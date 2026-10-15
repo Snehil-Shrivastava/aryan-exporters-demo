@@ -276,7 +276,7 @@ export default function EngineeringFlow() {
       {/* MIDDLE: left gutter | clear window | right gutter.
           The window uses flex-1, so it takes whatever height is left over. */}
       <div className="relative flex min-h-0 flex-1">
-        <div className={`w-[3.5cqw] shrink-0 ${frame}`} />
+        {/* <div className={`w-[3.5cqw] shrink-0 ${frame}`} /> */}
 
         {/* The window: no blur, no tint, so the background shows through sharp */}
         <div className="relative flex-1">

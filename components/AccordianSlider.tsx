@@ -129,7 +129,7 @@
 //               }`}
 //             >
 //               <span className="font-semibold text-gray-500">{num}</span>
-//               <h2 className="mb-6 mt-4 text-4xl font-bold text-red-800">
+//               <h2 className="mb-6 mt-4 text-4xl font-bold text-brand-red">
 //                 {slide.title}
 //               </h2>
 
@@ -168,9 +168,9 @@
 //                           e.stopPropagation();
 //                           toggleTag(i, t);
 //                         }}
-//                         className={`cursor-pointer border border-red-800 px-6 py-4 transition-colors ${
+//                         className={`cursor-pointer border border-brand-red px-6 py-4 transition-colors ${
 //                           selectedTag === t
-//                             ? "bg-red-800 text-white"
+//                             ? "bg-brand-red text-white"
 //                             : "text-gray-800 hover:bg-red-50"
 //                         }`}
 //                       >
@@ -181,7 +181,7 @@
 //                 </ul>
 //                 <Link
 //                   href={slide.href}
-//                   className="font-bold text-red-800 hover:underline"
+//                   className="font-bold text-brand-red hover:underline"
 //                 >
 //                   See this Range
 //                 </Link>
@@ -342,7 +342,7 @@ export default function ExpandingSlider() {
                 <span className="text-sm font-semibold text-gray-500 @6xl:text-base">
                   {num}
                 </span>
-                <h2 className="mb-3 mt-2 text-2xl font-bold leading-tight text-red-800 @4xl:mb-4 @4xl:mt-3 @4xl:text-3xl @6xl:mb-6 @6xl:mt-4 @6xl:text-4xl">
+                <h2 className="mb-3 mt-2 text-2xl font-bold leading-tight text-brand-red @4xl:mb-4 @4xl:mt-3 @4xl:text-3xl @6xl:mb-6 @6xl:mt-4 @6xl:text-4xl">
                   {slide.title}
                 </h2>
 
@@ -383,9 +383,9 @@ export default function ExpandingSlider() {
                             e.stopPropagation();
                             toggleTag(i, t);
                           }}
-                          className={`cursor-pointer border border-red-800 px-3 py-2 text-sm transition-colors @4xl:px-4 @4xl:py-3 @6xl:px-6 @6xl:py-4 @6xl:text-base ${
+                          className={`cursor-pointer border border-brand-red px-3 py-2 text-sm transition-colors @4xl:px-4 @4xl:py-3 @6xl:px-6 @6xl:py-4 @6xl:text-base ${
                             selectedTag === t
-                              ? "bg-red-800 text-white"
+                              ? "bg-brand-red text-white"
                               : "text-gray-800 hover:bg-red-50"
                           }`}
                         >
@@ -396,7 +396,7 @@ export default function ExpandingSlider() {
                   </ul>
                   <Link
                     href={slide.href}
-                    className="text-sm font-bold text-red-800 hover:underline @6xl:text-base"
+                    className="text-sm font-bold text-brand-red hover:underline @6xl:text-base"
                   >
                     See this Range
                   </Link>
