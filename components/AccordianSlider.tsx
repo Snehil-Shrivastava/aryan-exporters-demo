@@ -104,7 +104,7 @@ export default function ExpandingSlider() {
             <div
               key={slide.title}
               onClick={() => setActive(i)}
-              className={`relative basis-0 overflow-hidden transition-[flex-grow] duration-700 ease-in-out font-montserrat rounded-lg ${
+              className={`relative basis-0 overflow-hidden transition-[flex-grow] duration-700 ease-in-out rounded-lg ${
                 isActive
                   ? "grow-10 @4xl:grow-7 border border-gray-300 bg-white"
                   : "grow cursor-pointer"

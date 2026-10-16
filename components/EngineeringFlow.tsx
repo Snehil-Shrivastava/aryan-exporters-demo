@@ -210,7 +210,7 @@ export default function EngineeringFlow() {
 
   return (
     <section
-      className="relative flex aspect-16/10 w-full flex-col overflow-hidden font-montserrat text-white @container my-30 lg:aspect-13/7"
+      className="relative flex aspect-16/10 w-full flex-col overflow-hidden text-white @container my-30 lg:aspect-13/7"
       onMouseEnter={() => setPaused(true)}
       onMouseLeave={() => setPaused(false)}
     >

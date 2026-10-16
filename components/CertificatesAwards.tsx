@@ -54,7 +54,7 @@ const CertificatesAwards = () => {
         },
       });
 
-      items.forEach((item, i) => {
+      items.forEach((item) => {
         const node = item.querySelector(".timeline-node");
         const logo = item.querySelector(".timeline-logo");
         const text = item.querySelector(".timeline-text");
@@ -103,10 +103,7 @@ const CertificatesAwards = () => {
   );
 
   return (
-    <div
-      ref={containerRef}
-      className="w-full overflow-hidden py-20 font-montserrat"
-    >
+    <div ref={containerRef} className="w-full overflow-hidden">
       {/* Header */}
       <div className="mb-10 px-6 lg:px-10">
         <h2 className="text-4xl font-semibold text-gray-900">
@@ -118,7 +115,7 @@ const CertificatesAwards = () => {
       </div>
 
       {/* Timeline Container - Horizontal scroll on small screens */}
-      <div className="w-full overflow-x-auto py-10">
+      <div className="w-full pt-10">
         <div className="relative flex items-start justify-between">
           {timelineData.map((item, i) => (
             <div
@@ -140,7 +137,7 @@ const CertificatesAwards = () => {
               <div className="relative flex h-4 w-full items-center justify-center">
                 {/* The animated line (stretches from this node to the next) */}
                 {i < timelineData.length - 1 && (
-                  <div className="timeline-line absolute left-1/2 top-1/2 z-0 h-[2px] w-full -translate-y-1/2 bg-[#1e3a8a] opacity-100" />
+                  <div className="timeline-line absolute left-1/2 top-1/2 z-0 h-0.5 w-full -translate-y-1/2 bg-[#1e3a8a] opacity-100" />
                 )}
 
                 {/* The Node */}
