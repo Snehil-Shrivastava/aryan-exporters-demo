@@ -1,201 +1,3 @@
-// "use client";
-
-// import { useEffect, useState } from "react";
-// import Link from "next/link";
-// import Image from "next/image";
-
-// // each tag now has its own image
-// const slides = [
-//   {
-//     title: "Railway",
-//     image: "/images/railway.jpg",
-//     href: "#",
-//     tags: [
-//       { label: "Brake Systems", image: "/images/brake_systems.webp" },
-//       { label: "Couplers", image: "/images/couplers.jpg" },
-//     ],
-//   },
-//   {
-//     title: "Defence",
-//     image: "/images/defence.jpg",
-//     href: "#",
-//     tags: [
-//       { label: "Shelters", image: "/images/shelters.webp" },
-//       { label: "Cables", image: "/images/cables.jpg" },
-//     ],
-//   },
-//   {
-//     title: "Electrical Components",
-//     image: "/images/electrical_component.jpg",
-//     href: "#",
-//     tags: [
-//       { label: "Pantograph", image: "/images/pantograph.jpg" },
-//       { label: "Wiring Harness", image: "/images/wiring_harness.jpg" },
-//       { label: "Couplers", image: "/images/couplers.jpg" },
-//     ],
-//   },
-//   {
-//     title: "Power Electronics",
-//     image: "/images/power_electronics.jpg",
-//     href: "#",
-//     tags: [
-//       { label: "Converters", image: "/images/converters.jpg" },
-//       { label: "Inverters", image: "/images/inverters.jpg" },
-//     ],
-//   },
-//   {
-//     title: "Smart Embedded",
-//     image: "/images/smart_embedded.jpg",
-//     href: "#",
-//     tags: [
-//       { label: "Controllers", image: "/images/controllers.jpg" },
-//       { label: "Sensors", image: "/images/sensors.jpg" },
-//     ],
-//   },
-// ];
-
-// export default function ExpandingSlider() {
-//   const [active, setActive] = useState(2);
-//   const [paused, setPaused] = useState(false);
-//   // selected tag index for each slide, e.g. { 2: 0 } = slide 3, first tag
-//   const [selected, setSelected] = useState<Record<number, number | null>>({});
-
-//   // auto move to the next slide every 4 seconds
-//   useEffect(() => {
-//     if (paused) return;
-//     const id = setInterval(
-//       () => setActive((i) => (i + 1) % slides.length),
-//       4000,
-//     );
-//     return () => clearInterval(id);
-//   }, [paused, active]);
-
-//   // click a tag to select it, click it again to go back to the main image
-//   const toggleTag = (slideIndex: number, tagIndex: number) => {
-//     setSelected((prev) => ({
-//       ...prev,
-//       [slideIndex]: prev[slideIndex] === tagIndex ? null : tagIndex,
-//     }));
-//   };
-
-//   return (
-//     <div
-//       className="flex h-180 w-full gap-4"
-//       onMouseEnter={() => setPaused(true)}
-//       onMouseLeave={() => setPaused(false)}
-//     >
-//       {slides.map((slide, i) => {
-//         const isActive = i === active;
-//         const num = String(i + 1).padStart(2, "0");
-//         const selectedTag = selected[i] ?? null;
-
-//         return (
-//           <div
-//             key={slide.title}
-//             onClick={() => setActive(i)}
-//             className={`relative basis-0 overflow-hidden transition-[flex-grow] duration-700 ease-in-out font-montserrat ${
-//               isActive
-//                 ? "grow-7 border border-gray-300 bg-white"
-//                 : "grow cursor-pointer"
-//             }`}
-//           >
-//             {/* COLLAPSED VIEW */}
-//             <div
-//               className={`absolute inset-0 transition-opacity duration-500 ${
-//                 isActive ? "pointer-events-none opacity-0" : "opacity-100"
-//               }`}
-//             >
-//               <div className="relative w-full h-full">
-//                 <Image
-//                   src={slide.image}
-//                   alt=""
-//                   className="h-full w-full scale-110 object-cover blur-sm"
-//                   fill
-//                 />
-//               </div>
-//               <div className="absolute inset-0 bg-black/60" />
-//               <span className="absolute inset-x-0 top-6 text-center font-semibold text-white/80">
-//                 {num}
-//               </span>
-//               <span className="absolute bottom-[35%] left-1/2 -translate-x-1/2 rotate-180 whitespace-nowrap text-xl font-bold text-white [writing-mode:vertical-rl]">
-//                 {slide.title}
-//               </span>
-//             </div>
-
-//             {/* EXPANDED VIEW */}
-//             <div
-//               className={`flex h-full min-w-160 flex-col p-8 transition-opacity duration-500 ${
-//                 isActive ? "opacity-100 delay-300" : "opacity-0"
-//               }`}
-//             >
-//               <span className="font-semibold text-gray-500">{num}</span>
-//               <h2 className="mb-6 mt-4 text-4xl font-bold text-brand-red">
-//                 {slide.title}
-//               </h2>
-
-//               {/* All images are stacked; only the selected one is visible.
-//                   This gives a smooth cross-fade and preloads every image. */}
-//               <div className="relative w-full h-full">
-//                 <Image
-//                   src={slide.image}
-//                   alt={slide.title}
-//                   fill
-//                   className={`object-cover transition-opacity duration-500 ${
-//                     selectedTag === null ? "opacity-100" : "opacity-0"
-//                   }`}
-//                 />
-//                 {slide.tags.map((tag, t) => (
-//                   <Image
-//                     key={tag.label}
-//                     src={tag.image}
-//                     alt={tag.label}
-//                     fill
-//                     className={`object-cover transition-opacity duration-500 ${
-//                       selectedTag === t ? "opacity-100" : "opacity-0"
-//                     }`}
-//                   />
-//                 ))}
-//               </div>
-
-//               <div className="mt-6 flex items-center justify-between">
-//                 <ul className="flex gap-4">
-//                   {slide.tags.map((tag, t) => (
-//                     <li key={tag.label}>
-//                       <button
-//                         type="button"
-//                         aria-pressed={selectedTag === t}
-//                         onClick={(e) => {
-//                           e.stopPropagation();
-//                           toggleTag(i, t);
-//                         }}
-//                         className={`cursor-pointer border border-brand-red px-6 py-4 transition-colors ${
-//                           selectedTag === t
-//                             ? "bg-brand-red text-white"
-//                             : "text-gray-800 hover:bg-red-50"
-//                         }`}
-//                       >
-//                         {tag.label}
-//                       </button>
-//                     </li>
-//                   ))}
-//                 </ul>
-//                 <Link
-//                   href={slide.href}
-//                   className="font-bold text-brand-red hover:underline"
-//                 >
-//                   See this Range
-//                 </Link>
-//               </div>
-//             </div>
-//           </div>
-//         );
-//       })}
-//     </div>
-//   );
-// }
-
-// --------------------------------------- responsive
-
 "use client";
 
 import { useEffect, useState } from "react";
@@ -302,7 +104,7 @@ export default function ExpandingSlider() {
             <div
               key={slide.title}
               onClick={() => setActive(i)}
-              className={`relative basis-0 overflow-hidden transition-[flex-grow] duration-700 ease-in-out font-montserrat ${
+              className={`relative basis-0 overflow-hidden transition-[flex-grow] duration-700 ease-in-out font-montserrat rounded-lg ${
                 isActive
                   ? "grow-10 @4xl:grow-7 border border-gray-300 bg-white"
                   : "grow cursor-pointer"
@@ -353,7 +155,7 @@ export default function ExpandingSlider() {
                     src={slide.image}
                     alt={slide.title}
                     fill
-                    className={`object-cover transition-opacity duration-500 ${
+                    className={`object-cover transition-opacity duration-500 rounded-lg ${
                       selectedTag === null ? "opacity-100" : "opacity-0"
                     }`}
                   />
@@ -363,7 +165,7 @@ export default function ExpandingSlider() {
                       src={tag.image}
                       alt={tag.label}
                       fill
-                      className={`object-cover transition-opacity duration-500 ${
+                      className={`object-cover transition-opacity duration-500 rounded-lg ${
                         selectedTag === t ? "opacity-100" : "opacity-0"
                       }`}
                     />
@@ -383,10 +185,10 @@ export default function ExpandingSlider() {
                             e.stopPropagation();
                             toggleTag(i, t);
                           }}
-                          className={`cursor-pointer border border-brand-red px-3 py-2 text-sm transition-colors @4xl:px-4 @4xl:py-3 @6xl:px-6 @6xl:py-4 @6xl:text-base ${
+                          className={`cursor-pointer shadow-[0_0_15px_2px_rgba(0,0,0,0.15)] px-3 py-2 text-sm transition-colors @4xl:px-4 @4xl:py-3 @6xl:px-6 @6xl:py-4 @6xl:text-base rounded-lg font-medium ${
                             selectedTag === t
                               ? "bg-brand-red text-white"
-                              : "text-gray-800 hover:bg-red-50"
+                              : "text-brand-red hover:bg-red-50"
                           }`}
                         >
                           {tag.label}
@@ -396,9 +198,9 @@ export default function ExpandingSlider() {
                   </ul>
                   <Link
                     href={slide.href}
-                    className="text-sm font-bold text-brand-red hover:underline @6xl:text-base"
+                    className="text-sm font-medium text-brand-blue hover:underline @6xl:text-base"
                   >
-                    See this Range
+                    see this range
                   </Link>
                 </div>
               </div>
