@@ -5,6 +5,7 @@ import EngineeringFlowMasked from "@/components/EngineeringFlowMasked";
 import Footer from "@/components/Footer";
 import GroupofCompanies from "@/components/GroupofCompanies";
 import OurPartners from "@/components/OurPartners";
+import Responsibility from "@/components/Responsibility";
 import StartConvo from "@/components/StartConvo";
 
 export default function Home() {
@@ -17,6 +18,7 @@ export default function Home() {
         <CertificatesAwards />
         <GroupofCompanies />
         <OurPartners />
+        <Responsibility />
       </div>
       <StartConvo />
     </div>

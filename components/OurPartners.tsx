@@ -133,11 +133,11 @@ export default function OurPartners() {
             >
               {/* Note: I am using a standard img tag here for the placeholders. 
                   If you are using local assets, use the Next.js <Image> component instead. */}
-              <div className="relative w-full h-full">
+              <div className="relative w-7/10 h-full">
                 <Image
                   src={logo.src}
                   alt={`${logo.name} logo`}
-                  className="max-h-full max-w-full object-contain filter transition-all duration-300"
+                  className="object-contain filter transition-all duration-300"
                   fill
                 />
               </div>
