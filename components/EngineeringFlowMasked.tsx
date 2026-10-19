@@ -513,7 +513,7 @@ export default function EngineeringFlowMasked({
       ref={sectionRef}
       onMouseEnter={() => setPaused(true)}
       onMouseLeave={() => setPaused(false)}
-      className="relative isolate overflow-hidden rounded-lg text-white my-30"
+      className="relative isolate overflow-hidden rounded-lg text-white my-40"
     >
       {/* Layer 0: slide images, full bleed. Only ever seen through the red overlay. */}
       <div className="absolute inset-0 -z-20">

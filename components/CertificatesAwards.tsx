@@ -103,9 +103,12 @@ const CertificatesAwards = () => {
   );
 
   return (
-    <div ref={containerRef} className="w-full overflow-hidden">
+    <div
+      ref={containerRef}
+      className="w-full overflow-hidden py-20 max-1440p:py-0"
+    >
       {/* Header */}
-      <div className="mb-10 px-6 lg:px-10">
+      <div className="mb-10">
         <h2 className="text-4xl font-semibold text-gray-900">
           Certificates and awards
         </h2>

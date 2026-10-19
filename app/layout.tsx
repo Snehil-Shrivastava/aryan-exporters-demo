@@ -5,6 +5,7 @@ import "./globals.css";
 import Image from "next/image";
 
 import aryanExportersLogo from "@/public/aryan_exporters_logo.svg";
+import Footer from "@/components/Footer";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -38,12 +39,13 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
       lang="en"
       className={`${geistSans.variable} ${geistMono.variable} ${miranoExt.variable} ${montserrat.variable} h-full antialiased`}
     >
-      <body className="min-h-full flex flex-col 2xl:px-20">
+      <body className="min-h-full flex flex-col">
         <nav className="flex items-center justify-center gap-x-5 text-xl font-bold py-8 text-brand-blue">
           <Image src={aryanExportersLogo} alt="aryan exporters pvt ltd" />
           <span className="font-mirano uppercase">Aryan Exporters Pvt Ltd</span>
         </nav>
         {children}
+        <Footer />
       </body>
     </html>
   );
