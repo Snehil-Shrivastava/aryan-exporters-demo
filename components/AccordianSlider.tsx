@@ -14,6 +14,7 @@ const slides = [
       { label: "Brake Systems", image: "/images/brake_systems.webp" },
       { label: "Couplers", image: "/images/couplers.jpg" },
     ],
+    subheading: "Our Portfolio",
   },
   {
     title: "Defence",
@@ -23,6 +24,7 @@ const slides = [
       { label: "Shelters", image: "/images/shelters.webp" },
       { label: "Cables", image: "/images/cables.jpg" },
     ],
+    subheading: "Our Portfolio",
   },
   {
     title: "Electrical Components",
@@ -33,6 +35,7 @@ const slides = [
       { label: "Wiring Harness", image: "/images/wiring_harness.jpg" },
       { label: "Couplers", image: "/images/couplers.jpg" },
     ],
+    subheading: "Our Portfolio",
   },
   {
     title: "Power Electronics",
@@ -42,6 +45,7 @@ const slides = [
       { label: "Converters", image: "/images/converters.jpg" },
       { label: "Inverters", image: "/images/inverters.jpg" },
     ],
+    subheading: "Our Portfolio",
   },
   {
     title: "Smart Embedded",
@@ -51,6 +55,7 @@ const slides = [
       { label: "Controllers", image: "/images/controllers.jpg" },
       { label: "Sensors", image: "/images/sensors.jpg" },
     ],
+    subheading: "Our Portfolio",
   },
 ];
 
@@ -141,11 +146,11 @@ export default function ExpandingSlider() {
                   isActive ? "opacity-100 delay-300" : "opacity-0"
                 }`}
               >
-                <span className="text-sm font-semibold text-gray-500 @6xl:text-base">
-                  {num}
+                <span className="text-xl font-bold opacity-40 @6xl:text-base">
+                  {slide.subheading}
                 </span>
                 <h2 className="mb-3 mt-2 text-2xl font-bold leading-tight text-brand-red @4xl:mb-4 @4xl:mt-3 @4xl:text-3xl @6xl:mb-6 @6xl:mt-4 @6xl:text-4xl">
-                  {slide.title}
+                  {num} {slide.title}
                 </h2>
 
                 {/* All images are stacked; only the selected one is visible.
@@ -185,7 +190,7 @@ export default function ExpandingSlider() {
                             e.stopPropagation();
                             toggleTag(i, t);
                           }}
-                          className={`cursor-pointer shadow-[0_0_15px_2px_rgba(0,0,0,0.15)] px-3 py-2 text-sm transition-colors @4xl:px-4 @4xl:py-3 @6xl:px-6 @6xl:py-4 @6xl:text-base rounded-lg font-medium ${
+                          className={`cursor-pointer shadow-[0_0_15px_2px_rgba(0,0,0,0.15)] px-3 py-2 text-sm transition-colors @4xl:px-4 @4xl:py-3 @6xl:px-6 @6xl:py-4 @6xl:text-base rounded-full font-medium ${
                             selectedTag === t
                               ? "bg-brand-red text-white"
                               : "text-brand-red hover:bg-red-50"

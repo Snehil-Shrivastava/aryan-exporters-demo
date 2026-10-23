@@ -37,10 +37,10 @@ body {
 /* ---------- Engineering flow stepper ---------- */
 
 /* Each step is an arrow-shaped chevron. Steps overlap by the tip width so the points nest. */
-.engineering-step {
-  --tip: 1.75rem;
-  --edge: rgb(255 255 255); /* the thin chevron outline */
-  position: relative;
+/* .engineering-step {
+  --tip: 1.75rem; */
+/* --edge: rgb(255 255 255); the thin chevron outline */
+/* position: relative;
   flex: 1 1 0;
   margin-right: calc(var(--tip) * -1);
   padding: 0;
@@ -53,10 +53,10 @@ body {
     calc(100% - var(--tip)) 100%,
     0 100%
   );
-}
+} */
 
 /* Same shape pulled in 1.5px from the right: the gap shows --edge as an outline on the point. */
-.engineering-step-inner {
+/* .engineering-step-inner {
   position: absolute;
   inset: 0 1.5px 0 0;
   display: flex;
@@ -75,10 +75,10 @@ body {
   transition:
     background-color 300ms ease,
     font-weight 300ms ease;
-}
+} */
 
 /* Give the button its height from the text (inner is absolute) */
-.engineering-step::before {
+/* .engineering-step::before {
   content: "";
   display: block;
   padding-top: 3.25rem;
@@ -103,10 +103,10 @@ body {
   .engineering-step::before {
     padding-top: 4.5rem;
   }
-}
+} */
 
 /* ---------- Red info card swap ---------- */
-
+/* 
 @keyframes engineering-card-in {
   from {
     opacity: 0;
@@ -126,4 +126,9 @@ body {
   .engineering-card-in {
     animation: none;
   }
+} */
+
+.next-video-container {
+  overflow: hidden !important;
+  border-radius: 24px !important;
 }

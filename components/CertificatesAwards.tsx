@@ -105,7 +105,7 @@ const CertificatesAwards = () => {
   return (
     <div
       ref={containerRef}
-      className="w-full overflow-hidden py-20 max-1440p:py-0"
+      className="w-full overflow-hidden my-40 max-1440p:py-0"
     >
       {/* Header */}
       <div className="mb-10">

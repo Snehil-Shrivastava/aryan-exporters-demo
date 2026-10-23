@@ -6,14 +6,14 @@ import whatsapp from "@/public/images/whatsapp.svg";
 
 const Footer = () => {
   return (
-    <div className="flex flex-col bg-[#F1F1F1] px-30 max-2xl:px-15 pt-15 pb-8 font-montserrat">
+    <div className="flex flex-col px-30 max-2xl:px-5 pt-5 pb-8 font-montserrat">
       <div className="flex gap-15 pb-15">
         <div className="flex flex-col flex-[0.25] gap-15">
           <div className="relative flex gap-5 items-center">
-            <Image src={logo} alt="" />
-            <h3 className="text-brand-blue uppercase text-lg flex flex-col font-mirano">
-              <span className="font-bold leading-5">aryan exporters</span>
-              <span className="leading-5">pvt ltd.</span>
+            <Image src={logo} alt="" className="w-10" />
+            <h3 className="text-brand-blue uppercase text-sm flex flex-col font-mirano leading-4">
+              <span className="font-bold">aryan exporters</span>
+              <span>pvt ltd.</span>
             </h3>
           </div>
           <p className="font-montserrat">
