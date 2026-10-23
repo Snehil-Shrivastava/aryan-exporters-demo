@@ -61,9 +61,11 @@ const Footer = () => {
             <h3 className="font-bold tracking-wide">Contact</h3>
             <div className="flex flex-col gap-4">
               <p>Mob: +91 731-800-1900, Mail: mail@aryanexp.com</p>
-              <p>Registered Office & Works Office</p>
-              <p>B-1, Industrial Area,</p>
-              <p>Amausi, Lucknow-226008</p>
+              <div className="flex flex-col">
+                <p>Registered Office & Works Office</p>
+                <p>B-1, Industrial Area,</p>
+                <p>Amausi, Lucknow-226008</p>
+              </div>
               <div className="flex gap-8">
                 <Image src={linkedin} alt="linkedin" />
                 <Image src={whatsapp} alt="whatsapp" />

@@ -54,7 +54,7 @@ const GroupofCompanies = () => {
             <Image
               src={steelIndustrieslogo}
               alt=""
-              className="h-22 object-contain w-[342px]"
+              className="h-22 object-contain w-85.5"
             />
           </div>
           <div className="flex items-center gap-6 rounded-full shadow-[0_0_15px_2px_rgba(0,0,0,0.15)] px-8 py-2.5">

@@ -13,9 +13,9 @@ const Responsibility = () => {
           <span>structure and detail to follow</span>
         </p>
       </div>
-      <div className="flex gap-40 py-10">
+      <div className="flex max-xl:flex-col max-xl:flex-wrap gap-40 max-xl:gap-20 py-10">
         <div>
-          <div className="relative h-100 w-150">
+          <div className="relative 1440p:h-100 1440p:w-150 w-100 h-80">
             <Image
               src={environment}
               alt="environment"
@@ -29,7 +29,7 @@ const Responsibility = () => {
           </div>
         </div>
         <div>
-          <div className="relative h-100 w-150">
+          <div className="relative 1440p:h-100 1440p:w-150 w-100 h-80">
             <Image
               src={healthcare}
               alt="healthcare"
