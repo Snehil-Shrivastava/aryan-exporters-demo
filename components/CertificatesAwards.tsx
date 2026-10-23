@@ -108,12 +108,13 @@ const CertificatesAwards = () => {
       className="w-full overflow-hidden my-40 max-1440p:py-0"
     >
       {/* Header */}
-      <div className="mb-10">
+      <div className="mb-10 flex gap-10 items-center">
         <h2 className="text-4xl font-semibold text-gray-900">
           Certificates and awards
         </h2>
-        <p className="py-2 text-sm text-gray-600">
-          Told as a line, so the dates carry the credibility
+        <p className="py-2 text-sm text-gray-600 flex flex-col">
+          <span>Lorem Ipsum is simply dummy text of the</span>
+          <span>printing and typesetting industry.</span>
         </p>
       </div>
 
