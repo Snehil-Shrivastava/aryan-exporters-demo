@@ -69,7 +69,7 @@ export default function EngineeringFlow() {
           />
         )}
       </div>
-      <div className="flex max-1440p:flex-wrap gap-8 xl:justify-between items-center min-h-15">
+      <div className="flex max-1440p:flex-wrap gap-8 xl:justify-between items-center min-h-15 w-4/5 max-w-368.75 mx-auto">
         {EngineeringFlowTabs.map((tab, index) => {
           const isActive = activeTab == tab.label;
           return (

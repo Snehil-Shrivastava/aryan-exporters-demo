@@ -15,7 +15,7 @@ const GroupofCompanies = () => {
           <span>structure and detail to follow</span>
         </p>
       </div>
-      <div className="flex gap-30 py-15">
+      <div className="flex gap-30 py-15 items-center justify-center">
         <div className="flex flex-col items-center gap-10 justify-between">
           <div className="flex items-center gap-5 col-span-6 h-22">
             <Image src={aryanlogo} alt="" className="w-12" />

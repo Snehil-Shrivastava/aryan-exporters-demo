@@ -79,27 +79,18 @@ export default function OurPartners() {
       <h2 className="text-4xl font-semibold">Our Partners</h2>
 
       {/* Logos Grid */}
-      <div
+      {/* <div
         key={activeTab}
         className="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-4 animate-fade-in"
+      > */}
+      <div
+        key={activeTab}
+        className="flex gap-6 animate-fade-in justify-center"
       >
         {LOGOS[activeTab].map((logo) => (
-          // <div
-          //   key={logo.name}
-          //   className="group relative flex aspect-2.5/1 items-center justify-center rounded-2xl bg-white p-8 shadow-sm ring-1 ring-black/5 transition-all duration-300 hover:shadow-md hover:-translate-y-1"
-          // >
-          //   <div className="relative w-7/10 h-full">
-          //     <Image
-          //       src={logo.src}
-          //       alt={`${logo.name} logo`}
-          //       className="object-contain filter transition-all duration-300"
-          //       fill
-          //     />
-          //   </div>
-          // </div>
           <div
             key={logo.name}
-            className="group relative flex aspect-2.5/1 items-center justify-center bg-white p-8 transition-all duration-300 hover:shadow-md hover:-translate-y-1 border-b-5 border-r-5 border-neutral-300"
+            className="group relative flex aspect-2.5/1 items-center justify-center bg-white p-8 transition-all duration-300 hover:shadow-md hover:-translate-y-1 border-b-5 border-r-5 border-neutral-300 flex-1 max-w-110.5"
           >
             <div className="relative w-7/10 h-full">
               <Image
