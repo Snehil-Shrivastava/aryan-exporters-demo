@@ -14,7 +14,7 @@ const Responsibility = () => {
         </p>
       </div>
       <div className="flex max-xl:flex-col max-xl:flex-wrap gap-40 max-xl:gap-20 py-10">
-        <div>
+        <div className="flex-1">
           <div className="relative 1440p:h-100 1440p:w-150 w-100 h-80">
             <Image
               src={environment}
@@ -25,10 +25,13 @@ const Responsibility = () => {
           </div>
           <div className="text-lg py-6">
             <h3 className="font-bold text-2xl">Environment</h3>
-            <p>Green campus at the works.</p>
+            <p>
+              A green campus at the works. The company also supports Save Soil,
+              the Conscious Planet movement, across the workforce.
+            </p>
           </div>
         </div>
-        <div>
+        <div className="flex-1">
           <div className="relative 1440p:h-100 1440p:w-150 w-100 h-80">
             <Image
               src={healthcare}
@@ -39,7 +42,10 @@ const Responsibility = () => {
           </div>
           <div className="text-lg py-6">
             <h3 className="font-bold text-2xl">Community and healthcare</h3>
-            <p>Charitable clinic and local programmes.</p>
+            <p>
+              A charitable clinic run by the company gives free consultation and
+              medicine to anyone who needs it.
+            </p>
           </div>
         </div>
       </div>

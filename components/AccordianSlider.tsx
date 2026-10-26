@@ -11,7 +11,11 @@ const slides = [
     image: "/images/railway.jpg",
     href: "#",
     tags: [
-      { label: "Brake Systems", image: "/images/brake_systems.webp" },
+      { label: "Air springs", image: "/images/brake_systems.webp" },
+      {
+        label: "Constant contact side bearers Brake system",
+        image: "/images/brake_systems.webp",
+      },
       { label: "Couplers", image: "/images/couplers.jpg" },
     ],
     subheading: "Our Portfolio",
@@ -21,8 +25,10 @@ const slides = [
     image: "/images/defence.jpg",
     href: "#",
     tags: [
-      { label: "Shelters", image: "/images/shelters.webp" },
-      { label: "Cables", image: "/images/cables.jpg" },
+      { label: "Track pads", image: "/images/shelters.webp" },
+      { label: "Anti-vibration mounts", image: "/images/cables.jpg" },
+      { label: "Amoured vehicle suspensions", image: "/images/cables.jpg" },
+      { label: "Bellows and ducts", image: "/images/cables.jpg" },
     ],
     subheading: "Our Portfolio",
   },
@@ -33,7 +39,7 @@ const slides = [
     tags: [
       { label: "Pantograph", image: "/images/pantograph.jpg" },
       { label: "Wiring Harness", image: "/images/wiring_harness.jpg" },
-      { label: "Couplers", image: "/images/couplers.jpg" },
+      { label: "Grommets and bushes", image: "/images/couplers.jpg" },
     ],
     subheading: "Our Portfolio",
   },
@@ -42,8 +48,8 @@ const slides = [
     image: "/images/power_electronics.jpg",
     href: "#",
     tags: [
-      { label: "Converters", image: "/images/converters.jpg" },
-      { label: "Inverters", image: "/images/inverters.jpg" },
+      { label: "OHE", image: "/images/converters.jpg" },
+      { label: "Inverters/Converts", image: "/images/inverters.jpg" },
     ],
     subheading: "Our Portfolio",
   },
@@ -52,8 +58,9 @@ const slides = [
     image: "/images/smart_embedded.jpg",
     href: "#",
     tags: [
-      { label: "Controllers", image: "/images/controllers.jpg" },
-      { label: "Sensors", image: "/images/sensors.jpg" },
+      { label: "Rolling Stocks", image: "/images/controllers.jpg" },
+      { label: "MVIS", image: "/images/sensors.jpg" },
+      { label: "Onboard monitoring system", image: "/images/sensors.jpg" },
     ],
     subheading: "Our Portfolio",
   },
@@ -160,7 +167,7 @@ export default function ExpandingSlider() {
                     src={slide.image}
                     alt={slide.title}
                     fill
-                    className={`object-cover transition-opacity duration-500 rounded-lg ${
+                    className={`object-cover transition-opacity duration-500 rounded-lg select-none ${
                       selectedTag === null ? "opacity-100" : "opacity-0"
                     }`}
                   />
@@ -170,7 +177,7 @@ export default function ExpandingSlider() {
                       src={tag.image}
                       alt={tag.label}
                       fill
-                      className={`object-cover transition-opacity duration-500 rounded-lg ${
+                      className={`object-cover transition-opacity duration-500 rounded-lg select-none ${
                         selectedTag === t ? "opacity-100" : "opacity-0"
                       }`}
                     />

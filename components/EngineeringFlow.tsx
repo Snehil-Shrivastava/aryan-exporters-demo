@@ -7,38 +7,38 @@ import { useState } from "react";
 import Minimal from "player.style/minimal/react";
 
 const EngineeringFlowTabs = [
-  { label: "design" },
-  { label: "develop" },
-  { label: "test" },
+  { label: "design r&d" },
   { label: "manufacture" },
-  { label: "support" },
+  { label: "testing" },
+  // { label: "manufacture" },
+  { label: "success stories" },
 ];
 
 const Videos = [
   {
-    label: "Design",
+    label: "Design R&D",
     video: placeholderVideo,
-  },
-  {
-    label: "Develop",
-    video: designVideo,
-  },
-  {
-    label: "Test",
-    video: designVideo,
   },
   {
     label: "Manufacture",
     video: designVideo,
   },
   {
-    label: "Support",
+    label: "Testing",
+    video: designVideo,
+  },
+  // {
+  //   label: "Manufacture",
+  //   video: designVideo,
+  // },
+  {
+    label: "Success Stories",
     video: designVideo,
   },
 ];
 
 export default function EngineeringFlow() {
-  const [activeTab, setActiveTab] = useState("design");
+  const [activeTab, setActiveTab] = useState("design r&d");
 
   const activeVideo = Videos.find((v) => v.label.toLowerCase() === activeTab);
 

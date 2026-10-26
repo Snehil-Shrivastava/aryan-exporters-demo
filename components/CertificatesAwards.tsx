@@ -12,27 +12,32 @@ gsap.registerPlugin(ScrollTrigger, useGSAP);
 const timelineData = [
   {
     year: "1999",
-    text: "ISO 9001 first certified",
+    label: "ISO 9001, first certified",
+    text: "Currently ISO 9001:2015, certificate C899464 by DNV, valid to 17 May 2029.",
     logo: "/images/iso.png", // Replace with your actual image paths
   },
   {
     year: "2009",
-    text: "National Award, Entrepreneurship",
+    label: "MSME National Award, Entrepreneurship",
+    text: "Ministry of Micro, Small and Medium Enterprises. Special Recognition Award for outstanding entrepreneurship, to Shri Ravi Sood.",
     logo: "/images/msme.png",
   },
   {
     year: "2010",
-    text: "National Award, Research and Development",
+    label: "MSME National Award, Research and Development",
+    text: "Ministry of Micro, Small and Medium Enterprises. Special Recognition Award for research and development.",
     logo: "/images/msme.png",
   },
   {
     year: "2025",
-    text: "IRIS certified, valid to 2028",
+    label: "IRIS certified for rolling stock",
+    text: "Register C545422 by DNV Business Assurance India, valid to 3 August 2028.",
     logo: "/images/iris.png",
   },
   {
     year: "2026",
-    text: "NABL lab accreditation to 2030",
+    label: "NABL laboratory accreditation",
+    text: "ISO/IEC 17025:2017 for the laboratory at the works, certificate NABLT0726UP18835, valid to 28 July 2030.",
     logo: "/images/nabl.png",
   },
 ];
@@ -113,7 +118,7 @@ const CertificatesAwards = () => {
           Certificates and awards
         </h2>
         <p className="py-2 text-sm text-gray-600 flex flex-col">
-          <span>Lorem Ipsum is simply dummy text of the</span>
+          <span>Lorem Ipsum is simply dummy text of the </span>
           <span>printing and typesetting industry.</span>
         </p>
       </div>
@@ -153,7 +158,10 @@ const CertificatesAwards = () => {
                 <h3 className="text-3xl font-bold text-[#c92a2a]">
                   {item.year}
                 </h3>
-                <p className="mt-2 text-sm leading-snug text-gray-800">
+                <p className="mt-2 text-sm font-medium leading-snug text-gray-800">
+                  {item.label}
+                </p>
+                <p className="mt-2 text-xs leading-snug text-gray-800">
                   {item.text}
                 </p>
               </div>

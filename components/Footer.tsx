@@ -6,7 +6,7 @@ import whatsapp from "@/public/images/whatsapp.svg";
 
 const Footer = () => {
   return (
-    <div className="flex flex-col px-30 max-2xl:px-5 pt-5 pb-8 font-montserrat">
+    <div className="flex flex-col px-10 pt-5 pb-8 font-montserrat max-w-[1920px] mx-auto">
       <div className="flex gap-15 pb-15">
         <div className="flex flex-col flex-[0.25] gap-15">
           <div className="relative flex gap-5 items-center">
@@ -17,9 +17,10 @@ const Footer = () => {
             </h3>
           </div>
           <p className="font-montserrat">
-            We design, develop and test polymer parts in-house, then manufacture
-            them at scale. Proven on the Indian Railways, engineering now for
-            rail, defence, infrastructure and industry.
+            We design, test and build suspension, electrical, power and embedded
+            systems in our own works at Lucknow. Proven on Indian Railways since
+            1983, engineering now for rail, defence, infrastructure and
+            industry.
           </p>
         </div>
         <div className="text-lg flex-[0.75] flex 2xl:gap-40 1440p:max-2xl:gap-25 max-1440p:gap-15">
@@ -27,16 +28,16 @@ const Footer = () => {
             <h3 className="font-bold tracking-wide">Solutions</h3>
             <ul className="flex flex-col gap-4">
               <li>
-                <span className="capitalize">by application</span>
+                <span>By application</span>
               </li>
               <li>
-                <span className="capitalize">by challenges</span>
+                <span>By challenges</span>
               </li>
               <li>
-                <span className="capitalize">capabilities</span>
+                <span>Capabilities</span>
               </li>
               <li>
-                <span className="capitalize">how we work</span>
+                <span>How we work</span>
               </li>
             </ul>
           </div>
@@ -50,7 +51,10 @@ const Footer = () => {
                 <span className="capitalize">projects</span>
               </li>
               <li>
-                <span className="capitalize">resources</span>
+                <span className="capitalize">certifications</span>
+              </li>
+              <li>
+                <span className="capitalize">responsibility</span>
               </li>
               <li>
                 <span className="capitalize">careers</span>
@@ -60,11 +64,19 @@ const Footer = () => {
           <div className="flex flex-col gap-15">
             <h3 className="font-bold tracking-wide">Contact</h3>
             <div className="flex flex-col gap-4">
-              <p>Mob: +91 731-800-1900, Mail: mail@aryanexp.com</p>
-              <div className="flex flex-col">
-                <p>Registered Office & Works Office</p>
-                <p>B-1, Industrial Area,</p>
-                <p>Amausi, Lucknow-226008</p>
+              <p>Mob: +91 731-800-1900, 0522 2437456</p>
+              <p>Mail: mail@aryanexp.com</p>
+              <div className="flex gap-[3vw]">
+                <div className="flex flex-col">
+                  <p className="font-medium">Registered Office & Works</p>
+                  <p>B-1, Industrial Area,</p>
+                  <p>Amausi, Lucknow-226008, India</p>
+                </div>
+                <div className="flex flex-col">
+                  <p className="font-medium">Corporate Office</p>
+                  <p>T-31, Green Park Main,</p>
+                  <p>New Delhi 110016, India</p>
+                </div>
               </div>
               <div className="flex gap-8">
                 <Image src={linkedin} alt="linkedin" />
@@ -76,7 +88,7 @@ const Footer = () => {
       </div>
       <hr className="opacity-40" />
       <p className="text-center pt-8">
-        &copy; &nbsp; 2026-2027 Aryan Exporters Private Limited
+        &copy; &nbsp; Aryan Exporters Private Limited
       </p>
     </div>
   );
