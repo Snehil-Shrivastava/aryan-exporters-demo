@@ -67,7 +67,7 @@ const Navbar = () => {
     <nav
       className={`flex fixed top-0 left-0 right-0 z-99 bg-white transition-transform duration-300 ease-out will-change-transform border-b  shadow-[0_0_15px_2px_rgba(0,0,0,0.15)] border-gray-300 ${hidden ? "-translate-y-full" : "translate-y-0"}`}
     >
-      <div className="flex items-center gap-4 font-bold flex-[0.3] text-brand-blue py-6 max-1440p:py-3.5 pl-15 max-1440p:pl-8">
+      <div className="flex items-center gap-4 font-bold flex-[0.3] max-1440p:flex-[0.2] text-brand-blue py-6 max-1440p:py-3.5 pl-15 max-1440p:pl-8">
         <Image
           src={aryanExportersLogo}
           alt="aryan exporters pvt ltd"
@@ -77,15 +77,15 @@ const Navbar = () => {
           Aryan Exporters Pvt Ltd
         </span>
       </div>
-      <div className="flex-[0.7] flex justify-end items-stretch 1440p:gap-20">
-        <ul className="flex justify-around items-center font-semibold text-sm max-1440p:text-[10px] opacity-65 flex-1 max-w-200">
+      <div className="flex-[0.7] max-1440p:flex-[0.8] flex justify-end items-stretch 2xl:gap-20 1440p:gap-5 gap-10">
+        <ul className="flex 1440p:justify-around justify-end xl:max-1440p:gap-15 gap-10 items-center font-semibold text-sm xl:max-1440p:text-xs max-xl:text-[10px] opacity-65 flex-1 max-w-200">
           {navLinks.map((nav, index) => (
             <Link href={nav.link} key={index} className="uppercase">
               {nav.label}
             </Link>
           ))}
         </ul>
-        <button className="bg-brand-red text-white font-bold flex gap-5 max-1440p:gap-2.5 items-center uppercase px-10 max-1440p:px-5">
+        <button className="bg-brand-red text-white font-bold flex gap-5 max-1440p:gap-2.5 items-center uppercase px-10 1440p:max-2xl:px-6 max-1440p:px-5">
           <p className="flex flex-col text-start max-1440p:text-sm">
             <span>discuss</span>
             <span>a challenge</span>

@@ -16,14 +16,14 @@ const Footer = () => {
               <span>pvt ltd.</span>
             </h3>
           </div>
-          <p className="font-montserrat">
+          <p className="font-montserrat 1440p:max-2xl:text-base max-1440p:text-sm">
             We design, test and build suspension, electrical, power and embedded
             systems in our own works at Lucknow. Proven on Indian Railways since
             1983, engineering now for rail, defence, infrastructure and
             industry.
           </p>
         </div>
-        <div className="text-lg flex-[0.75] flex 2xl:gap-40 1440p:max-2xl:gap-25 max-1440p:gap-15">
+        <div className="text-lg flex-[0.75] flex 2xl:gap-40 1440p:max-2xl:gap-25 max-1440p:gap-15 1440p:max-2xl:text-base max-1440p:text-sm">
           <div className="flex flex-col gap-15">
             <h3 className="font-bold tracking-wide">Solutions</h3>
             <ul className="flex flex-col gap-4">
