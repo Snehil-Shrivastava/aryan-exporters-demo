@@ -77,8 +77,8 @@ const Navbar = () => {
           Aryan Exporters Pvt Ltd
         </span>
       </div>
-      <div className="flex-[0.7] flex justify-end items-stretch">
-        <ul className="flex justify-around items-center font-semibold text-xs max-1440p:text-[10px] opacity-65 flex-1 max-w-300">
+      <div className="flex-[0.7] flex justify-end items-stretch 1440p:gap-20">
+        <ul className="flex justify-around items-center font-semibold text-sm max-1440p:text-[10px] opacity-65 flex-1 max-w-200">
           {navLinks.map((nav, index) => (
             <Link href={nav.link} key={index} className="uppercase">
               {nav.label}

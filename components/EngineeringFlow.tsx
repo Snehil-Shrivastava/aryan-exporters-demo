@@ -49,9 +49,14 @@ export default function EngineeringFlow() {
           the enginnering flow
         </h2>
         <p>
-          <span>Five capabilities,</span>
+          <span>
+            A problem arrives as a drawing, a sample, a challenge, or a failure.
+          </span>
           <br />
-          <span>One enginnering team</span>
+          <span>
+            It leaves as a part with a test report behind it. This is what
+            happens in between.
+          </span>
         </p>
       </div>
       <div>

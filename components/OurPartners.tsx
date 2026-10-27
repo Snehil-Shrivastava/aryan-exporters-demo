@@ -76,8 +76,16 @@ export default function OurPartners() {
   return (
     <div className="flex flex-col gap-15 py-10 max-1440p:py-0">
       {/* Header Area */}
-      <h2 className="text-4xl font-semibold">Our Partners</h2>
-
+      <div className="flex gap-10 items-center">
+        <h2 className="text-4xl font-semibold">Our Partners</h2>
+        <p className="py-2 text-sm text-gray-600 flex flex-col">
+          <span>
+            The operators and builders who buy from us, the material companies
+            behind our compounds, and the people we develop with.
+          </span>
+          {/* <span>Click any to know more.</span> */}
+        </p>
+      </div>
       {/* Logos Grid */}
       {/* <div
         key={activeTab}

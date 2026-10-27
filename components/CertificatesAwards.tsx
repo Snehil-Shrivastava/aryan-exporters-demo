@@ -118,8 +118,11 @@ const CertificatesAwards = () => {
           Certificates and awards
         </h2>
         <p className="py-2 text-sm text-gray-600 flex flex-col">
-          <span>Lorem Ipsum is simply dummy text of the </span>
-          <span>printing and typesetting industry.</span>
+          <span>
+            Proving our capabilities and being recognized for it at multiple
+            steps.
+          </span>
+          <span>Click any to know more.</span>
         </p>
       </div>
 

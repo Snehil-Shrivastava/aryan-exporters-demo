@@ -8,9 +8,14 @@ const Responsibility = () => {
       <div className="flex gap-15 items-center">
         <h2 className="text-4xl font-semibold">Responsibility</h2>
         <p>
-          <span>Aryan Exporters is one of several comapanies:</span>
+          <span>
+            At Aryan Exporters we believe in conserving this very environment
+            that provides for us, and healthcare.
+          </span>
           <br />
-          <span>structure and detail to follow</span>
+          <span>
+            A holistic approach of living a simple life with high thinking.
+          </span>
         </p>
       </div>
       <div className="flex max-xl:flex-col max-xl:flex-wrap gap-40 max-xl:gap-20 py-10">
