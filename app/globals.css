@@ -131,4 +131,11 @@ body {
 .next-video-container {
   overflow: hidden !important;
   border-radius: 24px !important;
+  width: auto !important;
+}
+
+@media (min-width: 1280px) {
+  .next-video-container {
+    width: 80% !important;
+  }
 }

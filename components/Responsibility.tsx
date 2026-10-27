@@ -18,9 +18,10 @@ const Responsibility = () => {
           </span>
         </p>
       </div>
-      <div className="flex max-xl:flex-col max-xl:flex-wrap gap-40 max-xl:gap-20 py-10">
+      <div className="flex max-lg:flex-col max-xl:flex-wrap gap-40 max-xl:gap-20 py-10">
         <div className="flex-1">
-          <div className="relative 1440p:h-100 1440p:w-150 w-100 h-80">
+          {/* <div className="relative 1440p:h-100 1440p:w-150 w-100 h-80"> */}
+          <div className="relative w-full aspect-12/6">
             <Image
               src={environment}
               alt="environment"
@@ -37,7 +38,7 @@ const Responsibility = () => {
           </div>
         </div>
         <div className="flex-1">
-          <div className="relative 1440p:h-100 1440p:w-150 w-100 h-80">
+          <div className="relative w-full aspect-12/6">
             <Image
               src={healthcare}
               alt="healthcare"

@@ -66,21 +66,22 @@ export default function EngineeringFlow() {
             key={activeVideo.label}
             theme={Minimal}
             style={{
-              width: "80%",
+              // width: "80%",
               maxWidth: "1475px",
               marginLeft: "auto",
               marginRight: "auto",
             }}
+            className="max-xl:w-full w-4/5"
           />
         )}
       </div>
-      <div className="flex max-1440p:flex-wrap gap-8 xl:justify-between items-center min-h-15 w-4/5 max-w-368.75 mx-auto">
+      <div className="flex max-1440p:flex-wrap gap-8 justify-between items-center min-h-15 w-4/5 max-xl:w-full max-w-368.75 mx-auto">
         {EngineeringFlowTabs.map((tab, index) => {
           const isActive = activeTab == tab.label;
           return (
             <button
               key={index}
-              className={`capitalize shadow-[0_0_15px_2px_rgba(0,0,0,0.15)] px-20 py-3 rounded-full cursor-pointer text-xl ${isActive ? "font-bold bg-brand-red text-white" : "text-brand-red"}`}
+              className={`capitalize shadow-[0_0_15px_2px_rgba(0,0,0,0.15)] px-20 1440p:max-2xl:px-15 max-1440p:px-10 py-3 rounded-full cursor-pointer text-xl ${isActive ? "font-bold bg-brand-red text-white" : "text-brand-red"}`}
               onClick={() => setActiveTab(tab.label)}
             >
               {tab.label}
