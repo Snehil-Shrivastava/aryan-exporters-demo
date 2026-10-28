@@ -10,7 +10,7 @@ import StartConvo from "@/components/StartConvo";
 export default function Home() {
   return (
     <div className="py-10 w-full font-montserrat">
-      <div className="px-10 max-lg:px-4 max-w-[1920px] mx-auto w-full">
+      <div className="px-10 max-lg:px-4 max-w-[1920px] mx-auto w-full md:max-lg:pb-25">
         <AccordionSlider />
         <HomeAboutUs />
         {/* <EngineeringFlowMasked frameHeightClass="min-h-[450px] sm:max-lg:min-h-[360px] 1440p:min-h-[650px]" /> */}

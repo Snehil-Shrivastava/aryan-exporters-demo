@@ -4,7 +4,7 @@ import healthcare from "@/public/images/healthcare.png";
 
 const Responsibility = () => {
   return (
-    <div>
+    <div className="">
       {/* <div className="flex gap-15 items-center">
         <h2 className="text-4xl font-semibold">Responsibility</h2>
         <p>

@@ -23,7 +23,7 @@ const Footer = () => {
             industry.
           </p>
         </div>
-        <div className="text-lg flex-[0.75] flex max-lg:flex-wrap 2xl:gap-40 1440p:max-2xl:gap-25 max-1440p:gap-15 max-lg:gap-8 1440p:max-2xl:text-base max-1440p:text-sm max-lg:justify-between">
+        <div className="text-lg flex-[0.75] flex max-md:grid max-md:grid-cols-2 2xl:gap-40 1440p:max-2xl:gap-25 max-1440p:gap-15 max-lg:gap-8 1440p:max-2xl:text-base max-1440p:text-sm max-lg:justify-between">
           <div className="flex flex-col gap-15 max-md:flex-1 max-lg:gap-4">
             <h3 className="font-bold tracking-wide">Solutions</h3>
             <ul className="flex flex-col gap-4">
@@ -61,7 +61,7 @@ const Footer = () => {
               </li>
             </ul>
           </div>
-          <div className="flex flex-col gap-15 max-md:flex-1 max-lg:gap-4">
+          <div className="flex flex-col gap-15 max-md:flex-1 max-lg:gap-4 max-md:col-span-2">
             <h3 className="font-bold tracking-wide">Contact</h3>
             <div className="flex flex-col gap-4">
               <p>Mob: +91 731-800-1900, 0522 2437456</p>

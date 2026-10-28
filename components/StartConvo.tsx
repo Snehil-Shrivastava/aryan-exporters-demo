@@ -2,7 +2,7 @@ import { ArrowUpRight } from "lucide-react";
 
 const StartConvo = () => {
   return (
-    <div className="bg-brand-red text-white py-15 max-xl:py-8 mt-25">
+    <div className="bg-brand-red text-white py-15 max-xl:py-8 mt-25 max-lg:mt-0">
       <div className="max-w-[1920px] mx-auto px-10 flex max-lg:flex-col max-lg:items-start max-lg:gap-8 items-center justify-between">
         <div>
           <h4 className="font-bold max-lg:font-semibold max-lg:text-[10px] lg:max-xl:text-sm uppercase">

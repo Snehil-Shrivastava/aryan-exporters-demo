@@ -253,7 +253,7 @@ export default function OurPartners() {
         id="partners-panel"
         role="tabpanel"
         aria-labelledby={`tab-${activeTab}`}
-        className="flex animate-fade-in flex-wrap justify-center gap-4 sm:gap-6"
+        className="flex sm:max-lg:grid sm:max-lg:grid-cols-2 animate-fade-in flex-wrap justify-center gap-4 sm:gap-6"
       >
         {LOGOS[activeTab].map((logo) => (
           <div
