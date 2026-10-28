@@ -6,9 +6,9 @@ import whatsapp from "@/public/images/whatsapp.svg";
 
 const Footer = () => {
   return (
-    <div className="flex flex-col px-10 pt-5 pb-8 font-montserrat max-w-[1920px] mx-auto">
-      <div className="flex gap-15 pb-15">
-        <div className="flex flex-col flex-[0.25] gap-15">
+    <div className="flex flex-col px-10 max-lg:px-4 pt-5 pb-8 max-lg:py-0 font-montserrat max-w-[1920px] mx-auto">
+      <div className="flex max-lg:flex-col gap-15 pb-15">
+        <div className="flex flex-col flex-[0.25] gap-15 max-lg:gap-6">
           <div className="relative flex gap-5 items-center">
             <Image src={logo} alt="" className="w-10" />
             <h3 className="text-brand-blue uppercase text-sm flex flex-col font-mirano leading-4">
@@ -23,8 +23,8 @@ const Footer = () => {
             industry.
           </p>
         </div>
-        <div className="text-lg flex-[0.75] flex 2xl:gap-40 1440p:max-2xl:gap-25 max-1440p:gap-15 1440p:max-2xl:text-base max-1440p:text-sm">
-          <div className="flex flex-col gap-15">
+        <div className="text-lg flex-[0.75] flex max-lg:flex-wrap 2xl:gap-40 1440p:max-2xl:gap-25 max-1440p:gap-15 max-lg:gap-8 1440p:max-2xl:text-base max-1440p:text-sm max-lg:justify-between">
+          <div className="flex flex-col gap-15 max-md:flex-1 max-lg:gap-4">
             <h3 className="font-bold tracking-wide">Solutions</h3>
             <ul className="flex flex-col gap-4">
               <li>
@@ -41,7 +41,7 @@ const Footer = () => {
               </li>
             </ul>
           </div>
-          <div className="flex flex-col gap-15">
+          <div className="flex flex-col gap-15 max-md:flex-1 max-lg:gap-4">
             <h3 className="font-bold tracking-wide">Company</h3>
             <ul className="flex flex-col gap-4">
               <li>
@@ -61,7 +61,7 @@ const Footer = () => {
               </li>
             </ul>
           </div>
-          <div className="flex flex-col gap-15">
+          <div className="flex flex-col gap-15 max-md:flex-1 max-lg:gap-4">
             <h3 className="font-bold tracking-wide">Contact</h3>
             <div className="flex flex-col gap-4">
               <p>Mob: +91 731-800-1900, 0522 2437456</p>
@@ -87,7 +87,7 @@ const Footer = () => {
         </div>
       </div>
       <hr className="opacity-40" />
-      <p className="text-center pt-8">
+      <p className="text-center pt-8 max-lg:py-4">
         &copy; &nbsp; Aryan Exporters Private Limited
       </p>
     </div>

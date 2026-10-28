@@ -8,14 +8,23 @@ import { CircleArrowRight } from "lucide-react";
 const GroupofCompanies = () => {
   return (
     <div className="my-40 flex flex-col">
-      <div className="relative flex items-center gap-15">
+      {/* <div className="relative flex items-center gap-15">
         <h2 className="text-4xl font-semibold">Group of Companies</h2>
         <p className="text-sm py-5 flex flex-col">
           <span>Aryan Exporters is one of several companies:</span>
           <span>structure and detail to follow</span>
         </p>
+      </div> */}
+      <div className="flex flex-col items-start gap-1.5 xl:flex-row xl:items-center xl:gap-10">
+        <h2 className="text-2xl md:text-3xl 2xl:text-4xl font-semibold capitalize">
+          Group of Companies
+        </h2>
+        <p className="lg:flex lg:flex-col py-0 text-xs md:text-sm xl:text-xs 2xl:text-sm text-gray-600">
+          <span>Aryan Exporters is one of several companies:&nbsp;</span>
+          <span>structure and detail to follow</span>
+        </p>
       </div>
-      <div className="flex gap-30 py-15 items-center justify-center">
+      <div className="flex max-lg:flex-col gap-30 py-15 items-center justify-center">
         <div className="flex flex-col items-center gap-10 justify-between">
           <div className="flex items-center gap-5 col-span-6 h-22">
             <Image src={aryanlogo} alt="" className="w-12" />

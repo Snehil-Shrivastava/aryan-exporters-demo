@@ -5,7 +5,7 @@ import healthcare from "@/public/images/healthcare.png";
 const Responsibility = () => {
   return (
     <div>
-      <div className="flex gap-15 items-center">
+      {/* <div className="flex gap-15 items-center">
         <h2 className="text-4xl font-semibold">Responsibility</h2>
         <p>
           <span>
@@ -13,6 +13,20 @@ const Responsibility = () => {
             that provides for us, and healthcare.
           </span>
           <br />
+          <span>
+            A holistic approach of living a simple life with high thinking.
+          </span>
+        </p>
+      </div> */}
+      <div className="flex flex-col items-start gap-1.5 xl:flex-row xl:items-center xl:gap-10">
+        <h2 className="text-2xl md:text-3xl 2xl:text-4xl font-semibold capitalize">
+          Responsibility
+        </h2>
+        <p className="lg:flex lg:flex-col py-0 text-xs md:text-sm xl:text-xs 2xl:text-sm text-gray-600">
+          <span>
+            At Aryan Exporters we believe in conserving this very environment
+            that provides for us, and healthcare.&nbsp;
+          </span>
           <span>
             A holistic approach of living a simple life with high thinking.
           </span>
@@ -30,8 +44,10 @@ const Responsibility = () => {
             />
           </div>
           <div className="text-lg py-6">
-            <h3 className="font-bold text-2xl">Environment</h3>
-            <p>
+            <h3 className="font-bold text-base md:text-xl lg:text-2xl leading-relaxed">
+              Environment
+            </h3>
+            <p className="text-xs md:text-sm lg:text-base 2xl:text-lg leading-relaxed">
               A green campus at the works. The company also supports Save Soil,
               the Conscious Planet movement, across the workforce.
             </p>
@@ -47,8 +63,10 @@ const Responsibility = () => {
             />
           </div>
           <div className="text-lg py-6">
-            <h3 className="font-bold text-2xl">Community and healthcare</h3>
-            <p>
+            <h3 className="font-bold text-base md:text-xl lg:text-2xl leading-relaxed">
+              Community and healthcare
+            </h3>
+            <p className="text-xs md:text-sm lg:text-base 2xl:text-lg leading-relaxed">
               A charitable clinic run by the company gives free consultation and
               medicine to anyone who needs it.
             </p>

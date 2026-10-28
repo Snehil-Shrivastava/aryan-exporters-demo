@@ -27,10 +27,6 @@ const Videos = [
     label: "Testing",
     video: designVideo,
   },
-  // {
-  //   label: "Manufacture",
-  //   video: designVideo,
-  // },
   {
     label: "Success Stories",
     video: designVideo,
@@ -43,16 +39,16 @@ export default function EngineeringFlow() {
   const activeVideo = Videos.find((v) => v.label.toLowerCase() === activeTab);
 
   return (
-    <div className="flex flex-col gap-18">
-      <div className="flex gap-15 items-center">
-        <h2 className="text-4xl font-semibold capitalize">
+    <div className="flex flex-col gap-6 xl:gap-8">
+      <div className="flex flex-col items-start gap-1.5 xl:flex-row xl:items-center xl:gap-10">
+        <h2 className="text-2xl md:text-3xl 2xl:text-4xl font-semibold capitalize">
           the enginnering flow
         </h2>
-        <p>
+        <p className="lg:flex lg:flex-col py-0 text-xs md:text-sm xl:text-xs 2xl:text-sm text-gray-600">
           <span>
-            A problem arrives as a drawing, a sample, a challenge, or a failure.
+            A problem arrives as a drawing, a sample, a challenge, or a
+            failure.&nbsp;
           </span>
-          <br />
           <span>
             It leaves as a part with a test report behind it. This is what
             happens in between.
@@ -75,13 +71,13 @@ export default function EngineeringFlow() {
           />
         )}
       </div>
-      <div className="flex max-1440p:flex-wrap gap-8 justify-between items-center min-h-15 w-4/5 max-xl:w-full max-w-368.75 mx-auto">
+      <div className="flex flex-wrap gap-x-4 md:gap-x-6 lg:gap-x-8 2xl:gap-x-12 gap-y-4 items-center min-h-15 w-full xl:w-4/5 max-w-368.75 mx-auto">
         {EngineeringFlowTabs.map((tab, index) => {
           const isActive = activeTab == tab.label;
           return (
             <button
               key={index}
-              className={`capitalize shadow-[0_0_15px_2px_rgba(0,0,0,0.15)] px-20 1440p:max-2xl:px-15 max-1440p:px-10 py-3 rounded-full cursor-pointer text-xl ${isActive ? "font-bold bg-brand-red text-white" : "text-brand-red"}`}
+              className={`capitalize shadow-[0_0_15px_2px_rgba(0,0,0,0.15)] px-4 md:px-8 lg:px-10 py-1.5 md:py-2 lg:py-2.5 rounded-full cursor-pointer text-xs md:text-sm lg:text-base 2xl:text-lg ${isActive ? "font-bold bg-brand-red text-white" : "text-brand-red"}`}
               onClick={() => setActiveTab(tab.label)}
             >
               {tab.label}
