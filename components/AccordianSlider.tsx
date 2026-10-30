@@ -235,7 +235,7 @@ import Image from "next/image";
 // each tag now has its own image
 const slides = [
   {
-    title: "Railway",
+    title: "Railway Boogie",
     image: "/images/railway.jpg",
     href: "#",
     tags: [
@@ -282,8 +282,19 @@ const slides = [
     subheading: "Our Portfolio",
   },
   {
-    title: "Smart Embedded",
+    title: "Smart Embedded Systems",
     image: "/images/smart_embedded.jpg",
+    href: "#",
+    tags: [
+      { label: "Rolling Stocks", image: "/images/controllers.jpg" },
+      { label: "MVIS", image: "/images/sensors.jpg" },
+      { label: "Onboard monitoring system", image: "/images/sensors.jpg" },
+    ],
+    subheading: "Our Portfolio",
+  },
+  {
+    title: "Engineering Products",
+    image: "/images/engineering_products.jpg",
     href: "#",
     tags: [
       { label: "Rolling Stocks", image: "/images/controllers.jpg" },
@@ -419,7 +430,7 @@ export default function ExpandingSlider() {
                 {/* flex-wrap: if the tags and the link don't fit in one row,
                     the link drops under the tags instead of overflowing */}
                 <div className="mt-4 flex flex-wrap items-center justify-between gap-x-4 gap-y-3 @4xl:mt-5 @6xl:mt-6">
-                  <ul className="flex flex-wrap gap-2 @4xl:gap-3 @6xl:gap-4">
+                  {/* <ul className="flex flex-wrap gap-2 @4xl:gap-3 @6xl:gap-4">
                     {slide.tags.map((tag, t) => (
                       <li key={tag.label}>
                         <button
@@ -439,10 +450,10 @@ export default function ExpandingSlider() {
                         </button>
                       </li>
                     ))}
-                  </ul>
+                  </ul> */}
                   <Link
                     href={slide.href}
-                    className="text-sm font-medium text-brand-blue hover:underline @6xl:text-base"
+                    className="text-sm font-medium text-brand-blue hover:underline @6xl:text-base ml-auto"
                   >
                     see this range
                   </Link>

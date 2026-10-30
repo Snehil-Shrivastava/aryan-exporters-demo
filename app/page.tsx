@@ -13,7 +13,6 @@ export default function Home() {
       <div className="px-10 max-lg:px-4 max-w-[1920px] mx-auto w-full md:max-lg:pb-25">
         <AccordionSlider />
         <HomeAboutUs />
-        {/* <EngineeringFlowMasked frameHeightClass="min-h-[450px] sm:max-lg:min-h-[360px] 1440p:min-h-[650px]" /> */}
         <EngineeringFlow />
         <CertificatesAwards />
         <OurPartners />

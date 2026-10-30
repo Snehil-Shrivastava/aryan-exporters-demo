@@ -34,7 +34,7 @@ const GroupofCompanies = () => {
               Pvt Ltd
             </h2>
           </div>
-          <div className="flex items-center gap-6 rounded-full shadow-[0_0_15px_2px_rgba(0,0,0,0.15)] px-8 py-2.5">
+          {/* <div className="flex items-center gap-6 rounded-full shadow-[0_0_15px_2px_rgba(0,0,0,0.15)] px-8 py-2.5">
             <p className="col-span-4">Aryan Exporters Pvt Ltd</p>
             <Link
               href={"#"}
@@ -42,13 +42,13 @@ const GroupofCompanies = () => {
             >
               <CircleArrowRight strokeWidth={"0.5"} size={48} />
             </Link>
-          </div>
+          </div> */}
         </div>
         <div className="flex flex-col items-center gap-10 justify-between">
           <div className="flex items-center gap-5 col-span-6">
             <Image src={medrazlogo} alt="" className="h-22" />
           </div>
-          <div className="flex items-center gap-6 rounded-full shadow-[0_0_15px_2px_rgba(0,0,0,0.15)] px-8 py-2.5">
+          {/* <div className="flex items-center gap-6 rounded-full shadow-[0_0_15px_2px_rgba(0,0,0,0.15)] px-8 py-2.5">
             <p className="col-span-4">Medarz Ingenieria</p>
             <Link
               href={"#"}
@@ -56,7 +56,7 @@ const GroupofCompanies = () => {
             >
               <CircleArrowRight strokeWidth={"0.5"} size={48} />
             </Link>
-          </div>
+          </div> */}
         </div>
         <div className="flex flex-col items-center gap-10 justify-between">
           <div className="flex items-center gap-5 col-span-6 relative">
@@ -66,7 +66,7 @@ const GroupofCompanies = () => {
               className="h-22 object-contain w-85.5"
             />
           </div>
-          <div className="flex items-center gap-6 rounded-full shadow-[0_0_15px_2px_rgba(0,0,0,0.15)] px-8 py-2.5">
+          {/* <div className="flex items-center gap-6 rounded-full shadow-[0_0_15px_2px_rgba(0,0,0,0.15)] px-8 py-2.5">
             <p className="col-span-4">Steel Industries</p>
             <Link
               href={"#"}
@@ -74,7 +74,7 @@ const GroupofCompanies = () => {
             >
               <CircleArrowRight strokeWidth={"0.5"} size={48} />
             </Link>
-          </div>
+          </div> */}
         </div>
       </div>
     </div>

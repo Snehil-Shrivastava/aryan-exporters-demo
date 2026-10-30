@@ -53,6 +53,7 @@
 import homeAboutImg from "@/public/images/homeaboutimg.png";
 import logo from "@/public/aryan_exporters_logo.svg";
 import Image from "next/image";
+import HomeAboutStats from "./HomeAboutStats";
 
 const HomeAboutUs = () => {
   return (
@@ -113,6 +114,8 @@ const HomeAboutUs = () => {
           </button>
         </div>
       </div>
+
+      <HomeAboutStats />
     </section>
   );
 };
