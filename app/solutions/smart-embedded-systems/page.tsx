@@ -5,7 +5,7 @@ import bogieHeaderImg from "@/public/images/bogie_header_img.png";
 
 const SmartEmbeddedSystems = () => {
   return (
-    <div className="py-14 w-full font-montserrat">
+    <div className="py-14 max-md:py-8 w-full font-montserrat">
       <div className="px-10 max-lg:px-4 max-w-[1920px] mx-auto w-full md:max-lg:pb-25">
         <SolutionsHeader
           headerImg={bogieHeaderImg}
