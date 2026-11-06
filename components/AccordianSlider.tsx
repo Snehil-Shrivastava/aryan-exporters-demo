@@ -235,9 +235,9 @@ import Image from "next/image";
 // each tag now has its own image
 const slides = [
   {
-    title: "Railway Boogie",
+    title: "Railway Bogie",
     image: "/images/railway.jpg",
-    href: "#",
+    href: "/bogie",
     tags: [
       { label: "Air springs", image: "/images/brake_systems.webp" },
       {
