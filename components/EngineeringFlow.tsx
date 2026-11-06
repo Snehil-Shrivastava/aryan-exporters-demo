@@ -168,9 +168,9 @@ export default function EngineeringFlow() {
 
       {/* --- New Slider/Accordion Layout --- */}
       {/* Added a fixed height on desktop (lg:h-[600px]) to give the flex-grow animation a defined space */}
-      <div className="flex flex-col lg:flex-row w-full border border-gray-200 shadow-sm bg-white overflow-hidden h-auto lg:h-[550px] 2xl:h-[650px]">
+      <div className="flex flex-col lg:flex-row w-full border border-gray-200 shadow-sm bg-white overflow-hidden h-auto lg:h-137.5 2xl:h-162.5">
         {/* Video Player (Left) */}
-        <div className="w-full lg:w-2/3 relative bg-black flex items-center justify-center overflow-hidden">
+        <div className="w-full lg:w-2/3 relative bg-black flex items-center justify-center overflow-hidden max-lg:h-105">
           {activeData && (
             <div
               key={activeData.label}
@@ -234,7 +234,7 @@ export default function EngineeringFlow() {
                   <div
                     className={`transition-all duration-700 ease-in-out overflow-hidden flex flex-col flex-1 ${
                       isActive
-                        ? "opacity-100 max-h-[500px] mt-6"
+                        ? "opacity-100 max-h-125 mt-6"
                         : "opacity-0 max-h-0 mt-0 pointer-events-none"
                     }`}
                   >

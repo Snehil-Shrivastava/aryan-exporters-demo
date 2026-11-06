@@ -251,7 +251,7 @@ export default function OurPartners() {
                 key={`${logo.name}-${index}`}
                 aria-hidden={isDuplicate}
                 // ADDED: mr-4 sm:mr-6 for the gap between logos
-                className="group relative flex w-[180px] sm:w-[220px] lg:w-[12.5vw] shrink-0 aspect-2.5/1 items-center justify-center border-b-5 border-r-5 border-neutral-300 bg-white p-8 transition-all duration-300 hover:-translate-y-1 hover:shadow-md max-xl:p-4 mr-4 sm:mr-6"
+                className="group relative flex w-45 sm:w-55 lg:w-[12.5vw] shrink-0 aspect-2.5/1 items-center justify-center border-b-5 border-r-5 border-neutral-300 bg-white p-8 transition-all duration-300 hover:-translate-y-1 hover:shadow-md max-xl:p-4 mr-4 sm:mr-6"
               >
                 <div className="relative h-full w-7/10">
                   <Image

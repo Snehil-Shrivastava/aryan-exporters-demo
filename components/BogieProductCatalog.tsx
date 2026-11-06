@@ -74,7 +74,7 @@ export default function BogieProductCatalog() {
       : CATEGORIES.filter((cat) => selectedFilters.includes(cat.id));
 
   return (
-    <div className="flex flex-col gap-20 w-full py-10 px-4 md:px-8">
+    <div className="flex flex-col gap-20 w-full py-10">
       {/* Top Filter Bar */}
       <div className="flex flex-col xl:flex-row justify-between items-start xl:items-center gap-6">
         {/* Filter Pills */}
@@ -127,7 +127,7 @@ export default function BogieProductCatalog() {
               {category.items.map((item, index) => (
                 <div key={index} className="flex flex-col group cursor-pointer">
                   {/* Image Placeholder */}
-                  <div className="w-full aspect-[4/3] bg-[#f3f4f6] rounded-lg border border-neutral-300 transition-shadow duration-300 group-hover:shadow-md"></div>
+                  <div className="w-full aspect-4/3 bg-[#f3f4f6] rounded-lg border border-neutral-300 transition-shadow duration-300 group-hover:shadow-md"></div>
 
                   {/* Item Title */}
                   <h3 className="mt-4 text-sm md:text-base font-semibold text-gray-900 leading-snug">

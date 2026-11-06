@@ -309,7 +309,7 @@ export default function ExpandingSlider() {
   const [active, setActive] = useState(2);
   const [paused, setPaused] = useState(false);
   // selected tag index for each slide, e.g. { 2: 0 } = slide 3, first tag
-  const [selected, setSelected] = useState<Record<number, number | null>>({});
+  // const [selected, setSelected] = useState<Record<number, number | null>>({});
 
   // auto move to the next slide every 4 seconds
   useEffect(() => {
@@ -322,12 +322,12 @@ export default function ExpandingSlider() {
   }, [paused, active]);
 
   // click a tag to select it, click it again to go back to the main image
-  const toggleTag = (slideIndex: number, tagIndex: number) => {
-    setSelected((prev) => ({
-      ...prev,
-      [slideIndex]: prev[slideIndex] === tagIndex ? null : tagIndex,
-    }));
-  };
+  // const toggleTag = (slideIndex: number, tagIndex: number) => {
+  //   setSelected((prev) => ({
+  //     ...prev,
+  //     [slideIndex]: prev[slideIndex] === tagIndex ? null : tagIndex,
+  //   }));
+  // };
 
   return (
     <div
@@ -339,7 +339,7 @@ export default function ExpandingSlider() {
         {slides.map((slide, i) => {
           const isActive = i === active;
           const num = String(i + 1).padStart(2, "0");
-          const selectedTag = selected[i] ?? null;
+          // const selectedTag = selected[i] ?? null;
 
           return (
             <div
@@ -410,19 +410,21 @@ export default function ExpandingSlider() {
                     src={slide.image}
                     alt={slide.title}
                     fill
-                    className={`object-cover transition-opacity duration-500 rounded-lg select-none ${
-                      selectedTag === null ? "opacity-100" : "opacity-0"
-                    }`}
+                    // className={`object-cover transition-opacity duration-500 rounded-lg select-none ${
+                    //   selectedTag === null ? "opacity-100" : "opacity-0"
+                    // }`}
+                    className={`object-cover transition-opacity duration-500 rounded-lg select-none`}
                   />
-                  {slide.tags.map((tag, t) => (
+                  {slide.tags.map((tag) => (
                     <Image
                       key={tag.label}
                       src={tag.image}
                       alt={tag.label}
                       fill
-                      className={`object-cover transition-opacity duration-500 rounded-lg select-none ${
-                        selectedTag === t ? "opacity-100" : "opacity-0"
-                      }`}
+                      // className={`object-cover transition-opacity duration-500 rounded-lg select-none ${
+                      //   selectedTag === t ? "opacity-100" : "opacity-0"
+                      // }`}
+                      className={`object-cover transition-opacity duration-500 rounded-lg select-none`}
                     />
                   ))}
                 </div>
