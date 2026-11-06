@@ -237,7 +237,7 @@ const slides = [
   {
     title: "Railway Bogie",
     image: "/images/railway.jpg",
-    href: "/bogie",
+    href: "/solutions/bogie",
     tags: [
       { label: "Air springs", image: "/images/brake_systems.webp" },
       {
@@ -251,7 +251,7 @@ const slides = [
   {
     title: "Defence",
     image: "/images/defence.jpg",
-    href: "#",
+    href: "/solutions/defence",
     tags: [
       { label: "Track pads", image: "/images/shelters.webp" },
       { label: "Anti-vibration mounts", image: "/images/cables.jpg" },
@@ -263,7 +263,7 @@ const slides = [
   {
     title: "Electrical Components",
     image: "/images/electrical_component.jpg",
-    href: "#",
+    href: "/solutions/electrical-components",
     tags: [
       { label: "Pantograph", image: "/images/pantograph.jpg" },
       { label: "Wiring Harness", image: "/images/wiring_harness.jpg" },
@@ -274,7 +274,7 @@ const slides = [
   {
     title: "Power Electronics",
     image: "/images/power_electronics.jpg",
-    href: "#",
+    href: "/solutions/power-electronics",
     tags: [
       { label: "OHE", image: "/images/converters.jpg" },
       { label: "Inverters/Converts", image: "/images/inverters.jpg" },
@@ -284,7 +284,7 @@ const slides = [
   {
     title: "Smart Embedded Systems",
     image: "/images/smart_embedded.jpg",
-    href: "#",
+    href: "/solutions/smart-embedded-systems",
     tags: [
       { label: "Rolling Stocks", image: "/images/controllers.jpg" },
       { label: "MVIS", image: "/images/sensors.jpg" },
@@ -295,7 +295,7 @@ const slides = [
   {
     title: "Engineering Products",
     image: "/images/engineering_products.jpg",
-    href: "#",
+    href: "/solutions/engineering-products",
     tags: [
       { label: "Rolling Stocks", image: "/images/controllers.jpg" },
       { label: "MVIS", image: "/images/sensors.jpg" },
@@ -415,7 +415,7 @@ export default function ExpandingSlider() {
                     // }`}
                     className={`object-cover transition-opacity duration-500 rounded-lg select-none`}
                   />
-                  {slide.tags.map((tag) => (
+                  {/* {slide.tags.map((tag) => (
                     <Image
                       key={tag.label}
                       src={tag.image}
@@ -426,7 +426,7 @@ export default function ExpandingSlider() {
                       // }`}
                       className={`object-cover transition-opacity duration-500 rounded-lg select-none`}
                     />
-                  ))}
+                  ))} */}
                 </div>
 
                 {/* flex-wrap: if the tags and the link don't fit in one row,
