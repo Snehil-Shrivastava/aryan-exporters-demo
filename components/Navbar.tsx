@@ -216,7 +216,10 @@ const Navbar = () => {
       {/* -------------------------------- top bar -------------------------------- */}
       <div className="flex items-stretch">
         {/* brand */}
-        <div className="flex flex-1 items-center gap-3 py-4 pl-5 font-bold text-brand-blue sm:gap-4 sm:pl-8 lg:flex-[0.2] lg:py-3.5 1440p:flex-[0.3] 1440p:py-6 1440p:pl-15">
+        <Link
+          href="/"
+          className="flex flex-1 items-center gap-3 py-4 pl-5 font-bold text-brand-blue sm:gap-4 sm:pl-8 lg:flex-[0.2] lg:py-3.5 1440p:flex-[0.3] 1440p:py-6 1440p:pl-15"
+        >
           <Image
             src={aryanExportersLogo}
             alt="aryan exporters pvt ltd"
@@ -225,7 +228,7 @@ const Navbar = () => {
           <span className="font-mirano text-sm uppercase leading-tight 1440p:text-base">
             Aryan Exporters Pvt Ltd
           </span>
-        </div>
+        </Link>
 
         {/* desktop links + cta */}
         <div className="hidden flex-[0.8] items-stretch justify-end gap-10 lg:flex 1440p:flex-[0.7] 1440p:gap-5 2xl:gap-20">
@@ -241,8 +244,8 @@ const Navbar = () => {
             className="flex items-center gap-5 bg-brand-red px-10 font-bold uppercase text-white max-1440p:gap-2.5 max-1440p:px-5 1440p:max-2xl:px-6"
           >
             <span className="flex flex-col text-start max-lg:text-sm lg:max-xl:text-xs xl:max-1440p:text-sm">
-              <span>discuss</span>
-              <span>a challenge</span>
+              <span>NABL</span>
+              <span>Lab Testing</span>
             </span>
             <ArrowUpRight
               size={38}
@@ -308,7 +311,7 @@ const Navbar = () => {
             onClick={closeMenu}
             className="flex w-full items-center justify-center gap-3 bg-brand-red px-6 py-4 text-sm lg:max-xl:text-[10px] font-bold uppercase text-white"
           >
-            <span>discuss a challenge</span>
+            <span>nabl lab testing</span>
             <ArrowUpRight size={20} strokeWidth={1.5} />
           </button>
         </div>

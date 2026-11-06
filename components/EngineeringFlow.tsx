@@ -168,7 +168,7 @@ export default function EngineeringFlow() {
 
       {/* --- New Slider/Accordion Layout --- */}
       {/* Added a fixed height on desktop (lg:h-[600px]) to give the flex-grow animation a defined space */}
-      <div className="flex flex-col lg:flex-row w-full border border-gray-200 shadow-sm bg-white overflow-hidden h-auto lg:h-[650px]">
+      <div className="flex flex-col lg:flex-row w-full border border-gray-200 shadow-sm bg-white overflow-hidden h-auto lg:h-[550px] 2xl:h-[650px]">
         {/* Video Player (Left) */}
         <div className="w-full lg:w-2/3 relative bg-black flex items-center justify-center overflow-hidden">
           {activeData && (
