@@ -1,9 +1,7 @@
 import Image from "next/image";
 import aryanlogo from "@/public/aryan_exporters_logo.svg";
-import medrazlogo from "@/public/images/medraz.svg";
-import steelIndustrieslogo from "@/public/images/steel_industries.png";
-import Link from "next/link";
-import { CircleArrowRight } from "lucide-react";
+import liama from "@/public/images/Liama.svg";
+import aryanAdvanceTech from "@/public/images/Aryan Advance Technologies Logo.png";
 
 const GroupofCompanies = () => {
   return (
@@ -25,7 +23,7 @@ const GroupofCompanies = () => {
         </p>
       </div>
       <div className="flex max-lg:flex-col gap-30 py-15 items-center justify-center">
-        <div className="flex flex-col items-center gap-10 justify-between">
+        <div className="flex flex-col items-center gap-10 justify-between lg:max-xl:flex-1">
           <div className="flex items-center gap-5 col-span-6 h-22">
             <Image src={aryanlogo} alt="" className="w-12" />
             <h2 className="font-mirano text-brand-red uppercase text-xl leading-5.5">
@@ -44,9 +42,9 @@ const GroupofCompanies = () => {
             </Link>
           </div> */}
         </div>
-        <div className="flex flex-col items-center gap-10 justify-between">
+        <div className="flex flex-col items-center gap-10 justify-between lg:max-xl:flex-1">
           <div className="flex items-center gap-5 col-span-6">
-            <Image src={medrazlogo} alt="" className="h-22" />
+            <Image src={liama} alt="" className="w-80" />
           </div>
           {/* <div className="flex items-center gap-6 rounded-full shadow-[0_0_15px_2px_rgba(0,0,0,0.15)] px-8 py-2.5">
             <p className="col-span-4">Medarz Ingenieria</p>
@@ -58,12 +56,12 @@ const GroupofCompanies = () => {
             </Link>
           </div> */}
         </div>
-        <div className="flex flex-col items-center gap-10 justify-between">
+        <div className="flex flex-col items-center gap-10 justify-between lg:max-xl:flex-1">
           <div className="flex items-center gap-5 col-span-6 relative">
             <Image
-              src={steelIndustrieslogo}
+              src={aryanAdvanceTech}
               alt=""
-              className="h-22 object-contain w-85.5"
+              className="w-40 object-contain"
             />
           </div>
           {/* <div className="flex items-center gap-6 rounded-full shadow-[0_0_15px_2px_rgba(0,0,0,0.15)] px-8 py-2.5">
