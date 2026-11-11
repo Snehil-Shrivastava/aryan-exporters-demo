@@ -1,3 +1,4 @@
+import AboutCertificatesAwards from "@/components/AboutCertificatesAwards";
 import AboutHeader from "@/components/AboutHeader";
 import AboutHistory from "@/components/AboutHistory";
 import AboutLeadership from "@/components/AboutLeadership";
@@ -12,6 +13,7 @@ const About = () => {
         <AboutHistory />
         <AboutLeadership />
         <GroupofCompanies />
+        <AboutCertificatesAwards />
       </div>
       <StartConvo />
     </div>

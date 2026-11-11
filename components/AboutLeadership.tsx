@@ -14,13 +14,16 @@ const AboutLeadership = () => {
           <span>The management team</span>
         </p>
       </div>
-      <div className="flex flex-wrap max-lg:flex-col gap-30 py-15 items-center justify-center">
+      <div className="grid grid-cols-5 max-lg:grid-cols-2 lg:max-xl:grid-cols-3 gap-x-30 max-xl:gap-10 py-15 items-center justify-center">
         {leadership.map((leader, index) => (
-          <div key={index} className="flex-1 flex flex-col items-center">
+          <div
+            key={index}
+            className="flex-1 flex flex-col items-center justify-stretch gap-6"
+          >
             <div className="relative w-full h-full max-w-52 rounded-4xl overflow-hidden">
               <Image src={leader.image} alt="" />
             </div>
-            <div className="text-center mt-6">
+            <div className="text-center">
               <h4 className="font-bold text-lg">{leader.name}</h4>
               <span>{leader.designation}</span>
             </div>

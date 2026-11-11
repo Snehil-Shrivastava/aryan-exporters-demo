@@ -4,6 +4,12 @@ import suspensionBush from "@/public/images/bogie_suspension_bush.png";
 
 import profileImg from "@/public/images/ProfilePlaceholder.png";
 
+import isoImg from "@/public/images/ISO 9002 (copy).png";
+import irisImg from "@/public/images/Iris 1 (copy).png";
+import nablImg from "@/public/images/NABL 1 (copy).png";
+import msme2009lImg from "@/public/images/MSME 2009 1 (copy).png";
+import msme2010lImg from "@/public/images/MSME 2010 1 (copy).png";
+
 export const DefenceProducts = [
   {
     name: "Naval anti-vibration pads",
@@ -108,5 +114,38 @@ export const LeadershipData = [
     name: "Fatima",
     designation: "Certification, Trade Shows and Press",
     image: profileImg,
+  },
+];
+
+export const AboutAwardsData = [
+  {
+    title: "ISO 9001:2015",
+    description:
+      "DNV, certificate C899464. First certified 18 May 1999. Current validity 18 May 2026 to 17 May 2029.",
+    image: isoImg,
+  },
+  {
+    title: "IRIS Certification",
+    description:
+      "DNV Business Assurance India, register C545422. Valid 4 August 2025 to 3 August 2028. Business category rolling stock.",
+    image: irisImg,
+  },
+  {
+    title: "NABL accreditation",
+    description:
+      "ISO/IEC 17025:2017 for the laboratory division at the works. Certificate NABLT0726UP18835, issued 29 July 2026, valid to 28 July 2030.",
+    image: nablImg,
+  },
+  {
+    title: "MSME National Awards 2009",
+    description:
+      "Ministry of Micro, Small and Medium Enterprises. Special Recognition Award for outstanding entrepreneurship, to Shri Ravi Sood.",
+    image: msme2009lImg,
+  },
+  {
+    title: "MSME National Awards 2010",
+    description:
+      "Ministry of Micro, Small and Medium Enterprises. Special Recognition Award for research and development.",
+    image: msme2010lImg,
   },
 ];
