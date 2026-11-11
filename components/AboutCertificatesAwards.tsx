@@ -23,7 +23,7 @@ const AboutCertificatesAwards = () => {
             key={index}
             className="flex max-lg:flex-col items-center gap-15 lg:max-xl:gap-8 max-lg:gap-4"
           >
-            <div className="relative aspect-3/4 w-40 shrink-0 md:w-48">
+            <div className="relative aspect-3/4 w-40 shrink-0 md:w-48 shadow-[4px_2px_6px_2px_rgba(0,0,0,0.35)]">
               <Image
                 src={award.image}
                 alt={award.title}
