@@ -4,20 +4,24 @@ import { useEffect, useRef, useState } from "react";
 
 const AboutStats = [
   {
-    number: "1947",
-    description: "Foundation Day",
+    number: "30",
+    description: "Years in Operations",
   },
   {
-    number: "88",
-    description: "Foundation Day",
+    number: "100",
+    description: "Products",
   },
   {
-    number: "786",
-    description: "Foundation Day",
+    number: "10",
+    description: "New Products Launched",
   },
   {
-    number: "05",
-    description: "Foundation Day",
+    number: "200",
+    description: "Customers Across Globe",
+  },
+  {
+    number: "10",
+    description: "CSR Initiatives",
   },
 ];
 
@@ -79,7 +83,7 @@ const HomeAboutStats = () => {
   return (
     <div
       ref={sectionRef}
-      className="my-25 grid grid-cols-4 max-md:grid-cols-1 md:max-lg:grid-cols-2 max-md:gap-y-4 max-lg:gap-y-10"
+      className="my-25 grid grid-cols-5 max-md:grid-cols-1 md:max-lg:grid-cols-2 max-md:gap-y-4 max-lg:gap-y-10"
     >
       {AboutStats.map((stats, index) => {
         const target = Number(stats.number);
@@ -94,20 +98,20 @@ const HomeAboutStats = () => {
         return (
           <div
             key={index}
-            className={`text-center ${
-              index != 3 ? "md:border-r border-neutral-400 max-md:border-b" : ""
+            className={`text-center px-2 ${
+              index != 4 ? "lg:border-r border-neutral-400 max-md:border-b" : ""
             }`}
           >
             <h2
               className="text-brand-red text-4xl xl:max-1440p:text-5xl 1440p:max-2xl:text-6xl 2xl:text-7xl font-bold tabular-nums"
               aria-label={stats.number}
             >
-              {display}
+              {display}+
             </h2>
-            <p className="text-xl 1440p:max-2xl:text-2xl 2xl:text-4xl py-5 2xl:py-10 flex flex-col leading-6 1440p:max-2xl:leading-8 2xl:leading-12">
-              {stats.description.split(" ").map((text, i) => (
-                <span key={i}>{text}</span>
-              ))}
+            <p className="text-xl xl:max-1440p:text-base lg:max-xl:text-base 1440p:text-2xl py-5 2xl:py-10 flex flex-col leading-6 1440p:max-2xl:leading-8 2xl:leading-12">
+              {/* {stats.description.split(" ").map((text, i) => ( */}
+              <span>{stats.description}</span>
+              {/* ))} */}
             </p>
           </div>
         );
