@@ -10,6 +10,18 @@ import nablImg from "@/public/images/NABL 1 (copy).png";
 import msme2009lImg from "@/public/images/MSME 2009 1 (copy).png";
 import msme2010lImg from "@/public/images/MSME 2010 1 (copy).png";
 
+import teknoloji from "@/public/images/teknoloji.png";
+import rfcomm from "@/public/images/rf-comm.png";
+import ideasunlimited from "@/public/images/ideas-unlimited.png";
+import tictag from "@/public/images/tictag.png";
+import lanxess from "@/public/images/lanxess.png";
+import suda from "@/public/images/suda.png";
+import covestro from "@/public/images/covestro.png";
+import pamozdi from "@/public/images/pamodzi.png";
+import sojitz from "@/public/images/sojitz.png";
+import geh from "@/public/images/geh.png";
+import iitroorkee from "@/public/images/iit-roorkee.png";
+
 export const DefenceProducts = [
   {
     name: "Naval anti-vibration pads",
@@ -147,5 +159,41 @@ export const AboutAwardsData = [
     description:
       "Ministry of Micro, Small and Medium Enterprises. Special Recognition Award for research and development.",
     image: msme2010lImg,
+  },
+];
+
+export const Collaborators = [
+  {
+    img: teknoloji,
+  },
+  {
+    img: rfcomm,
+  },
+  {
+    img: ideasunlimited,
+  },
+  {
+    img: tictag,
+  },
+  {
+    img: lanxess,
+  },
+  {
+    img: suda,
+  },
+  {
+    img: covestro,
+  },
+  {
+    img: pamozdi,
+  },
+  {
+    img: sojitz,
+  },
+  {
+    img: geh,
+  },
+  {
+    img: iitroorkee,
   },
 ];

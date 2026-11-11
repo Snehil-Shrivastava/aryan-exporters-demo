@@ -105,6 +105,86 @@ const HistoryTimeline = () => {
         mobile: "(max-width: 1023px)",
         reduceMotion: "(prefers-reduced-motion: reduce)",
       },
+      //   (context) => {
+      //     const { desktop, reduceMotion } = context.conditions as {
+      //       desktop: boolean;
+      //       reduceMotion: boolean;
+      //     };
+
+      //     // Respect reduced motion: just show everything.
+      //     if (reduceMotion) {
+      //       gsap.set(
+      //         list.querySelectorAll(
+      //           "[data-dot], [data-badge], [data-text], [data-line]",
+      //         ),
+      //         { opacity: 1 },
+      //       );
+      //       return;
+      //     }
+
+      //     const rows = gsap.utils.toArray<HTMLElement>("[data-row]", list);
+      //     const timelines: gsap.core.Timeline[] = [];
+
+      //     rows.forEach((row, i) => {
+      //       const dot = row.querySelector("[data-dot]");
+      //       const badge = row.querySelector("[data-badge]");
+      //       const text = row.querySelector("[data-text]");
+      //       const line = row.querySelector("[data-line]"); // absent on the last row
+
+      //       // Odd rows sit on the left on desktop, so they slide in from the right.
+      //       const dir = desktop && i % 2 === 1 ? 1 : -1;
+
+      //       const tl = gsap.timeline({
+      //         paused: true,
+      //         // When this row finishes, immediately start the next one.
+      //         onComplete: () => {
+      //           timelines[i + 1]?.play();
+      //         },
+      //       });
+
+      //       // 1. dot pops in
+      //       tl.fromTo(
+      //         dot,
+      //         { scale: 0, opacity: 0 },
+      //         { scale: 1, opacity: 1, duration: 0.2, ease: "back.out(2.5)" },
+      //       )
+      //         // 2. year badge
+      //         .fromTo(
+      //           badge,
+      //           { x: dir * 16, opacity: 0 },
+      //           { x: 0, opacity: 1, duration: 0.15, ease: "power2.out" },
+      //           "-=0.15",
+      //         )
+      //         // 3. text, a beat behind the badge
+      //         .fromTo(
+      //           text,
+      //           { x: dir * 16, opacity: 0 },
+      //           { x: 0, opacity: 1, duration: 0.15, ease: "power2.out" },
+      //           "<0.1",
+      //         );
+
+      //       // 4. line flows down to where the next dot will appear
+      //       if (line) {
+      //         tl.fromTo(
+      //           line,
+      //           { scaleY: 0, opacity: 1, transformOrigin: "top center" },
+      //           { scaleY: 1, duration: 0.5, ease: "power1.inOut" },
+      //         );
+      //       }
+
+      //       timelines.push(tl);
+      //     });
+
+      //     // One trigger: when the timeline scrolls into view, start the first
+      //     // row and let the rest play through on their own.
+      //     ScrollTrigger.create({
+      //       trigger: list,
+      //       start: "top 80%",
+      //       end: "max", // still fires if the page loads already scrolled past it
+      //       once: true,
+      //       onEnter: () => timelines[0]?.play(),
+      //     });
+      //   },
       (context) => {
         const { desktop, reduceMotion } = context.conditions as {
           desktop: boolean;
@@ -142,33 +222,33 @@ const HistoryTimeline = () => {
             },
           });
 
-          // 1. dot pops in
+          // 1. dot pops in (Sped up from 0.2 to 0.15)
           tl.fromTo(
             dot,
             { scale: 0, opacity: 0 },
-            { scale: 1, opacity: 1, duration: 0.2, ease: "back.out(2.5)" },
+            { scale: 1, opacity: 1, duration: 0.15, ease: "back.out(2.5)" },
           )
-            // 2. year badge
+            // 2. year badge (Sped up from 0.15 to 0.1, tighter overlap)
             .fromTo(
               badge,
               { x: dir * 16, opacity: 0 },
-              { x: 0, opacity: 1, duration: 0.15, ease: "power2.out" },
-              "-=0.15",
+              { x: 0, opacity: 1, duration: 0.1, ease: "power2.out" },
+              "-=0.1",
             )
-            // 3. text, a beat behind the badge
+            // 3. text (Sped up from 0.15 to 0.1, tighter overlap)
             .fromTo(
               text,
               { x: dir * 16, opacity: 0 },
-              { x: 0, opacity: 1, duration: 0.15, ease: "power2.out" },
-              "<0.1",
+              { x: 0, opacity: 1, duration: 0.1, ease: "power2.out" },
+              "<0.05",
             );
 
-          // 4. line flows down to where the next dot will appear
+          // 4. line flows down (Sped up from 0.5 to 0.25)
           if (line) {
             tl.fromTo(
               line,
               { scaleY: 0, opacity: 1, transformOrigin: "top center" },
-              { scaleY: 1, duration: 0.5, ease: "power1.inOut" },
+              { scaleY: 1, duration: 0.25, ease: "power1.inOut" },
             );
           }
 
@@ -212,7 +292,7 @@ const HistoryTimeline = () => {
               {i < MILESTONES.length - 1 && (
                 <span
                   data-line
-                  className="absolute left-1/2 top-[18px] -ml-px h-full w-px bg-brand-red/30 opacity-0"
+                  className="absolute left-1/2 top-4.5 -ml-px h-full w-px bg-brand-red/30 opacity-0"
                 />
               )}
               <span

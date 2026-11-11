@@ -141,7 +141,7 @@ const AboutHeader = () => {
 
       {/* RED BANNER */}
       <div className="mt-12 bg-brand-red rounded-xl py-6 text-center">
-        <h3 className="text-white max-md:text-base max-md:px-4 text-xl md:text-2xl font-semibold tracking-wide">
+        <h3 className="text-white max-md:text-base max-md:px-4 text-xl md:text-2xl font-semibold tracking-wide px-4">
           Our record is best measured by the problems resolved, not by the
           volume dispatched.
         </h3>
