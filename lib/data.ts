@@ -2,6 +2,8 @@ import airSpring from "@/public/images/bogie_air_spring.png";
 import slideBearer from "@/public/images/bogie_slide_bearer.png";
 import suspensionBush from "@/public/images/bogie_suspension_bush.png";
 
+import profileImg from "@/public/images/ProfilePlaceholder.png";
+
 export const DefenceProducts = [
   {
     name: "Naval anti-vibration pads",
@@ -78,5 +80,33 @@ export const EngineeringProductsCategories = [
     id: "automotive",
     label: "Automotive",
     items: ["Automotive rubber-to-metal parts"],
+  },
+];
+
+export const LeadershipData = [
+  {
+    name: "Arun Bhatia",
+    designation: "Director",
+    image: profileImg,
+  },
+  {
+    name: "Manu Bhatia",
+    designation: "Director",
+    image: profileImg,
+  },
+  {
+    name: "Kathiraman",
+    designation: "Director",
+    image: profileImg,
+  },
+  {
+    name: "Maan Singh",
+    designation: "Development and testing",
+    image: profileImg,
+  },
+  {
+    name: "Fatima",
+    designation: "Certification, Trade Shows and Press",
+    image: profileImg,
   },
 ];

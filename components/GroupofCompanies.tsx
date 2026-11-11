@@ -6,13 +6,6 @@ import aryanAdvanceTech from "@/public/images/Aryan Advance Technologies Logo.pn
 const GroupofCompanies = () => {
   return (
     <div className="my-40 flex flex-col">
-      {/* <div className="relative flex items-center gap-15">
-        <h2 className="text-4xl font-semibold">Group of Companies</h2>
-        <p className="text-sm py-5 flex flex-col">
-          <span>Aryan Exporters is one of several companies:</span>
-          <span>structure and detail to follow</span>
-        </p>
-      </div> */}
       <div className="flex flex-col items-start gap-1.5 xl:flex-row xl:items-center xl:gap-10">
         <h2 className="text-2xl md:text-3xl 2xl:text-4xl font-semibold capitalize">
           Group of Companies
@@ -32,30 +25,8 @@ const GroupofCompanies = () => {
               Pvt Ltd
             </h2>
           </div>
-          {/* <div className="flex items-center gap-6 rounded-full shadow-[0_0_15px_2px_rgba(0,0,0,0.15)] px-8 py-2.5">
-            <p className="col-span-4">Aryan Exporters Pvt Ltd</p>
-            <Link
-              href={"#"}
-              className="col-span-2 opacity-50 flex items-center justify-end"
-            >
-              <CircleArrowRight strokeWidth={"0.5"} size={48} />
-            </Link>
-          </div> */}
         </div>
-        <div className="flex flex-col items-center gap-10 justify-between lg:max-xl:flex-1">
-          <div className="flex items-center gap-5 col-span-6">
-            <Image src={liama} alt="" className="w-80" />
-          </div>
-          {/* <div className="flex items-center gap-6 rounded-full shadow-[0_0_15px_2px_rgba(0,0,0,0.15)] px-8 py-2.5">
-            <p className="col-span-4">Medarz Ingenieria</p>
-            <Link
-              href={"#"}
-              className="col-span-2 opacity-50 flex items-center justify-end"
-            >
-              <CircleArrowRight strokeWidth={"0.5"} size={48} />
-            </Link>
-          </div> */}
-        </div>
+
         <div className="flex flex-col items-center gap-10 justify-between lg:max-xl:flex-1">
           <div className="flex items-center gap-5 col-span-6 relative">
             <Image
@@ -64,15 +35,12 @@ const GroupofCompanies = () => {
               className="w-40 object-contain"
             />
           </div>
-          {/* <div className="flex items-center gap-6 rounded-full shadow-[0_0_15px_2px_rgba(0,0,0,0.15)] px-8 py-2.5">
-            <p className="col-span-4">Steel Industries</p>
-            <Link
-              href={"#"}
-              className="col-span-2 opacity-50 flex items-center justify-end"
-            >
-              <CircleArrowRight strokeWidth={"0.5"} size={48} />
-            </Link>
-          </div> */}
+        </div>
+
+        <div className="flex flex-col items-center gap-10 justify-between lg:max-xl:flex-1">
+          <div className="flex items-center gap-5 col-span-6">
+            <Image src={liama} alt="" className="w-80" />
+          </div>
         </div>
       </div>
     </div>

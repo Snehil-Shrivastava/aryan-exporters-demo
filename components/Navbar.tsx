@@ -133,7 +133,7 @@ const navLinks = [
   },
   {
     label: "about",
-    link: "",
+    link: "/about",
   },
 ];
 
@@ -241,7 +241,7 @@ const Navbar = () => {
           </ul>
           <button
             type="button"
-            className="flex items-center gap-5 bg-brand-red px-10 font-bold uppercase text-white max-1440p:gap-2.5 max-1440p:px-5 1440p:max-2xl:px-6"
+            className="flex items-center gap-5 bg-brand-red px-10 font-bold text-white max-1440p:gap-2.5 max-1440p:px-5 1440p:max-2xl:px-6"
           >
             <span className="flex flex-col text-start max-lg:text-sm lg:max-xl:text-xs xl:max-1440p:text-sm">
               <span>NABL</span>
@@ -309,9 +309,9 @@ const Navbar = () => {
           <button
             type="button"
             onClick={closeMenu}
-            className="flex w-full items-center justify-center gap-3 bg-brand-red px-6 py-4 text-sm lg:max-xl:text-[10px] font-bold uppercase text-white"
+            className="flex w-full items-center justify-center gap-3 bg-brand-red px-6 py-4 text-sm lg:max-xl:text-[10px] font-bold text-white"
           >
-            <span>nabl lab testing</span>
+            <span>NABL Lab Testing</span>
             <ArrowUpRight size={20} strokeWidth={1.5} />
           </button>
         </div>
