@@ -165,10 +165,6 @@
 import { useState } from "react";
 import Image from "next/image";
 
-import ballistic from "@/public/images/ballistic.svg";
-import liva from "@/public/images/liva.svg";
-import aven from "@/public/images/aven.svg";
-import vertex from "@/public/images/vertex.svg";
 import { OurPartnersLogos } from "@/lib/data";
 
 // Define the tabs
@@ -178,46 +174,15 @@ const TABS = [
   { id: "collaborators", label: "Collaborators" },
 ];
 
-// Define the logos for each tab.
-const LOGOS = {
-  customers: [
-    { name: "Ballistic Dummy Lab", src: ballistic },
-    { name: "Liva", src: liva },
-    { name: "Aven", src: aven },
-    { name: "Vertex Kapital LLC", src: vertex },
-    // Added dummy logos to demonstrate the scroll
-    { name: "Customer 5", src: ballistic },
-    { name: "Customer 6", src: liva },
-    { name: "Customer 7", src: aven },
-    { name: "Customer 8", src: vertex },
-    { name: "Customer 9", src: ballistic },
-    { name: "Customer 10", src: liva },
-  ],
-  technology: [
-    { name: "Tech Corp", src: liva },
-    { name: "Innovate Inc", src: vertex },
-    { name: "Future Systems", src: ballistic },
-    { name: "Tech 4", src: aven },
-    { name: "Tech 5", src: liva },
-    { name: "Tech 6", src: vertex },
-    { name: "Tech 7", src: ballistic },
-    { name: "Tech 8", src: aven },
-  ],
-  collaborators: [
-    { name: "Global Reach", src: aven },
-    { name: "Partner One", src: ballistic },
-    { name: "Joint Ventures", src: liva },
-    { name: "Synergy Group", src: vertex },
-    { name: "Collab 5", src: aven },
-    { name: "Collab 6", src: ballistic },
-    { name: "Collab 7", src: liva },
-    { name: "Collab 8", src: vertex },
-  ],
-};
-
 export default function OurPartners() {
-  const [activeTab, setActiveTab] = useState<keyof typeof LOGOS>("customers");
+  const [activeTab, setActiveTab] =
+    useState<keyof typeof OurPartnersLogos>("customers");
   const partnerLogos = OurPartnersLogos;
+
+  const REFERENCE_DURATION = 40;
+  const referenceCount = partnerLogos.collaborators.length;
+  const scrollDuration =
+    (partnerLogos[activeTab].length / referenceCount) * REFERENCE_DURATION;
 
   return (
     <div className="flex flex-col gap-8 py-10 sm:gap-10 lg:gap-15 max-1440p:py-0">
@@ -244,7 +209,11 @@ export default function OurPartners() {
         className="relative w-full overflow-hidden py-2"
       >
         {/* The moving track */}
-        <div className="flex w-max animate-scroll hover:[animation-play-state:paused]">
+        {/* <div className="flex w-max animate-scroll hover:[animation-play-state:paused]"> */}
+        <div
+          className="flex w-max animate-scroll hover:[animation-play-state:paused]"
+          style={{ animationDuration: `${scrollDuration}s` }}
+        >
           {[...partnerLogos[activeTab], ...partnerLogos[activeTab]].map(
             (logo, index) => {
               const isDuplicate = index >= partnerLogos[activeTab].length;
@@ -253,10 +222,11 @@ export default function OurPartners() {
                 <div
                   key={`${logo.name}-${index}`}
                   aria-hidden={isDuplicate}
-                  // ADDED: mr-4 sm:mr-6 for the gap between logos
-                  className="group relative flex w-45 sm:w-55 lg:w-[12.5vw] shrink-0 aspect-2.5/1 items-center justify-center border-b-5 border-r-5 border-neutral-300 bg-white p-8 transition-all duration-300 hover:-translate-y-1 hover:shadow-md max-xl:p-4 mr-4 sm:mr-6"
+                  // className="group relative flex w-45 sm:w-55 lg:w-[12.5vw] shrink-0 aspect-2.5/1 items-center justify-center border-b-5 border-r-5 border-neutral-300 bg-white p-8 transition-all duration-300 hover:-translate-y-1 hover:shadow-md max-xl:p-4 mr-4 sm:mr-6"
+                  className="group relative flex w-45 sm:w-55 lg:w-[12.5vw] max-h-38 shrink-0 aspect-3/2 max-sm:aspect-3.5/1 sm:max-lg:aspect-2.5/1 items-center justify-center border-b-5 border-r-5 border-neutral-300 bg-white p-8 transition-all duration-300 hover:-translate-y-1 hover:shadow-md max-xl:p-4 mr-4 sm:mr-6"
                 >
-                  <div className="relative h-full w-7/10">
+                  {/* <div className="relative h-full w-7/10"> */}
+                  <div className="relative h-full w-full">
                     <Image
                       src={logo.img}
                       alt={`${logo.name} logo`}
@@ -288,7 +258,9 @@ export default function OurPartners() {
               id={`tab-${tab.id}`}
               aria-selected={isActive}
               aria-controls="partners-panel"
-              onClick={() => setActiveTab(tab.id as keyof typeof LOGOS)}
+              onClick={() =>
+                setActiveTab(tab.id as keyof typeof OurPartnersLogos)
+              }
               className={`cursor-pointer py-2 text-sm transition-all duration-300 ${
                 isActive
                   ? "font-bold opacity-100"
