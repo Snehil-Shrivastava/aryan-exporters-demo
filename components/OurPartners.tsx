@@ -223,7 +223,7 @@ export default function OurPartners() {
                   key={`${logo.name}-${index}`}
                   aria-hidden={isDuplicate}
                   // className="group relative flex w-45 sm:w-55 lg:w-[12.5vw] shrink-0 aspect-2.5/1 items-center justify-center border-b-5 border-r-5 border-neutral-300 bg-white p-8 transition-all duration-300 hover:-translate-y-1 hover:shadow-md max-xl:p-4 mr-4 sm:mr-6"
-                  className="group relative flex w-45 sm:w-55 lg:w-[12.5vw] max-h-38 shrink-0 aspect-3/2 max-sm:aspect-3.5/1 sm:max-lg:aspect-2.5/1 items-center justify-center border-b-5 border-r-5 border-neutral-300 bg-white p-8 transition-all duration-300 hover:-translate-y-1 hover:shadow-md max-xl:p-4 mr-4 sm:mr-6"
+                  className="group relative flex w-45 sm:w-55 lg:w-[12.5vw] max-h-38 shrink-0 aspect-3/2 max-sm:aspect-3.5/2 sm:max-lg:aspect-2.5/1.5 items-center justify-center border-b-5 border-r-5 border-neutral-300 bg-white p-8 transition-all duration-300 hover:-translate-y-1 hover:shadow-md max-xl:p-4 mr-4 sm:mr-6"
                 >
                   {/* <div className="relative h-full w-7/10"> */}
                   <div className="relative h-full w-full">

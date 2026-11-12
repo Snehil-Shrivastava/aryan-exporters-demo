@@ -17,7 +17,7 @@ const AboutCertificatesAwards = () => {
           <span>Click any to know more.</span>
         </p>
       </div>
-      <div className="grid grid-cols-2 max-lg:grid-cols-1 gap-20 py-20 xl:max-w-4/5 mx-auto">
+      <div className="grid grid-cols-2 max-lg:gap-8 gap-20 py-20 xl:max-w-4/5 mx-auto">
         {awardsData.map((award, index) => (
           <div
             key={index}
@@ -33,8 +33,10 @@ const AboutCertificatesAwards = () => {
               />
             </div>
             <div className="max-lg:text-center">
-              <h3 className="font-bold text-2xl mb-2">{award.title}</h3>
-              <p>{award.description}</p>
+              <h3 className="font-bold text-2xl mb-2 max-lg:text-xl">
+                {award.title}
+              </h3>
+              <p className="max-lg:text-sm">{award.description}</p>
             </div>
           </div>
         ))}
