@@ -303,3 +303,156 @@ export const Customers = [
     img: titagarhrailsystem,
   },
 ];
+
+export const OurPartnersLogos = {
+  customers: [
+    {
+      img: banaraslocomotive,
+      name: "banaraslocomotive",
+    },
+    {
+      img: beml,
+      name: "beml",
+    },
+    {
+      img: bhel,
+      name: "bhel",
+    },
+    {
+      img: brandalloys,
+      name: "brandalloys",
+    },
+    {
+      img: chitaranjanlocomotive,
+      name: "chitaranjanlocomotive",
+    },
+    {
+      img: indiandefence,
+      name: "indiandefence",
+    },
+    {
+      img: indiannavy,
+      name: "indiannavy",
+    },
+    {
+      img: indianrailways,
+      name: "indianrailways",
+    },
+    {
+      img: integratedcoachfactory,
+      name: "integratedcoachfactory",
+    },
+    {
+      img: jupiterwagons,
+      name: "jupiterwagons",
+    },
+    {
+      img: lnt,
+      name: "lnt",
+    },
+    {
+      img: mazagoandock,
+      name: "mazagoandock",
+    },
+    {
+      img: moderncoachfactory,
+      name: "moderncoachfactory",
+    },
+    {
+      img: nalco,
+      name: "nalco",
+    },
+    {
+      img: patialalocomotiveworks,
+      name: "patialalocomotiveworks",
+    },
+    {
+      img: railcoachfactory,
+      name: "railcoachfactory",
+    },
+    {
+      img: rdso,
+      name: "rdso",
+    },
+    {
+      img: rdso2,
+      name: "rdso2",
+    },
+    {
+      img: texmacorail,
+      name: "texmacorail",
+    },
+    {
+      img: titagarhrailsystem,
+      name: "titagarhrailsystem",
+    },
+  ],
+  technology: [
+    {
+      img: covestro,
+      name: "covestro",
+    },
+    {
+      img: kunwar,
+      name: "kunwar",
+    },
+    {
+      img: lanxess,
+      name: "lanxess",
+    },
+    {
+      img: royalispat,
+      name: "royalispat",
+    },
+    {
+      img: sadhuforging,
+      name: "sadhuforging",
+    },
+  ],
+  collaborators: [
+    {
+      img: teknoloji,
+      name: "teknoloji",
+    },
+    {
+      img: rfcomm,
+      name: "rfcomm",
+    },
+    {
+      img: ideasunlimited,
+      name: "ideasunlimited",
+    },
+    {
+      img: tictag,
+      name: "tictag",
+    },
+    {
+      img: lanxess,
+      name: "lanxess",
+    },
+    {
+      img: suda,
+      name: "suda",
+    },
+    {
+      img: covestro,
+      name: "covestro",
+    },
+    {
+      img: pamozdi,
+      name: "pamozdi",
+    },
+    {
+      img: sojitz,
+      name: "sojitz",
+    },
+    {
+      img: geh,
+      name: "geh",
+    },
+    {
+      img: iitroorkee,
+      name: "iitroorkee",
+    },
+  ],
+};

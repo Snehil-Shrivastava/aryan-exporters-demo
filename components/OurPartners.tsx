@@ -169,6 +169,7 @@ import ballistic from "@/public/images/ballistic.svg";
 import liva from "@/public/images/liva.svg";
 import aven from "@/public/images/aven.svg";
 import vertex from "@/public/images/vertex.svg";
+import { OurPartnersLogos } from "@/lib/data";
 
 // Define the tabs
 const TABS = [
@@ -216,6 +217,7 @@ const LOGOS = {
 
 export default function OurPartners() {
   const [activeTab, setActiveTab] = useState<keyof typeof LOGOS>("customers");
+  const partnerLogos = OurPartnersLogos;
 
   return (
     <div className="flex flex-col gap-8 py-10 sm:gap-10 lg:gap-15 max-1440p:py-0">
@@ -243,28 +245,30 @@ export default function OurPartners() {
       >
         {/* The moving track */}
         <div className="flex w-max animate-scroll hover:[animation-play-state:paused]">
-          {[...LOGOS[activeTab], ...LOGOS[activeTab]].map((logo, index) => {
-            const isDuplicate = index >= LOGOS[activeTab].length;
+          {[...partnerLogos[activeTab], ...partnerLogos[activeTab]].map(
+            (logo, index) => {
+              const isDuplicate = index >= partnerLogos[activeTab].length;
 
-            return (
-              <div
-                key={`${logo.name}-${index}`}
-                aria-hidden={isDuplicate}
-                // ADDED: mr-4 sm:mr-6 for the gap between logos
-                className="group relative flex w-45 sm:w-55 lg:w-[12.5vw] shrink-0 aspect-2.5/1 items-center justify-center border-b-5 border-r-5 border-neutral-300 bg-white p-8 transition-all duration-300 hover:-translate-y-1 hover:shadow-md max-xl:p-4 mr-4 sm:mr-6"
-              >
-                <div className="relative h-full w-7/10">
-                  <Image
-                    src={logo.src}
-                    alt={`${logo.name} logo`}
-                    className="object-contain filter transition-all duration-300"
-                    fill
-                    sizes="(min-width: 1024px) 15vw, (min-width: 640px) 220px, 180px"
-                  />
+              return (
+                <div
+                  key={`${logo.name}-${index}`}
+                  aria-hidden={isDuplicate}
+                  // ADDED: mr-4 sm:mr-6 for the gap between logos
+                  className="group relative flex w-45 sm:w-55 lg:w-[12.5vw] shrink-0 aspect-2.5/1 items-center justify-center border-b-5 border-r-5 border-neutral-300 bg-white p-8 transition-all duration-300 hover:-translate-y-1 hover:shadow-md max-xl:p-4 mr-4 sm:mr-6"
+                >
+                  <div className="relative h-full w-7/10">
+                    <Image
+                      src={logo.img}
+                      alt={`${logo.name} logo`}
+                      className="object-contain filter transition-all duration-300"
+                      fill
+                      sizes="(min-width: 1024px) 15vw, (min-width: 640px) 220px, 180px"
+                    />
+                  </div>
                 </div>
-              </div>
-            );
-          })}
+              );
+            },
+          )}
         </div>
       </div>
 
