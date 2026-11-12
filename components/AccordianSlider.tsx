@@ -236,7 +236,7 @@ import Image from "next/image";
 const slides = [
   {
     title: "Railway Bogie",
-    image: "/images/railway.jpg",
+    image: "/images/Bogie.webp",
     href: "/solutions/bogie",
     tags: [
       { label: "Air springs", image: "/images/brake_systems.webp" },
@@ -250,7 +250,7 @@ const slides = [
   },
   {
     title: "Defence",
-    image: "/images/defence.jpg",
+    image: "/images/Defense.webp",
     href: "/solutions/defence",
     tags: [
       { label: "Track pads", image: "/images/shelters.webp" },
@@ -273,7 +273,7 @@ const slides = [
   },
   {
     title: "Power Electronics",
-    image: "/images/power_electronics.jpg",
+    image: "/images/Power Electronics.webp",
     href: "/solutions/power-electronics",
     tags: [
       { label: "OHE", image: "/images/converters.jpg" },
@@ -283,7 +283,7 @@ const slides = [
   },
   {
     title: "Smart Embedded Systems",
-    image: "/images/smart_embedded.jpg",
+    image: "/images/Smart Embedded System.webp",
     href: "/solutions/smart-embedded-systems",
     tags: [
       { label: "Rolling Stocks", image: "/images/controllers.jpg" },
@@ -294,7 +294,7 @@ const slides = [
   },
   {
     title: "Engineering Products",
-    image: "/images/engineering_products.jpg",
+    image: "/images/Engineering Product.webp",
     href: "/solutions/engineering-products",
     tags: [
       { label: "Rolling Stocks", image: "/images/controllers.jpg" },
@@ -308,8 +308,6 @@ const slides = [
 export default function ExpandingSlider() {
   const [active, setActive] = useState(2);
   const [paused, setPaused] = useState(false);
-  // selected tag index for each slide, e.g. { 2: 0 } = slide 3, first tag
-  // const [selected, setSelected] = useState<Record<number, number | null>>({});
 
   // auto move to the next slide every 4 seconds
   useEffect(() => {
@@ -320,14 +318,6 @@ export default function ExpandingSlider() {
     );
     return () => clearInterval(id);
   }, [paused, active]);
-
-  // click a tag to select it, click it again to go back to the main image
-  // const toggleTag = (slideIndex: number, tagIndex: number) => {
-  //   setSelected((prev) => ({
-  //     ...prev,
-  //     [slideIndex]: prev[slideIndex] === tagIndex ? null : tagIndex,
-  //   }));
-  // };
 
   return (
     <div
@@ -410,49 +400,13 @@ export default function ExpandingSlider() {
                     src={slide.image}
                     alt={slide.title}
                     fill
-                    // className={`object-cover transition-opacity duration-500 rounded-lg select-none ${
-                    //   selectedTag === null ? "opacity-100" : "opacity-0"
-                    // }`}
-                    className={`object-cover transition-opacity duration-500 rounded-lg select-none`}
+                    className={`object-cover ${slide.title === "Electrical Components" ? "object-top" : ""} transition-opacity duration-500 rounded-lg select-none`}
                   />
-                  {/* {slide.tags.map((tag) => (
-                    <Image
-                      key={tag.label}
-                      src={tag.image}
-                      alt={tag.label}
-                      fill
-                      // className={`object-cover transition-opacity duration-500 rounded-lg select-none ${
-                      //   selectedTag === t ? "opacity-100" : "opacity-0"
-                      // }`}
-                      className={`object-cover transition-opacity duration-500 rounded-lg select-none`}
-                    />
-                  ))} */}
                 </div>
 
                 {/* flex-wrap: if the tags and the link don't fit in one row,
                     the link drops under the tags instead of overflowing */}
                 <div className="mt-4 flex flex-wrap items-center justify-between gap-x-4 gap-y-3 @4xl:mt-5 @6xl:mt-6">
-                  {/* <ul className="flex flex-wrap gap-2 @4xl:gap-3 @6xl:gap-4">
-                    {slide.tags.map((tag, t) => (
-                      <li key={tag.label}>
-                        <button
-                          type="button"
-                          aria-pressed={selectedTag === t}
-                          onClick={(e) => {
-                            e.stopPropagation();
-                            toggleTag(i, t);
-                          }}
-                          className={`cursor-pointer shadow-[0_0_15px_2px_rgba(0,0,0,0.15)] px-3 py-2 text-sm transition-colors @4xl:px-4 @4xl:py-3 @6xl:px-6 @6xl:py-4 @6xl:text-base rounded-full font-medium ${
-                            selectedTag === t
-                              ? "bg-brand-red text-white"
-                              : "text-brand-red hover:bg-red-50"
-                          }`}
-                        >
-                          {tag.label}
-                        </button>
-                      </li>
-                    ))}
-                  </ul> */}
                   <Link
                     href={slide.href}
                     className="text-sm font-medium text-brand-blue hover:underline @6xl:text-base ml-auto"
