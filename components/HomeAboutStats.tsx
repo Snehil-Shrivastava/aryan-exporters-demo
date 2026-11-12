@@ -4,7 +4,7 @@ import { useEffect, useRef, useState } from "react";
 
 const AboutStats = [
   {
-    number: "30",
+    number: "40",
     description: "Years in Operations",
   },
   {

@@ -10,17 +10,42 @@ import nablImg from "@/public/images/NABL 1 (copy).png";
 import msme2009lImg from "@/public/images/MSME 2009 1 (copy).png";
 import msme2010lImg from "@/public/images/MSME 2010 1 (copy).png";
 
-import teknoloji from "@/public/images/teknoloji.png";
-import rfcomm from "@/public/images/rf-comm.png";
-import ideasunlimited from "@/public/images/ideas-unlimited.png";
-import tictag from "@/public/images/tictag.png";
-import lanxess from "@/public/images/lanxess.png";
-import suda from "@/public/images/suda.png";
-import covestro from "@/public/images/covestro.png";
-import pamozdi from "@/public/images/pamodzi.png";
-import sojitz from "@/public/images/sojitz.png";
-import geh from "@/public/images/geh.png";
-import iitroorkee from "@/public/images/iit-roorkee.png";
+import teknoloji from "@/public/images/collaborators/AHA Teknoloji.png";
+import rfcomm from "@/public/images/collaborators/RF-Comm.png";
+import ideasunlimited from "@/public/images/collaborators/Ideas Unlimited.png";
+import tictag from "@/public/images/collaborators/tictag-logo.webp";
+import lanxess from "@/public/images/collaborators/Lanxess.svg";
+import suda from "@/public/images/collaborators/Tsuda Industries.gif";
+import covestro from "@/public/images/collaborators/Covestro.png";
+import pamozdi from "@/public/images/collaborators/Pamoudzi Unique Engineering.png";
+import sojitz from "@/public/images/collaborators/Sojitz Corporation.svg";
+import geh from "@/public/images/collaborators/Global Energy Harvest.png";
+import iitroorkee from "@/public/images/collaborators/IIT Roorkee.png";
+
+import kunwar from "@/public/images/partners/Kunwar Engineers Pvt Ltd.png";
+import royalispat from "@/public/images/partners/Royal Ispat Udyog.png";
+import sadhuforging from "@/public/images/partners/sadhu forging limited.png";
+
+import banaraslocomotive from "@/public/images/customers/Banaras Locomotive Works.png";
+import beml from "@/public/images/customers/BEML.png";
+import bhel from "@/public/images/customers/BHEL.png";
+import brandalloys from "@/public/images/customers/Brand Alloys Limited.png";
+import chitaranjanlocomotive from "@/public/images/customers/Chitaranjan Locomotive Works.png";
+import indiandefence from "@/public/images/customers/Indian Defense.png";
+import indiannavy from "@/public/images/customers/Indian Navy.png";
+import indianrailways from "@/public/images/customers/Indian Railways.jpg";
+import integratedcoachfactory from "@/public/images/customers/Integrated Coach Factory.png";
+import jupiterwagons from "@/public/images/customers/Jupiter Wagons.png";
+import lnt from "@/public/images/customers/L&T.png";
+import mazagoandock from "@/public/images/customers/Mazagoan Dock.webp";
+import moderncoachfactory from "@/public/images/customers/Modern Coach Factory.png";
+import nalco from "@/public/images/customers/NALCO.png";
+import patialalocomotiveworks from "@/public/images/customers/Patiala Locomotive Works.png";
+import railcoachfactory from "@/public/images/customers/Rail Coach Factory.png";
+import rdso from "@/public/images/customers/RDSO Logo.png";
+import rdso2 from "@/public/images/customers/RDSO.png";
+import texmacorail from "@/public/images/customers/Texmaco Rail and Engineering.png";
+import titagarhrailsystem from "@/public/images/customers/Titagarh Rail System.png";
 
 export const DefenceProducts = [
   {
@@ -195,5 +220,86 @@ export const Collaborators = [
   },
   {
     img: iitroorkee,
+  },
+];
+
+export const Partners = [
+  {
+    img: covestro,
+  },
+  {
+    img: kunwar,
+  },
+  {
+    img: lanxess,
+  },
+  {
+    img: royalispat,
+  },
+  {
+    img: sadhuforging,
+  },
+];
+
+export const Customers = [
+  {
+    img: banaraslocomotive,
+  },
+  {
+    img: beml,
+  },
+  {
+    img: bhel,
+  },
+  {
+    img: brandalloys,
+  },
+  {
+    img: chitaranjanlocomotive,
+  },
+  {
+    img: indiandefence,
+  },
+  {
+    img: indiannavy,
+  },
+  {
+    img: indianrailways,
+  },
+  {
+    img: integratedcoachfactory,
+  },
+  {
+    img: jupiterwagons,
+  },
+  {
+    img: lnt,
+  },
+  {
+    img: mazagoandock,
+  },
+  {
+    img: moderncoachfactory,
+  },
+  {
+    img: nalco,
+  },
+  {
+    img: patialalocomotiveworks,
+  },
+  {
+    img: railcoachfactory,
+  },
+  {
+    img: rdso,
+  },
+  {
+    img: rdso2,
+  },
+  {
+    img: texmacorail,
+  },
+  {
+    img: titagarhrailsystem,
   },
 ];
