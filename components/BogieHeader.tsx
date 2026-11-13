@@ -1,9 +1,9 @@
 import Image from "next/image";
-import bogieHeaderImg from "@/public/images/Bogie.webp";
+import bogieHeaderImg from "@/public/images/hero-images/Railway bogie.webp";
 
 const BogieHeader = () => {
   return (
-    <div className="flex gap-15">
+    <div className="flex gap-15 max-h-140 mb-25">
       <div className="flex-1 max-1440p:flex-[0.75] max-xl:flex-1 flex flex-col gap-10 max-1440p:gap-6 pt-15 max-1440p:pt-1">
         <div>
           <h1 className="uppercase font-bold text-4xl">Bogie</h1>

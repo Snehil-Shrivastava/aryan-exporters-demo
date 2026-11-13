@@ -4,7 +4,7 @@ import SolutionsProductCatalog from "@/components/SolutionsProductCatalog";
 import StartConvo from "@/components/StartConvo";
 import { DefenceCategory, DefenceProducts } from "@/lib/data";
 
-import defenceHeaderImg from "@/public/images/Defense.webp";
+import defenceHeaderImg from "@/public/images/hero-images/Defence.webp";
 
 const Defence = () => {
   return (
@@ -18,7 +18,7 @@ const Defence = () => {
           suddenly instead of cyclically, the environment is salt or desert
           rather than a depot, and a part that fails is not an inconvenience."
         />
-        <SolutionsKeyProducts keyProducts={DefenceProducts} />
+        {/* <SolutionsKeyProducts keyProducts={DefenceProducts} /> */}
         <SolutionsProductCatalog CATEGORIES={DefenceCategory} />
       </div>
       <StartConvo />

@@ -7,19 +7,19 @@ import {
   EngineeringProductsCategory,
 } from "@/lib/data";
 
-import bogieHeaderImg from "@/public/images/bogie_header_img.png";
+import engineeringproductsHeader from "@/public/images/hero-images/Engineered products.webp";
 
 const EngineeringProducts = () => {
   return (
     <div className="py-14 max-md:py-8 w-full font-montserrat">
       <div className="px-10 max-lg:px-4 max-w-[1920px] mx-auto w-full md:max-lg:pb-25">
         <SolutionsHeader
-          headerImg={bogieHeaderImg}
+          headerImg={engineeringproductsHeader}
           heading="Engineering products"
           subHeading="The same engineering, a long way from a railway."
           description="Everything on this page is made in the same plant, from the same compounds, by the same people as the rail work. What changes is the application. A bridge bearing and a side bearer are the same problem stated differently: something has to carry a very large load and still be allowed to move."
         />
-        <SolutionsKeyProducts keyProducts={EngineeringKeyProducts} />
+        {/* <SolutionsKeyProducts keyProducts={EngineeringKeyProducts} /> */}
         <SolutionsProductCatalog CATEGORIES={EngineeringProductsCategory} />
       </div>
       <StartConvo />
