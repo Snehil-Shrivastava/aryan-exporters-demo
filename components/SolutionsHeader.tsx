@@ -12,7 +12,7 @@ const SolutionsHeader = ({
   headerImg: StaticImageData;
 }) => {
   return (
-    <div className="flex gap-15 max-md:pb-15 max-h-150 mb-20">
+    <div className="flex gap-15 max-md:pb-15 mb-20 max-md:mb-0">
       <div className="flex-1 max-1440p:flex-[0.75] max-xl:flex-1 flex flex-col gap-10 max-1440p:gap-6 max-sm:gap-4 pt-15 max-1440p:pt-1">
         <div>
           <h1 className="uppercase font-bold text-4xl max-md:text-xl md:max-lg:text-2xl">
@@ -27,7 +27,7 @@ const SolutionsHeader = ({
         </div>
         <p className="max-md:text-sm">{description}</p>
       </div>
-      <div className="flex-1 overflow-hidden rounded-xl max-xl:hidden">
+      <div className="flex-1 overflow-hidden rounded-xl max-xl:hidden aspect-3/2">
         <Image src={headerImg} alt="" />
       </div>
     </div>
