@@ -369,7 +369,7 @@ export default function ExpandingSlider() {
                 <span className="absolute inset-x-0 top-4 hidden text-center text-sm font-semibold text-white/80 lg:block @6xl:top-6 @6xl:text-base">
                   {num}
                 </span>
-                <span className="absolute bottom-[35%] left-1/2 hidden -translate-x-1/2 rotate-180 whitespace-nowrap text-lg font-bold text-white [writing-mode:vertical-rl] lg:block @6xl:text-xl">
+                <span className="absolute bottom-[30%] left-1/2 hidden -translate-x-1/2 rotate-180 whitespace-nowrap text-lg font-bold text-white [writing-mode:vertical-rl] lg:block @6xl:text-xl">
                   {slide.title}
                 </span>
               </div>
