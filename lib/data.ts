@@ -1,3 +1,5 @@
+import { StaticImageData } from "next/image";
+
 import airSpring from "@/public/images/bogie_air_spring.png";
 import slideBearer from "@/public/images/bogie_slide_bearer.png";
 import suspensionBush from "@/public/images/bogie_suspension_bush.png";
@@ -47,6 +49,235 @@ import rdso2 from "@/public/images/customers/RDSO.png";
 import texmacorail from "@/public/images/customers/Texmaco Rail and Engineering.png";
 import titagarhrailsystem from "@/public/images/customers/Titagarh Rail System.png";
 
+// import airspringassembly from "@/public/images/Products for Website/Bogie/Conventional Coach (ICF)/Air spring assembly, EMU, DMU and mainline.png";
+// import airspring140 from "@/public/images/Products for Website/Bogie/Conventional Coach (ICF)/140 kN air spring.png";
+// import airspring160 from "@/public/images/Products for Website/Bogie/Conventional Coach (ICF)/160 kN air spring.png";
+// import airspring180 from "@/public/images/Products for Website/Bogie/Conventional Coach (ICF)/180 kN air spring.png";
+// import polyurethanerubberwasher from "@/public/images/Products for Website/Bogie/Conventional Coach (ICF)/Upper and lower polyurethane rubber washer.png";
+// import silentblockanchorlink from "@/public/images/Products for Website/Bogie/Conventional Coach (ICF)/Silent block for anchor link.png";
+// import silentblockcentrepivot from "@/public/images/Products for Website/Bogie/Conventional Coach (ICF)/Silent block for centre pivot.png";
+// import sidebufferrubberpad from "@/public/images/Products for Website/Bogie/Conventional Coach (ICF)/High capacity side buffer rubber pad.png";
+
+// --- Conventional Coach (ICF) ---
+import airspringassembly from "@/public/images/Products for Website/Bogie/Conventional Coach (ICF)/Air spring assembly, EMU, DMU and mainline.png";
+import airspring140 from "@/public/images/Products for Website/Bogie/Conventional Coach (ICF)/140 kN air spring.png";
+import airspring160 from "@/public/images/Products for Website/Bogie/Conventional Coach (ICF)/160 kN air spring.png";
+import airspring180 from "@/public/images/Products for Website/Bogie/Conventional Coach (ICF)/180 kN air spring.png";
+import polyurethanerubberwasher from "@/public/images/Products for Website/Bogie/Conventional Coach (ICF)/Upper and lower polyurethane rubber washer.png";
+import silentblockanchorlink from "@/public/images/Products for Website/Bogie/Conventional Coach (ICF)/Silent block for anchor link.png";
+import silentblockcentrepivot from "@/public/images/Products for Website/Bogie/Conventional Coach (ICF)/Silent block for centre pivot.png";
+import sidebufferrubberpad from "@/public/images/Products for Website/Bogie/Conventional Coach (ICF)/High capacity side buffer rubber pad.png";
+import wearingpiecetpu from "@/public/images/Products for Website/Bogie/Conventional Coach (ICF)/Wearing piece, TPU.png";
+import rubberspringpad1225 from "@/public/images/Products for Website/Bogie/Conventional Coach (ICF)/1225 kgm rubber spring pad, side buffer.png";
+import rubberspring1000 from "@/public/images/Products for Website/Bogie/Conventional Coach (ICF)/1000 kgm rubber spring, side buffer.png";
+import centrepivotbush from "@/public/images/Products for Website/Bogie/Conventional Coach (ICF)/Centre pivot bush.png";
+import centrepivotwasher from "@/public/images/Products for Website/Bogie/Conventional Coach (ICF)/Centre pivot washer.png";
+import rubberpad from "@/public/images/Products for Website/Bogie/Conventional Coach (ICF)/Rubber pad.png";
+import sidebumper from "@/public/images/Products for Website/Bogie/Conventional Coach (ICF)/Side bumper.png";
+import metalbondedsidebufferpad from "@/public/images/Products for Website/Bogie/Conventional Coach (ICF)/Metal bonded side buffer pad.png";
+import elasticring from "@/public/images/Products for Website/Bogie/Conventional Coach (ICF)/Elastic Ring.png"; // Note: Capital 'R' in your screenshot
+import spheribloc from "@/public/images/Products for Website/Bogie/Conventional Coach (ICF)/Spheribloc.png";
+
+// --- LHB and Fiat Bogie ---
+import silentblockrolllink from "@/public/images/Products for Website/Bogie/LHB and Fiat bogie/Silent block for roll link.png";
+import elasticconnectionfiat from "@/public/images/Products for Website/Bogie/LHB and Fiat bogie/Elastic connection for Fiat bogies.png";
+import axleboxpivotbush from "@/public/images/Products for Website/Bogie/LHB and Fiat bogie/Axle box pivot bush.png";
+import balljointtractionlever from "@/public/images/Products for Website/Bogie/LHB and Fiat bogie/Ball joint for traction lever.png";
+import balljointrolllink from "@/public/images/Products for Website/Bogie/LHB and Fiat bogie/Ball joint, roll link.png";
+import tractioncentreelasticjoint from "@/public/images/Products for Website/Bogie/LHB and Fiat bogie/Traction centre elastic joint.png";
+import tractionrodbush from "@/public/images/Products for Website/Bogie/LHB and Fiat bogie/Traction rod bush.png";
+import lateralbumpstop from "@/public/images/Products for Website/Bogie/LHB and Fiat bogie/Lateral bump stop.png";
+import primarybumpstop from "@/public/images/Products for Website/Bogie/LHB and Fiat bogie/Primary bump stop.png";
+import bumpstopprimarysuspension from "@/public/images/Products for Website/Bogie/LHB and Fiat bogie/Bump stop, primary suspension.png";
+import primarysuspensionbush from "@/public/images/Products for Website/Bogie/LHB and Fiat bogie/Primary suspension bush.png";
+import rubberspring from "@/public/images/Products for Website/Bogie/LHB and Fiat bogie/Rubber spring.png";
+
+// --- Freight Wagon ---
+import ccsbpad22t from "@/public/images/Products for Website/Bogie/Freight Wagon/Constant contact side bearer pad, 22 t.png";
+import ccsbpad25t from "@/public/images/Products for Website/Bogie/Freight Wagon/Constant contact side bearer pad, 25 t.png";
+import elastomericpad from "@/public/images/Products for Website/Bogie/Freight Wagon/Elastomeric pad.png";
+import improvedsidebearerpad from "@/public/images/Products for Website/Bogie/Freight Wagon/Improved side bearer pad.png";
+import modifiedpuelastomericpad from "@/public/images/Products for Website/Bogie/Freight Wagon/Modified design PU elastomeric pad.png";
+
+// --- Locomotive ---
+import motorsuspensionbush from "@/public/images/Products for Website/Bogie/Locomotive/Motor suspension bush.png";
+import motorsuspensionpad from "@/public/images/Products for Website/Bogie/Locomotive/Motor suspension pad.png";
+import longlifesidebuffer from "@/public/images/Products for Website/Bogie/Locomotive/Long life side buffer, locomotives.png";
+import rubberspringemd from "@/public/images/Products for Website/Bogie/Locomotive/Rubber spring, EMD.png";
+import springpadtpu from "@/public/images/Products for Website/Bogie/Locomotive/Spring pad, TPU.png";
+
+// --- Metro ---
+import sealingcap from "@/public/images/Products for Website/Bogie/Metro/Sealing cap.png";
+import rubberbuffer from "@/public/images/Products for Website/Bogie/Metro/Rubber buffer.png";
+import rubbersnubber from "@/public/images/Products for Website/Bogie/Metro/Rubber snubber.png";
+
+// --- Track ---
+import trackunderrailpad from "@/public/images/Products for Website/Bogie/Track/Track under-rail pad.png";
+
+// --- Defence ---
+// Mounting and isolation
+import navalantivibrationpads from "@/public/images/Products for Website/Defence/Mounting and isolation/Naval anti-vibration pads.png";
+import sandwichmounting from "@/public/images/Products for Website/Defence/Mounting and isolation/Sandwich mounting.png";
+import shockmounts from "@/public/images/Products for Website/Defence/Mounting and isolation/Shock mounts.png";
+
+// Sealing and ducting
+import bellowsandducts from "@/public/images/Products for Website/Defence/Sealing and ducting/Bellows and ducts, aramid and silicone.png";
+
+import grommets from "@/public/images/Products for Website/Electrical components/Cable entry and protection/Grommets.png";
+
+// --- Engineering products ---
+// Automotive
+import automotiverubbertometalpart from "@/public/images/Products for Website/Engineering products/Automotive/Automotive rubber-to-metal part.png";
+
+// Bridges and structures
+import potptfebearings from "@/public/images/Products for Website/Engineering products/Bridges and structures/POT-PTFE bearings.png";
+
+// Conveyor and process
+import conveyorpulleypolyrim1 from "@/public/images/Products for Website/Engineering products/Conveyor and process/Conveyor pulley polyrim 1.png";
+import conveyorpulleypolyrim2 from "@/public/images/Products for Website/Engineering products/Conveyor and process/Conveyor pulley polyrim 2.png";
+import conveyorpulleypolyrim3 from "@/public/images/Products for Website/Engineering products/Conveyor and process/Conveyor pulley polyrim 3.png";
+import longlifericerollers from "@/public/images/Products for Website/Engineering products/Conveyor and process/Long life rice rollers.png";
+import polyurethaneprintingrollers from "@/public/images/Products for Website/Engineering products/Conveyor and process/Polyurethane printing rollers.png";
+import polyurethanerods from "@/public/images/Products for Website/Engineering products/Conveyor and process/Polyurethane rods.png";
+
+type ProductItem = {
+  name: string;
+  image: StaticImageData;
+};
+
+type Category = {
+  id: string;
+  label: string;
+  items: ProductItem[];
+};
+
+export const BogieCategory: Category[] = [
+  {
+    id: "conventional-coach",
+    label: "Conventional Coach (ICF)",
+    items: [
+      {
+        name: "Air spring assembly, EMU, DMU and mainline",
+        image: airspringassembly,
+      },
+      { name: "140 kN air spring", image: airspring140 },
+      { name: "160 kN air spring", image: airspring160 },
+      { name: "180 kN air spring", image: airspring180 },
+      {
+        name: "Upper and lower polyurethane rubber washer",
+        image: polyurethanerubberwasher,
+      },
+      { name: "Silent block for anchor link", image: silentblockanchorlink },
+      { name: "Silent block for centre pivot", image: silentblockcentrepivot },
+      {
+        name: "High capacity side buffer rubber pad",
+        image: sidebufferrubberpad,
+      },
+      { name: "Wearing piece, TPU", image: wearingpiecetpu },
+      // { name: "Brake gear bush, TPU", image: brakegearbushtpu },
+      {
+        name: "1225 kgm rubber spring pad, side buffer",
+        image: rubberspringpad1225,
+      },
+      { name: "1000 kgm rubber spring, side buffer", image: rubberspring1000 },
+      { name: "Centre pivot bush", image: centrepivotbush },
+      { name: "Centre pivot washer", image: centrepivotwasher },
+      { name: "Rubber pad", image: rubberpad },
+      { name: "Side bumper", image: sidebumper },
+      { name: "Metal bonded side buffer pad", image: metalbondedsidebufferpad },
+      { name: "Elastic ring", image: elasticring },
+      { name: "Spheribloc", image: spheribloc },
+    ],
+  },
+  {
+    id: "lhb-fiat",
+    label: "LHB and Fiat Bogie",
+    items: [
+      { name: "Silent block for roll link", image: silentblockrolllink },
+      {
+        name: "Elastic connection for Fiat bogies",
+        image: elasticconnectionfiat,
+      },
+      { name: "Axle box pivot bush", image: axleboxpivotbush },
+      { name: "Ball joint for traction lever", image: balljointtractionlever },
+      { name: "Ball joint, roll link", image: balljointrolllink },
+      {
+        name: "Traction centre elastic joint",
+        image: tractioncentreelasticjoint,
+      },
+      { name: "Traction rod bush", image: tractionrodbush },
+      { name: "Lateral bump stop", image: lateralbumpstop },
+      { name: "Primary bump stop", image: primarybumpstop },
+      {
+        name: "Bump stop, primary suspension",
+        image: bumpstopprimarysuspension,
+      },
+      { name: "Primary suspension bush", image: primarysuspensionbush },
+      { name: "Rubber spring", image: rubberspring },
+    ],
+  },
+  {
+    id: "freight-wagon",
+    label: "Freight Wagon",
+    items: [
+      { name: "Constant contact side bearer pad, 22 t", image: ccsbpad22t },
+      { name: "Constant contact side bearer pad, 25 t", image: ccsbpad25t },
+      { name: "Elastomeric pad", image: elastomericpad },
+      {
+        name: "Modified design PU elastomeric pad",
+        image: modifiedpuelastomericpad,
+      },
+      { name: "Improved side bearer pad", image: improvedsidebearerpad },
+      // { name: "High capacity draft gear pad, 71BD", image: draftgearpad71bd },
+      // { name: "High capacity draft gear pad, RF-8", image: draftgearpadrf8 },
+    ],
+  },
+  {
+    id: "locomotive",
+    label: "Locomotive",
+    items: [
+      { name: "Motor suspension bush", image: motorsuspensionbush },
+      { name: "Motor suspension pad", image: motorsuspensionpad },
+      { name: "Long life side buffer, locomotives", image: longlifesidebuffer },
+      { name: "Rubber spring, EMD", image: rubberspringemd },
+      { name: "Spring pad, TPU", image: springpadtpu },
+    ],
+  },
+  {
+    id: "metro",
+    label: "Metro",
+    items: [
+      { name: "Sealing cap", image: sealingcap },
+      { name: "Rubber buffer", image: rubberbuffer },
+      { name: "Rubber snubber", image: rubbersnubber },
+    ],
+  },
+  {
+    id: "track",
+    label: "Track",
+    items: [{ name: "Track under-rail pad", image: trackunderrailpad }],
+  },
+];
+
+export const BogieKeyProducts = [
+  {
+    name: "180 kN Air Spring",
+    label: "Developed here when the technology could only be imported.",
+    image: airspring180,
+  },
+  {
+    name: "Constant Contact Side Bearer, 25 t",
+    label:
+      "Cast polyurethane rings in a forged housing, replacing the coil spring that kept breaking.",
+    image: slideBearer,
+  },
+  {
+    name: "Motor Suspension Bush",
+    label: "All-rubber, moulded in one piece. No joint, so no joint to fail.",
+    image: motorsuspensionbush,
+  },
+];
+
 export const DefenceProducts = [
   {
     name: "Naval anti-vibration pads",
@@ -61,24 +292,38 @@ export const DefenceProducts = [
   },
 ];
 
-export const DefenceCategories = [
+export const DefenceCategory: Category[] = [
   {
     id: "mounting-and-isolation",
     label: "Mounting and isolation",
-    items: ["Naval anti-vibration pads", "Shock mounts", "Sandwich mounting"],
+    items: [
+      { name: "Naval anti-vibration pads", image: navalantivibrationpads },
+      { name: "Shock mounts", image: shockmounts },
+      { name: "Sandwich mounting", image: sandwichmounting },
+    ],
   },
   {
     id: "sealing-and-ducting",
     label: "Sealing and ducting",
-    items: ["Bellows and ducts, aramid and silicone"],
+    items: [
+      {
+        name: "Bellows and ducts, aramid and silicone",
+        image: bellowsandducts,
+      },
+    ],
   },
 ];
 
-export const ElectricalComponentsCategories = [
+export const ElectricalComponentsCategory: Category[] = [
   {
     id: "cable-entry-and-protection",
     label: "Cable entry and protection",
-    items: ["Grommets"],
+    items: [
+      {
+        name: "Grommets",
+        image: grommets,
+      },
+    ],
   },
 ];
 
@@ -103,26 +348,39 @@ export const EngineeringKeyProducts = [
   },
 ];
 
-export const EngineeringProductsCategories = [
+export const EngineeringProductsCategory: Category[] = [
   {
     id: "bridges-and-structures",
     label: "Bridges and structures",
-    items: ["POT-PTFE bearings", "Elastomeric bearings"],
+    items: [
+      { name: "POT-PTFE bearings", image: potptfebearings },
+      // { name: "Elastomeric bearings", image: elastomericbearings }, // Add this import and uncomment when you have the image
+    ],
   },
   {
     id: "conveyor-and-process",
     label: "Conveyor and process",
     items: [
-      "Conveyor pulley polyrim",
-      "Long life rice rollers",
-      "Polyurethane rods",
-      "Polyurethane printing rollers",
+      { name: "Conveyor pulley polyrim 1", image: conveyorpulleypolyrim1 },
+      { name: "Conveyor pulley polyrim 2", image: conveyorpulleypolyrim2 },
+      { name: "Conveyor pulley polyrim 3", image: conveyorpulleypolyrim3 },
+      { name: "Long life rice rollers", image: longlifericerollers },
+      { name: "Polyurethane rods", image: polyurethanerods },
+      {
+        name: "Polyurethane printing rollers",
+        image: polyurethaneprintingrollers,
+      },
     ],
   },
   {
     id: "automotive",
     label: "Automotive",
-    items: ["Automotive rubber-to-metal parts"],
+    items: [
+      {
+        name: "Automotive rubber-to-metal part",
+        image: automotiverubbertometalpart,
+      },
+    ],
   },
 ];
 

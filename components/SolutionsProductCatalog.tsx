@@ -1,15 +1,23 @@
 "use client";
 
+import Image, { StaticImageData } from "next/image";
 import { useState } from "react";
+
+type ProductItem = {
+  name: string;
+  image: StaticImageData;
+};
+
+type Category = {
+  id: string;
+  label: string;
+  items: ProductItem[];
+};
 
 const SolutionsProductCatalog = ({
   CATEGORIES,
 }: {
-  CATEGORIES: {
-    id: string;
-    label: string;
-    items: string[];
-  }[];
+  CATEGORIES: Category[];
 }) => {
   // State to hold the currently selected filter IDs
   const [selectedFilters, setSelectedFilters] = useState<string[]>([]);
@@ -76,15 +84,23 @@ const SolutionsProductCatalog = ({
             </div>
 
             {/* Cards Grid */}
-            <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-x-6 gap-y-10">
+            <div className="grid grid-cols-2 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5 max-md:gap-x-10 gap-x-15 gap-y-10">
               {category.items.map((item, index) => (
                 <div key={index} className="flex flex-col group cursor-pointer">
                   {/* Image Placeholder */}
-                  <div className="w-full aspect-4/3 bg-[#f3f4f6] rounded-lg border border-neutral-300 transition-shadow duration-300 group-hover:shadow-md"></div>
+                  <div className="relative w-full aspect-4/3 rounded-lg border border-neutral-300 overflow-hidden transition-shadow duration-300 group-hover:shadow-md">
+                    <Image
+                      src={item.image}
+                      alt={item.name}
+                      fill
+                      sizes="(max-width: 640px) 100vw, (max-width: 768px) 50vw, (max-width: 1024px) 33vw, 25vw"
+                      className="object-contain p-4"
+                    />
+                  </div>
 
                   {/* Item Title */}
                   <h3 className="mt-4 text-sm md:text-base font-semibold text-gray-900 leading-snug">
-                    {item}
+                    {item.name}
                   </h3>
                 </div>
               ))}

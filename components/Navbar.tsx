@@ -241,7 +241,7 @@ const navLinks: NavItem[] = [
     label: "solutions",
     link: "",
     children: [
-      { label: "Coach", link: "/solutions/bogie" },
+      { label: "Railway Bogie", link: "/solutions/bogie" },
       { label: "Defence", link: "/solutions/defence" },
       {
         label: "Electrical components",

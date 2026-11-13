@@ -1,5 +1,5 @@
 import Image from "next/image";
-import bogieHeaderImg from "@/public/images/bogie_header_img.png";
+import bogieHeaderImg from "@/public/images/Bogie.webp";
 
 const BogieHeader = () => {
   return (

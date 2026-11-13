@@ -4,7 +4,7 @@ import SolutionsProductCatalog from "@/components/SolutionsProductCatalog";
 import StartConvo from "@/components/StartConvo";
 import {
   EngineeringKeyProducts,
-  EngineeringProductsCategories,
+  EngineeringProductsCategory,
 } from "@/lib/data";
 
 import bogieHeaderImg from "@/public/images/bogie_header_img.png";
@@ -20,7 +20,7 @@ const EngineeringProducts = () => {
           description="Everything on this page is made in the same plant, from the same compounds, by the same people as the rail work. What changes is the application. A bridge bearing and a side bearer are the same problem stated differently: something has to carry a very large load and still be allowed to move."
         />
         <SolutionsKeyProducts keyProducts={EngineeringKeyProducts} />
-        <SolutionsProductCatalog CATEGORIES={EngineeringProductsCategories} />
+        <SolutionsProductCatalog CATEGORIES={EngineeringProductsCategory} />
       </div>
       <StartConvo />
     </div>

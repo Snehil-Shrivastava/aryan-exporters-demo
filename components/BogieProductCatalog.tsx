@@ -1,60 +1,8 @@
 "use client";
 
+import { BogieCategory } from "@/lib/data";
+import Image from "next/image";
 import { useState } from "react";
-
-// Define the structure of the data
-const CATEGORIES = [
-  {
-    id: "conventional-coach",
-    label: "Conventional Coach (ICF)",
-    items: [
-      "Air Spring Assembly, EMU, DMU and Mainline",
-      "140 kN Air Spring",
-      "160 kN Air Spring",
-      "180 kN Air Spring",
-    ],
-  },
-  {
-    id: "lhb-fiat",
-    label: "LHB and Fiat Bogie",
-    items: [
-      "Silent Block for Roll Link",
-      "Elastic Connection for Fiat Bogies",
-      "Axle Box Pivot Bush",
-      "Ball Joint for Traction Lever",
-    ],
-  },
-  {
-    id: "freight-wagon",
-    label: "Freight Wagon",
-    items: [
-      "Constant Contact Side Bearer pad, 22 t",
-      "Constant Contact Side Bearer pad, 25 t",
-      "Elastomeric Pad",
-      "Modified design PU Elastomeric pad",
-    ],
-  },
-  {
-    id: "locomotive",
-    label: "Locomotive",
-    items: [
-      "Motor Suspension Bush",
-      "Motor Suspension Pad",
-      "Long Life Side Buffer, Locomotives",
-      "Rubber Spring, EMD",
-    ],
-  },
-  {
-    id: "metro",
-    label: "Metro",
-    items: ["Sealing Cap", "Rubber Buffer", "Rubber Snubber"],
-  },
-  {
-    id: "track",
-    label: "Track",
-    items: ["Track Under-Rail Pad"],
-  },
-];
 
 export default function BogieProductCatalog() {
   // State to hold the currently selected filter IDs
@@ -67,11 +15,13 @@ export default function BogieProductCatalog() {
     );
   };
 
+  const categories = BogieCategory;
+
   // If no filters are selected, show all. Otherwise, filter the categories.
   const visibleCategories =
     selectedFilters.length === 0
-      ? CATEGORIES
-      : CATEGORIES.filter((cat) => selectedFilters.includes(cat.id));
+      ? categories
+      : categories.filter((cat) => selectedFilters.includes(cat.id));
 
   return (
     <div className="flex flex-col gap-20 w-full py-10">
@@ -79,7 +29,7 @@ export default function BogieProductCatalog() {
       <div className="flex flex-col xl:flex-row justify-between items-start xl:items-center gap-6">
         {/* Filter Pills */}
         <div className="flex flex-wrap gap-3">
-          {CATEGORIES.map((cat) => {
+          {categories.map((cat) => {
             const isActive = selectedFilters.includes(cat.id);
             return (
               <button
@@ -123,15 +73,23 @@ export default function BogieProductCatalog() {
             </div>
 
             {/* Cards Grid */}
-            <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-x-6 gap-y-10">
+            <div className="grid grid-cols-2 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5 max-md:gap-x-10 gap-x-15 gap-y-10">
               {category.items.map((item, index) => (
                 <div key={index} className="flex flex-col group cursor-pointer">
                   {/* Image Placeholder */}
-                  <div className="w-full aspect-4/3 bg-[#f3f4f6] rounded-lg border border-neutral-300 transition-shadow duration-300 group-hover:shadow-md"></div>
+                  <div className="relative w-full aspect-4/3 rounded-lg border border-neutral-300 overflow-hidden transition-shadow duration-300 group-hover:shadow-md">
+                    <Image
+                      src={item.image}
+                      alt={item.name}
+                      fill
+                      sizes="(max-width: 640px) 100vw, (max-width: 768px) 50vw, (max-width: 1024px) 33vw, 25vw"
+                      className="object-contain p-4"
+                    />
+                  </div>
 
                   {/* Item Title */}
                   <h3 className="mt-4 text-sm md:text-base font-semibold text-gray-900 leading-snug">
-                    {item}
+                    {item.name}
                   </h3>
                 </div>
               ))}
