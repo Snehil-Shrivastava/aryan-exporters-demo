@@ -131,6 +131,12 @@ import longlifericerollers from "@/public/images/Products for Website/Engineerin
 import polyurethaneprintingrollers from "@/public/images/Products for Website/Engineering products/Conveyor and process/Polyurethane printing rollers.png";
 import polyurethanerods from "@/public/images/Products for Website/Engineering products/Conveyor and process/Polyurethane rods.png";
 
+import story1img from "@/public/images/success_story_air_spring.png";
+import story2img1 from "@/public/images/story2img1.png";
+import story2img2 from "@/public/images/story2img2.png";
+import story3img from "@/public/images/story3img.png";
+import story4img from "@/public/images/story4img.png";
+
 type ProductItem = {
   name: string;
   image: StaticImageData;
@@ -758,3 +764,252 @@ export const SupportingCapabilities = [
     para2: `Work with international polymer manufacturers on thermoplastic and castable systems is how new material technology reaches this shop floor.`,
   },
 ];
+
+export const Story1Arr = {
+  story: "01 - air spring",
+  storyTitle: "A fully indigenised air spring for Indian Railways",
+  text1:
+    "Eight years of development, an assembly built in house down to the bellow, and certification by RDSO after a year in service.",
+  image: [story1img],
+  tags: [
+    "Eight-year programme",
+    "180 kN ",
+    "RDSO certified ",
+    "Bellow manufactured in house",
+  ],
+  oppportunityTxt: (
+    <>
+      <p>
+        Indian Railways had moved from metal springs to air springs in secondary
+        suspension in order to improve ride quality as the network moved towards
+        higher speeds. The technology was new, and Railways required its vendors
+        to bring it into the country to meet demand. Industry responded through
+        technology agreements with established air spring manufacturers
+        overseas. That response met the immediate requirement, but it left a
+        gap: there was still no fully indigenised source for the product. The
+        air bellow, the most critical assembly within the air spring, demanded a
+        scale of analysis and research to produce in India that would withstand
+        the performance requirements of Indian Railways in full.
+      </p>
+      <p>
+        Aryan accepted that challenge and undertook to manufacture the complete
+        air spring assembly, bellow included, in house.
+      </p>
+    </>
+  ),
+  challengeTxt: (
+    <>
+      <p>
+        India had a number of rubber tyre manufacturers, but none with the
+        technology to produce the flexible air bellow that an air spring
+        assembly requires. Road wheels are made of solid rubber and are designed
+        to generate friction; that technology does not transfer to a flexible
+        rubber bellow which must withstand the stresses experienced in rolling
+        stock operation.
+      </p>
+      <p>
+        Building an air suspension meant building a product that would meet the
+        load, fatigue and envelope requirements of Indian Railways. That
+        involved not only designing the system, but developing the chemical
+        composition of the material used for the air bellow.
+      </p>
+      <p>
+        Alongside the system design, and working closely with our suppliers, we
+        developed the plant and machinery required to manufacture the air bellow
+        in house.
+      </p>
+    </>
+  ),
+  achievementTxt: (
+    <>
+      <p>
+        The programme ran for close to eight years and was full of new problems,
+        each of which called for strict design discipline and a willingness to
+        experiment. The approval of our 180 kN air spring for field trial, and
+        its certification by RDSO after more than a year in service, was a
+        considerable moment for the company.
+      </p>
+      <p>
+        Aryan is today the only supplier of a fully indigenised air spring to
+        Indian Railways.
+      </p>
+    </>
+  ),
+};
+
+export const Story2Arr = {
+  story: "02 - constant contact side bearer",
+  storyTitle: "Ending repeat side bearer failures in freight wagons",
+  text1:
+    "A modular polyurethane and metal design, more than twenty years in service with almost no reported failures.",
+  image: [story2img1, story2img2],
+  tags: [
+    "In service since 2005",
+    "22 t and 25 t",
+    "Modular, field-replaceable",
+    "Developed with Lanxess",
+  ],
+  oppportunityTxt: (
+    <>
+      <p>
+        The side bearer assembly used on Indian Railways wagons had already been
+        through several changes and was still subject to failures reported from
+        the field. Whether the failure was of the metal spring within the side
+        bearer or the wearing of the assembly components, each one carried a
+        maintenance burden and a cost to Railways.
+      </p>
+      <p>
+        Indian Railways was looking for a solution that would end the recurring
+        failures and improve the service life of the component. It was clear to
+        us that this needed more than a change of design. The application and
+        the assembly had to be reconsidered as a whole, and a permanent solution
+        provided.
+      </p>
+    </>
+  ),
+  challengeTxt: (
+    <>
+      <p>
+        India’s freight wagons are the lifeline of the country for the movement
+        of critical goods. They operate in conditions that vary to extremes, and
+        loading and unloading introduce further demands.
+      </p>
+      <p>
+        The solution had to extend the life of the product, withstand that
+        working environment, and reduce wear on the wagon itself.
+      </p>
+      <p>
+        Aryan developed a spring function in polyurethane capable of sustaining
+        the load while offering a modular design that improves both service life
+        and reusability. In partnership with Lanxess and other industry
+        partners, and after extensive simulation and physical testing at our own
+        premises, a new product design was released. It offers the following
+        advantages over the conventional product:
+      </p>
+      <ul
+        style={{ listStyleType: "disc" }}
+        className="marker:text-neutral-600 flex flex-col gap-6 ml-8 mt-8"
+      >
+        <li>
+          A modular polyurethane and metal spring design, meeting the load,
+          deflection and fatigue requirements of Indian Railways.
+        </li>
+        <li>
+          No single point of failure: the modular approach allows a failed
+          component to be replaced in place of the complete assembly.
+        </li>
+        <li>
+          Extended service life, through a TPU sleeve that restores the service
+          height where it has worn in operation.
+        </li>
+        <li>
+          A change of material in the top housing, so that the housing takes the
+          wear where it meets the wagon bed, improving the life of the wagon.
+        </li>
+      </ul>
+    </>
+  ),
+  achievementTxt: (
+    <>
+      <p>
+        The constant contact side bearer is a design that removed component
+        failures from the application for Indian Railways. With more than twenty
+        years in operation, the system has almost no failures reported across
+        the three companies that collaborated on its development.
+      </p>
+    </>
+  ),
+};
+
+export const Story3Arr = {
+  story: "03 - rubber bellow",
+  storyTitle: "A single-piece moulded bellow for traction motor cooling",
+  text1:
+    "Two years of development, first to the Indian market, and the design was shared with Railways so that a specification could be written for the industry.",
+  image: [story3img],
+  tags: [
+    "Single-piece seamless moulding",
+    "Two-year development",
+    "First to the Indian market",
+    "Design shared to create the specification",
+  ],
+  oppportunityTxt: (
+    <>
+      <p>
+        The traction motors of Indian locomotives require a constant supply of
+        air from the loco body in order to keep the system cool in operation. It
+        is a simple requirement, and a demanding one. The channel carrying that
+        air must be flexible enough to absorb the movement between bogie and
+        cabin, and must remain intact so that the supply continues without loss.
+      </p>
+    </>
+  ),
+  challengeTxt: (
+    <>
+      <p>
+        A bellow has to move, bend and stretch, day after day, without cracking
+        or breaking. Producing one to that standard in a single piece is not
+        straightforward.
+      </p>
+      <p>
+        Through careful design, Aryan arrived at a single, seamlessly moulded
+        rubber bellow that meets the requirement. Better materials, a more
+        considered design and controlled manufacture produced a bellow that is
+        compliant where it has to bend, strong where it has to hold, and durable
+        in long service.
+      </p>
+      <p>The development took two years.</p>
+    </>
+  ),
+  achievementTxt: (
+    <p>
+      Aryan was the first to introduce the product to Indian Railways, and
+      shared its design with Railways so that a specification could be drawn up
+      for other suppliers to work to.
+    </p>
+  ),
+};
+
+export const Story4Arr = {
+  story: "04 - spring pad",
+  storyTitle: "The Happy Pad: protecting primary suspension springs",
+  text1:
+    "Some products are manufactured; others are invented. The Happy Pad belongs to the second category — and it is now fitted to the primary suspension of locomotives and passenger coaches alike.",
+  image: [story4img],
+  tags: [
+    "Invented at Aryan",
+    "President’s Award, 2010",
+    "Locomotives and passenger coaches",
+  ],
+  oppportunityTxt: (
+    <>
+      <p>
+        Indian Railways was experiencing frequent breakage and damage to the
+        primary suspension springs on its locomotives in service. A single
+        instance of spring damage meant a long overhaul, and operation at
+        reduced speed until the rolling stock could reach its next service
+        point, both of which added to the cost of running the vehicle.
+      </p>
+      <p>
+        Aryan invented a spring pad to be fitted below and above the helical
+        spring, acting as a shock absorber and taking the impact out of the
+        primary suspension. Material selection and thickness were the decisive
+        factors, and both were determined from stress and compression analysis
+        of the helical springs.
+      </p>
+      <p>
+        A simple design, arrived at through precise research, gave a product
+        that removed the problem Indian Railways had been facing.
+      </p>
+    </>
+  ),
+  achievementTxt: (
+    <>
+      <p>
+        In 2010 Aryan was honoured with the President’s Award for this
+        innovation. Following its results on locomotives, the pad has since been
+        rolled out to the primary suspension of passenger coaches as well.
+      </p>
+    </>
+  ),
+};

@@ -2,7 +2,7 @@ import React from "react";
 
 const SuccessStoriesHeader = () => {
   return (
-    <section className="px-10 max-lg:px-4 max-w-[1920px] mx-auto w-full">
+    <section>
       <div className="overflow-hidden mb-15 max-lg:mb-8">
         <div>
           <p className="text-2xl max-lg:text-lg font-medium mb-2">Success</p>
