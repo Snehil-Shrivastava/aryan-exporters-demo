@@ -132,7 +132,7 @@ const DesktopNavItem = ({ nav }: { nav: NavItem }) => {
       ref={ref}
       // `relative` anchors the dropdown. The li stretches the full bar height,
       // so the dropdown sits flush against the bar with no hover gap.
-      className="relative flex items-center"
+      className="relative flex items-center font-montserrat"
       // hover only for a real mouse; touch devices use the click toggle instead
       onPointerEnter={(e) => {
         if (nav.children && e.pointerType === "mouse") setOpen(true);
@@ -283,7 +283,7 @@ const Navbar = () => {
 
   return (
     <nav
-      className={`fixed top-0 left-0 right-0 z-99 flex flex-col bg-white border-b border-gray-300 shadow-[0_0_15px_2px_rgba(0,0,0,0.15)] transition-transform duration-300 ease-out will-change-transform ${
+      className={`fixed top-0 left-0 right-0 z-99 flex flex-col bg-white border-b border-gray-300 shadow-[0_0_15px_2px_rgba(0,0,0,0.15)] transition-transform duration-300 ease-out will-change-transform font-montserrat ${
         hidden ? "-translate-y-full" : "translate-y-0"
       }`}
     >

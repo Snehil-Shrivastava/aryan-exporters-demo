@@ -49,15 +49,6 @@ import rdso2 from "@/public/images/customers/RDSO.png";
 import texmacorail from "@/public/images/customers/Texmaco Rail and Engineering.png";
 import titagarhrailsystem from "@/public/images/customers/Titagarh Rail System.png";
 
-// import airspringassembly from "@/public/images/Products for Website/Bogie/Conventional Coach (ICF)/Air spring assembly, EMU, DMU and mainline.png";
-// import airspring140 from "@/public/images/Products for Website/Bogie/Conventional Coach (ICF)/140 kN air spring.png";
-// import airspring160 from "@/public/images/Products for Website/Bogie/Conventional Coach (ICF)/160 kN air spring.png";
-// import airspring180 from "@/public/images/Products for Website/Bogie/Conventional Coach (ICF)/180 kN air spring.png";
-// import polyurethanerubberwasher from "@/public/images/Products for Website/Bogie/Conventional Coach (ICF)/Upper and lower polyurethane rubber washer.png";
-// import silentblockanchorlink from "@/public/images/Products for Website/Bogie/Conventional Coach (ICF)/Silent block for anchor link.png";
-// import silentblockcentrepivot from "@/public/images/Products for Website/Bogie/Conventional Coach (ICF)/Silent block for centre pivot.png";
-// import sidebufferrubberpad from "@/public/images/Products for Website/Bogie/Conventional Coach (ICF)/High capacity side buffer rubber pad.png";
-
 // --- Conventional Coach (ICF) ---
 import airspringassembly from "@/public/images/Products for Website/Bogie/Conventional Coach (ICF)/Air spring assembly, EMU, DMU and mainline.png";
 import airspring140 from "@/public/images/Products for Website/Bogie/Conventional Coach (ICF)/140 kN air spring.png";
@@ -714,3 +705,56 @@ export const OurPartnersLogos = {
     },
   ],
 };
+
+export const Stage2Tags = [
+  "Desma rubber injection",
+  "Ferromatik Milacron plastic injection",
+  "Baulé polyurethane injection",
+  "Transfer and compression moulding",
+];
+
+export const Stage2Listitems = [
+  "First article inspection",
+  "Batch records traceable to the compound",
+  "Production under a certified system, with the certificate numbers published above",
+];
+
+export const Stage3Tags = [
+  "Rheometer, on every batch",
+  "Tensile testing machine",
+  "Digital universal testing machine",
+  "Fatigue and torque rig",
+  "Analytical bench",
+];
+
+export const Stage3Listitems = [
+  "A test report written against your specification",
+  "Endurance and field trial results before release",
+  "Material analysis on incoming stock and finished product alike",
+];
+
+export const SupportingCapabilities = [
+  {
+    index: "01",
+    heading: "Materials and compounding",
+    para1: `The compound is the product; everything else is shape. Two components with identical drawings and different compounds are different components, and most failures brought to us turn out to be material failures in a geometry costume.`,
+    para2: `Compounds are developed and mixed in house on an automatic internal mixer with PLC-controlled chemical batching, so a compound made in March is the compound made in September. Natural and synthetic rubber, cast polyurethane, thermoplastic polyurethane, thermoplastic elastomers, and rubber bonded to metal. Every batch goes on the rheometer before it is permitted to be moulded.`,
+  },
+  {
+    index: "02",
+    heading: "Tool room and mould making",
+    para1: `Most of the time lost in developing a rubber component is not spent developing it. It is spent waiting for somebody else’s tool room. Ours is on site, so the first sample, the review, the change and the second sample happen within one week rather than across three suppliers and two months.Mould design and manufacture, and an engineering workshop alongside it`,
+  },
+  {
+    index: "03",
+    heading: "Metal preparation and bonding",
+    para1: `A rubber-to-metal component is only as good as the preparation underneath it. Metal blanking, surface preparation and automatic adhesive application are all carried out here, and that last step is automated precisely because it is the one that decides whether the bond holds.`,
+    para2: `It is also what allows the group to supply complete bonded assemblies, with housings and mounting plates forged by Steel Industries within the group.`,
+  },
+  {
+    index: "04",
+    heading: "Polyurethane plant",
+    para1: `A cast and thermoplastic polyurethane shop, with PLC-controlled polyurethane injection. It is the capability behind the constant contact side bearer, the TPU spring pad and the engineering products range.`,
+    para2: `Work with international polymer manufacturers on thermoplastic and castable systems is how new material technology reaches this shop floor.`,
+  },
+];
