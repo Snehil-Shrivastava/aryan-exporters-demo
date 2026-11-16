@@ -39,30 +39,9 @@ const navLinks: NavItem[] = [
     label: "capabilities",
     link: "/capabilities",
   },
-  // {
-  //   label: "products",
-  //   link: "",
-  //   children: [
-  //     { label: "Coach", link: "/products/bogie" },
-  //     { label: "Defence", link: "/products/defence" },
-  //     {
-  //       label: "Electrical components",
-  //       link: "/products/electrical-components",
-  //     },
-  //     { label: "Power electronics", link: "/products/power-electronics" },
-  //     {
-  //       label: "Smart embedded systems",
-  //       link: "/products/smart-embedded-systems",
-  //     },
-  //     {
-  //       label: "Engineering products",
-  //       link: "/products/engineering-products",
-  //     },
-  //   ],
-  // },
   {
     label: "Success stories",
-    link: "",
+    link: "/success-stories",
   },
   {
     label: "about",

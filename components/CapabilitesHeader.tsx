@@ -37,7 +37,7 @@ const CapabilitesHeader = () => {
             <h2 className="inline-block font-bold text-4xl max-lg:text-2xl lg:max-xl:text-2xl">
               6,000 m<sup>2</sup>
             </h2>
-            <p className="inline-block max-lg:text-sm max-lg:text-center max-w-75 flex-1">
+            <p className="inline-block max-lg:text-sm max-lg:text-center max-2xl:max-w-75 flex-1">
               The works at Amausi, Lucknow
             </p>
           </div>
@@ -46,7 +46,7 @@ const CapabilitesHeader = () => {
             <h2 className="inline-block font-bold text-4xl max-lg:text-2xl lg:max-xl:text-2xl">
               2,500 m<sup>2</sup>
             </h2>
-            <p className="inline-block max-lg:text-sm max-lg:text-center max-w-75 flex-1">
+            <p className="inline-block max-lg:text-sm max-lg:text-center max-2xl:max-w-75 flex-1">
               Covered, for rubber manufacturing
             </p>
           </div>
@@ -55,7 +55,7 @@ const CapabilitesHeader = () => {
             <h2 className="inline-block font-bold text-4xl max-lg:text-2xl lg:max-xl:text-2xl">
               3 stages
             </h2>
-            <p className="inline-block max-lg:text-sm max-lg:text-center max-w-75 flex-1">
+            <p className="inline-block max-lg:text-sm max-lg:text-center max-2xl:max-w-75 flex-1">
               Design and R&D, manufacture, testing — none of them outsourced
             </p>
           </div>
