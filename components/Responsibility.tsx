@@ -1,23 +1,10 @@
 import Image from "next/image";
-import environment from "@/public/images/environment.png";
-import healthcare from "@/public/images/healthcare.png";
+import environment from "@/public/images/Lanidng-page-CSR-3.JPG.webp";
+import healthcare from "@/public/images/Landing-page-CSR-1.JPG.webp";
 
 const Responsibility = () => {
   return (
     <div className="">
-      {/* <div className="flex gap-15 items-center">
-        <h2 className="text-4xl font-semibold">Responsibility</h2>
-        <p>
-          <span>
-            At Aryan Exporters we believe in conserving this very environment
-            that provides for us, and healthcare.
-          </span>
-          <br />
-          <span>
-            A holistic approach of living a simple life with high thinking.
-          </span>
-        </p>
-      </div> */}
       <div className="flex flex-col items-start gap-1.5 xl:flex-row xl:items-center xl:gap-10">
         <h2 className="text-2xl md:text-3xl 2xl:text-4xl font-semibold capitalize">
           Responsibility
@@ -32,9 +19,8 @@ const Responsibility = () => {
           </span>
         </p>
       </div>
-      <div className="flex max-lg:flex-col max-xl:flex-wrap gap-40 max-xl:gap-20 py-10">
+      <div className="flex max-lg:flex-col max-xl:flex-wrap gap-40 justify-between max-xl:gap-20 py-10">
         <div className="flex-1">
-          {/* <div className="relative 1440p:h-100 1440p:w-150 w-100 h-80"> */}
           <div className="relative w-full aspect-12/6">
             <Image
               src={environment}
