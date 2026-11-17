@@ -4,23 +4,23 @@ import { useEffect, useRef, useState } from "react";
 
 const AboutStats = [
   {
-    number: "40",
+    number: "43",
     description: "Years in Operations",
   },
   {
-    number: "100",
-    description: "Products",
+    number: "200",
+    description: "Strong Team",
   },
   {
     number: "10",
-    description: "New Products Launched",
+    description: "Innovations in Products",
   },
   {
     number: "200",
     description: "Customers Across Globe",
   },
   {
-    number: "10",
+    number: "4",
     description: "CSR Initiatives",
   },
 ];
@@ -106,7 +106,8 @@ const HomeAboutStats = () => {
               className="text-brand-red text-4xl xl:max-1440p:text-5xl 1440p:max-2xl:text-6xl 2xl:text-7xl font-bold tabular-nums"
               aria-label={stats.number}
             >
-              {display}+
+              {display}
+              {index != 0 && index != 4 ? "+" : ""}
             </h2>
             <p className="text-xl xl:max-1440p:text-base lg:max-xl:text-base 1440p:text-2xl py-5 2xl:py-10 flex flex-col leading-6 1440p:max-2xl:leading-8 2xl:leading-12">
               {/* {stats.description.split(" ").map((text, i) => ( */}
