@@ -50,12 +50,10 @@ const CapabilitiesStage1 = ({
       </div>
       <div className="xl:flex-[0.6] lg:pb-10">
         <h4 className="uppercase font-medium tracking-widest max-lg:text-sm">
-          {stage ? stage : "stage 1 - design and r&d"}
+          {stage ? stage : "stage 1"}
         </h4>
         <h2 className="text-[42px] 1440p:leading-12 max-lg:text-3xl lg:max-1440p:text-4xl font-bold text-brand-red mt-3">
-          {stageTitle
-            ? stageTitle
-            : "Nothing is cut until we know what it will do"}
+          {stageTitle ? stageTitle : "Design and R&D"}
         </h2>
         <div className="flex flex-col gap-10 max-lg:gap-6 mt-10 max-lg:mt-4 lg:max-1440p:mt-6">
           <h3 className="font-semibold text-xl max-lg:text-base">

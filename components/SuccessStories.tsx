@@ -20,6 +20,7 @@ const SuccessStoriesSection = ({
   challengeColSpan,
   achievementColSpan,
   tagsColSpan,
+  bgColor,
 }: {
   story?: string;
   storyTitle?: string;
@@ -33,10 +34,13 @@ const SuccessStoriesSection = ({
   challengeColSpan?: string;
   achievementColSpan?: string;
   tagsColSpan?: string;
+  bgColor?: string;
 }) => {
   return (
-    <div className={`flex gap-25 xl:max-1440p:gap-15`}>
-      <div className="lg:pb-10">
+    <div
+      className={`flex gap-25 xl:max-1440p:gap-15 ${bgColor} pt-15 max-lg:pb-15`}
+    >
+      <div className="lg:pb-10 px-10 max-lg:px-4 max-w-[1920px] mx-auto w-full">
         <h4 className="uppercase font-medium tracking-widest max-lg:text-sm">
           {story}
         </h4>
@@ -45,7 +49,7 @@ const SuccessStoriesSection = ({
         </h2>
         <div className="flex flex-col gap-10 max-lg:gap-6 mt-10 max-lg:mt-4 lg:max-1440p:mt-6">
           <h3 className="font-semibold text-xl max-lg:text-base">{text1}</h3>
-          <div className="flex justify-between gap-15">
+          <div className="flex justify-between gap-15 max-md:flex-col max-md:gap-8">
             {image.map((image, i) => (
               <div key={i} className="relative overflow-hidden rounded-xl">
                 <Image src={image} alt="" />

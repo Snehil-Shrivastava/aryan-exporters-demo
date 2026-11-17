@@ -20,6 +20,7 @@
 
 @theme {
   --breakpoint-1440p: 90rem;
+  --breakpoint-1920p: 120rem;
 }
 
 /* @media (prefers-color-scheme: dark) {
