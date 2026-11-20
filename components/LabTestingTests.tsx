@@ -96,7 +96,7 @@ import { LabTestingTests as LabTestingTestsData } from "@/lib/data";
 const LabTestingTests = () => {
   const labTestingTestsData = LabTestingTestsData;
   return (
-    <div className="bg-[#F5F5F5] my-30 max-lg:my-15">
+    <div className="bg-[#F5F5F5] my-30 max-lg:my-15 lg:max-1440p:mb-20">
       <div className="lg:py-20 max-lg:py-10 px-10 max-lg:px-4 max-w-[1920px] mx-auto w-full">
         <div className="flex flex-col items-start gap-1.5 xl:flex-row xl:items-center xl:gap-10">
           <h2 className="text-2xl md:text-3xl 2xl:text-4xl font-semibold capitalize">
@@ -117,7 +117,7 @@ const LabTestingTests = () => {
           {/* Scroll container: the table scrolls sideways below 1440px */}
           <div className="mb-12 overflow-x-auto">
             {/* Min width keeps the columns from squashing; removed at 1440p */}
-            <div className="min-w-[1100px] 1440p:min-w-0">
+            <div className="min-w-275 1440p:min-w-0">
               <div className="grid grid-cols-16 bg-brand-red px-6 py-2.5 rounded-lg">
                 <div className="uppercase text-white font-semibold tracking-wider col-span-5">
                   <span>property</span>

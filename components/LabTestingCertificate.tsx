@@ -13,7 +13,7 @@ const LabTestingCertificate = () => {
           <span>certificate says</span>
         </p>
       </div>
-      <div className="grid grid-cols-5 max-md:grid-cols-1 md:max-lg:grid-cols-2 lg:max-xl:grid-cols-3 gap-15 lg:max-xl:gap-10 xl:max-1440p:gap-8 max-lg:gap-8">
+      <div className="grid grid-cols-5 max-md:grid-cols-1 md:max-lg:grid-cols-2 lg:max-xl:grid-cols-3 xl:max-1440p:grid-cols-4 gap-15 lg:max-xl:gap-10 xl:max-1440p:gap-8 max-lg:gap-8">
         {certificateSaysData.map((data, index) => (
           <div
             key={index}
