@@ -137,6 +137,12 @@ import story2img2 from "@/public/images/story2img2.png";
 import story3img from "@/public/images/story3img.png";
 import story4img from "@/public/images/story4img.png";
 
+import rheomater from "@/public/Rheometer.svg";
+import tensiletest from "@/public/tensiletesting.svg";
+import digitalutm from "@/public/digitalutm.svg";
+import fatiguetorquetest from "@/public/fatiguetorquetest.svg";
+import analyticalbench from "@/public/analyticalbench.svg";
+
 type ProductItem = {
   name: string;
   image: StaticImageData;
@@ -1083,5 +1089,82 @@ export const LabTestingAwardsData = [
     validity: "Valid 4 August 2025 to 3 August 2028",
     text: "The rail industry standard. Business category: rolling stock. Product scope: electrical, components, guidance. Covers design and development, production, control of outsourced processes, and project management.",
     link: "/#",
+  },
+];
+
+export const LabTestingEquipmentData = [
+  {
+    title: "Rheometer",
+    description:
+      "Cure behaviour of every compound batch, before that batch is allowed to be moulded. Every batch, not a sample of them.",
+    icon: rheomater,
+  },
+  {
+    title: "Tensile testing machine",
+    description: "Tensile strength, elongation at break and modulus.",
+    icon: tensiletest,
+  },
+  {
+    title: "Digital universal testing machine",
+    description:
+      "Compression, tear and load against deflection, on finished parts as well as on test pieces.",
+    icon: digitalutm,
+  },
+  {
+    title: "Fatigue and torque testing rig",
+    description:
+      "Endurance of finished products under repeated load. Torque testing to a set number of cycles.",
+    icon: fatiguetorquetest,
+  },
+  {
+    title: "Analytical bench",
+    description:
+      "Raw material and product analysis. We use it to identify and check incoming material, and to analyse finished parts and parts returned from service.",
+    icon: analyticalbench,
+  },
+];
+
+export const LabTestingTests = [
+  {
+    property: "Mechanical",
+    test: [
+      "Tensile strength and elongation",
+      "Tear strength",
+      "Hardness",
+      "Compression set",
+      "Load and deflection",
+    ],
+    method: [
+      "ASTM D412 / ISO 37",
+      "ASTM D624",
+      "ASTM D2240 / ISO 7619",
+      "ASTM D395",
+      "To customer specification",
+    ],
+  },
+  {
+    property: "Cure and processing",
+    test: ["Cure behaviour"],
+    method: ["ASTM D5289 / ISO 6502"],
+  },
+  {
+    property: "Ageing",
+    test: ["Accelerated heat ageing", "Low temperature behaviour"],
+    method: ["ASTM D573", "ASTM D1329 / D2137"],
+  },
+  {
+    property: "Bonded parts",
+    test: ["Rubber to metal adhesion"],
+    method: ["ASTM D429"],
+  },
+  {
+    property: "Endurance",
+    test: ["Fatigue to a set number of cycles"],
+    method: ["To customer specification"],
+  },
+  {
+    property: "Material identification",
+    test: ["Specific gravity, ash, polymer identification"],
+    method: ["ASTM D297 and related"],
   },
 ];

@@ -1,6 +1,11 @@
 import LabTestingAwards from "@/components/LabTestingAwards";
+import LabTestingBanner from "@/components/LabTestingBanner";
 import LabTestingCertificate from "@/components/LabTestingCertificate";
+import LabTestingEnquiry from "@/components/LabTestingEnquiry";
+import LabTestingEquipment from "@/components/LabTestingEquipment";
 import LabTestingHeader from "@/components/LabTestingHeader";
+import LabTestingOwnProducts from "@/components/LabTestingOwnProducts";
+import LabTestingTests from "@/components/LabTestingTests";
 import StartConvo from "@/components/StartConvo";
 
 const LabTesting = () => {
@@ -11,6 +16,11 @@ const LabTesting = () => {
         <LabTestingCertificate />
       </div>
       <LabTestingAwards />
+      <LabTestingEquipment />
+      <LabTestingTests />
+      <LabTestingOwnProducts />
+      <LabTestingBanner />
+      <LabTestingEnquiry />
       <StartConvo />
     </div>
   );
