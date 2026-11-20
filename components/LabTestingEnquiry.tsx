@@ -256,7 +256,7 @@ const LabTestingEnquiry = () => {
 
               <button
                 type="submit"
-                className="flex items-center justify-center gap-3 rounded-lg bg-[#a42826] text-xl md:text-2xl font-semibold text-white transition hover:bg-[#8a2020] focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#a42826] py-4 mt-auto"
+                className="flex items-center justify-center gap-3 rounded-lg bg-brand-red text-xl md:text-2xl font-semibold text-white transition hover:bg-[#8a2020] focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#a42826] py-4 mt-auto"
               >
                 Send
                 <Send size={24} />
@@ -274,7 +274,7 @@ const LabTestingEnquiry = () => {
                 <a
                   key={item.label}
                   href={item.href}
-                  className="flex items-center gap-3 rounded-lg border border-neutral-300 bg-white px-6 py-5 text-base md:text-lg font-semibold text-[#a42826] transition hover:border-[#a42826]"
+                  className="flex items-center gap-3 rounded-lg border border-neutral-300 bg-white px-6 py-5 text-base md:text-lg font-semibold text-brand-red transition hover:border-brand-red"
                 >
                   {item.label}
                   <FileDown />

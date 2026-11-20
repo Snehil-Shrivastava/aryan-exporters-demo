@@ -4,7 +4,7 @@ import labTestingHeader from "@/public/images/lab-testing-header.png";
 const LabTestingHeader = () => {
   return (
     <div className="flex gap-15 mb-25 max-md:mb-0">
-      <div className="flex-1 max-1440p:flex-[0.75] max-xl:flex-1 flex flex-col gap-0 max-1440p:gap-6 pt-15 max-1440p:pt-1">
+      <div className="flex-1 max-1440p:flex-[0.75] max-xl:flex-1 flex flex-col gap-0 max-lg:gap-0 max-1440p:gap-6 pt-15 max-1440p:pt-1">
         <div>
           <p className="text-2xl max-lg:text-lg font-medium mb-2">
             Lab and Testing
@@ -12,7 +12,7 @@ const LabTestingHeader = () => {
           <h1 className="max-lg:text-3xl lg:max-1440p:text-5xl 1440p:text-6xl font-bold text-brand-red 1440p:leading-16">
             Our laboratory is NABL accredited
           </h1>
-          <div className="overflow-hidden rounded-xl xl:hidden">
+          <div className="overflow-hidden rounded-xl xl:hidden max-lg:mt-5 lg:max-xl:mt-8">
             <Image src={labTestingHeader} alt="" />
           </div>
         </div>

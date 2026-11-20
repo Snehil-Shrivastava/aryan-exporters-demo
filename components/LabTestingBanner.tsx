@@ -21,7 +21,7 @@ const LabTestingBanner = () => {
     <div
       className={`bg-brand-red text-white py-15 max-xl:py-8 mt-25 max-lg:mt-0`}
     >
-      <div className="max-w-[1920px] mx-auto px-10">
+      <div className="max-w-[1920px] mx-auto px-10 max-lg:px-4">
         <div>
           <h4 className="font-bold max-lg:font-semibold max-lg:text-[10px] lg:max-xl:text-sm uppercase">
             for outside customers
@@ -34,7 +34,7 @@ const LabTestingBanner = () => {
             from us.
           </p>
         </div>
-        <div className="grid grid-cols-3 gap-15 pt-10">
+        <div className="grid grid-cols-3 max-lg:grid-cols-1 gap-15 max-lg:gap-6 pt-10">
           {bannerData.map((data, i) => (
             <div
               key={i}
