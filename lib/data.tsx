@@ -1013,3 +1013,75 @@ export const Story4Arr = {
     </>
   ),
 };
+
+export const LabTestingCertificateSays = [
+  {
+    title: "Accredited laboratory",
+    description: "Aryan Exporters Private Limited (Lab Division)",
+  },
+  {
+    title: "Standard",
+    description:
+      "ISO/IEC 17025:2017, General Requirements for the Competence of Testing and Calibration Labs.",
+  },
+  {
+    title: "Field of accreditation",
+    description: "Testing",
+  },
+  {
+    title: "Facility",
+    description: "B-1, Industrial Area, Amausi, Lucknow, Uttar Pradesh, India",
+  },
+  {
+    title: "Certificate number",
+    description: "NABLT0726UP18835",
+  },
+  {
+    title: "Issued",
+    description: "29 July 2026",
+  },
+  {
+    title: "Valid until",
+    description: "28 July 2030",
+  },
+  {
+    title: "Scope",
+    description:
+      "Listed in the annexure to the certificate, and published by NABL on its own website.",
+  },
+  {
+    title: "Issued by",
+    description:
+      "NABL, the National Accreditation Board for Testing and Calibration Laboratories",
+  },
+];
+
+export const LabTestingAwardsData = [
+  {
+    tag: "the laboratory",
+    title: "NABL accreditation ISO/IEC 17025:2017",
+    description1: "NABLT0726UP18835",
+    description2: "Aryan Exporters Private Limited (Lab Division)",
+    validity: "Valid to 28 July 2030",
+    text: "How we test. An independent assessment of the laboratory’s competence, for the tests listed in its scope. This is the certificate that matters if you are sending  us a sample.",
+    link: "/#",
+  },
+  {
+    tag: "the company",
+    title: "ISO 9001:2015",
+    description1: "DNV, certificate C899464",
+    description2: "First certified 18 May 1999",
+    validity: "Valid 18 May 2026 to 17 May 2029",
+    text: "Our quality management system, covering design, development and manufacture. It governs how the business is run, including record keeping and traceability.",
+    link: "/#",
+  },
+  {
+    tag: "the company",
+    title: "IRIS Certification",
+    description1: "DNV Business Assurance India",
+    description2: "Register C545422",
+    validity: "Valid 4 August 2025 to 3 August 2028",
+    text: "The rail industry standard. Business category: rolling stock. Product scope: electrical, components, guidance. Covers design and development, production, control of outsourced processes, and project management.",
+    link: "/#",
+  },
+];
