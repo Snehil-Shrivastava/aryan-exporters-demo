@@ -122,8 +122,8 @@ const LabTestingEnquiry = () => {
           <h2 className="text-2xl md:text-3xl 2xl:text-4xl font-semibold capitalize">
             Enquiry
           </h2>
-          <p className="lg:flex lg:flex-col py-0 text-xs md:text-sm xl:text-xs 2xl:text-sm text-gray-600">
-            <span>Send it to</span>
+          <p className="flex lg:flex-col py-0 text-xs md:text-sm xl:text-xs 2xl:text-sm text-gray-600">
+            <span>Send it to&nbsp;</span>
             <span>the laboratory</span>
           </p>
         </div>

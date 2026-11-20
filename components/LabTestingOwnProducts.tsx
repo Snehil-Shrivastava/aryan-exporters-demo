@@ -6,8 +6,8 @@ const LabTestingOwnProducts = () => {
           <h2 className="text-2xl md:text-3xl 2xl:text-4xl font-semibold capitalize">
             Our own products
           </h2>
-          <p className="lg:flex lg:flex-col py-0 text-xs md:text-sm xl:text-xs 2xl:text-sm text-gray-600">
-            <span>How we test </span>
+          <p className="flex lg:flex-col py-0 text-xs md:text-sm xl:text-xs 2xl:text-sm text-gray-600">
+            <span>How we test&nbsp;</span>
             <span>our own parts</span>
           </p>
         </div>

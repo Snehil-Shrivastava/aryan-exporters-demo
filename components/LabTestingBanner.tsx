@@ -34,7 +34,7 @@ const LabTestingBanner = () => {
             from us.
           </p>
         </div>
-        <div className="grid grid-cols-3 max-lg:grid-cols-1 gap-15 max-lg:gap-6 pt-10">
+        <div className="grid grid-cols-3 max-lg:grid-cols-1 gap-15 max-lg:gap-6 lg:max-xl:gap-10 pt-10">
           {bannerData.map((data, i) => (
             <div
               key={i}

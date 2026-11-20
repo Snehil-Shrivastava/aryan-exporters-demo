@@ -17,21 +17,21 @@ const LabTestingHeader = () => {
           </div>
         </div>
         <div>
-          <p className="leading-relaxed mt-6 text-lg max-lg:text-base">
+          <p className="leading-relaxed mt-6 text-lg max-lg:text-sm">
             Aryan Exporters Private Limited (Lab Division) is accredited by NABL
             to ISO/IEC 17025:2017. That is the international standard for the
             competence of testing laboratories.
           </p>
-          <p className="leading-relaxed mt-6 text-lg max-lg:text-base">
+          <p className="leading-relaxed mt-6 text-lg max-lg:text-sm">
             Our certificate number is NABLT0726UP18835. It was issued on 29 July
             2026 and runs to 28 July 2030.
           </p>
-          <p className="leading-relaxed mt-6 text-lg max-lg:text-base">
+          <p className="leading-relaxed mt-6 text-lg max-lg:text-sm">
             The accreditation covers testing at our works at B-1, Industrial
             Area, Amausi, Lucknow. It is held by the laboratory. It is not a
             certificate for the factory.
           </p>
-          <p className="leading-relaxed mt-6 text-lg max-lg:text-base">
+          <p className="leading-relaxed mt-6 text-lg max-lg:text-sm">
             The laboratory does two jobs. It tests what we make, before any of
             it is released. And it tests for outside customers who need rubber,
             polyurethane or polymer material and parts tested.

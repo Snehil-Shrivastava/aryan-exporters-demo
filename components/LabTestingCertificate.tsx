@@ -8,12 +8,12 @@ const LabTestingCertificate = () => {
         <h2 className="text-2xl md:text-3xl 2xl:text-4xl font-semibold capitalize">
           The Certificate
         </h2>
-        <p className="lg:flex lg:flex-col py-0 text-xs md:text-sm xl:text-xs 2xl:text-sm text-gray-600">
-          <span>What the </span>
+        <p className="flex lg:flex-col py-0 text-xs md:text-sm xl:text-xs 2xl:text-sm text-gray-600">
+          <span>What the&nbsp;</span>
           <span>certificate says</span>
         </p>
       </div>
-      <div className="grid grid-cols-5 max-lg:grid-cols-1 lg:max-xl:grid-cols-3 gap-15 xl:max-1440p:gap-8 max-lg:gap-8">
+      <div className="grid grid-cols-5 max-md:grid-cols-1 md:max-lg:grid-cols-2 lg:max-xl:grid-cols-3 gap-15 lg:max-xl:gap-10 xl:max-1440p:gap-8 max-lg:gap-8">
         {certificateSaysData.map((data, index) => (
           <div
             key={index}

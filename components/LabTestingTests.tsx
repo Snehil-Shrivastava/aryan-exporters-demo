@@ -102,8 +102,8 @@ const LabTestingTests = () => {
           <h2 className="text-2xl md:text-3xl 2xl:text-4xl font-semibold capitalize">
             Tests
           </h2>
-          <p className="lg:flex lg:flex-col py-0 text-xs md:text-sm xl:text-xs 2xl:text-sm opacity-80">
-            <span>What we </span>
+          <p className="flex lg:flex-col py-0 text-xs md:text-sm xl:text-xs 2xl:text-sm opacity-80">
+            <span>What we&nbsp;</span>
             <span>can test</span>
           </p>
         </div>
