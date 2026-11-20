@@ -39,7 +39,7 @@ const LabTestingHeader = () => {
         </div>
       </div>
       <div className="flex-1 overflow-hidden rounded-xl max-xl:hidden aspect-3/2">
-        <Image src={labTestingHeader} alt="" />
+        <Image src={labTestingHeader} alt="" className="rounded-xl" />
       </div>
     </div>
   );
