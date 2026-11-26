@@ -63,7 +63,7 @@ const navLinks: NavItem[] = [
   },
   {
     label: "contact",
-    link: "",
+    link: "/contact",
   },
 ];
 

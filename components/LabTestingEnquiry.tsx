@@ -1,26 +1,3 @@
-// const LabTestingEnquiry = () => {
-//   return (
-//     <div className="px-10 max-lg:px-4 max-w-[1920px] mx-auto w-full pt-15">
-//       <div className="flex flex-col gap-4">
-//         <div className="flex flex-col items-start gap-1.5 xl:flex-row xl:items-center xl:gap-10">
-//           <h2 className="text-2xl md:text-3xl 2xl:text-4xl font-semibold capitalize">
-//             Enquiry
-//           </h2>
-//           <p className="lg:flex lg:flex-col py-0 text-xs md:text-sm xl:text-xs 2xl:text-sm text-gray-600">
-//             <span>Send it to</span>
-//             <span>the laboratory</span>
-//           </p>
-//         </div>
-//         <div>{/* the remaining content goes here */}</div>
-//       </div>
-//     </div>
-//   );
-// };
-
-// export default LabTestingEnquiry;
-
-// ------------------------------------------
-
 "use client";
 
 import { ChevronDown, FileDown, Send } from "lucide-react";
