@@ -148,6 +148,10 @@ import worksMaterial from "@/public/works_materials.svg";
 import worksLab from "@/public/works_laboratory.svg";
 import worksTool from "@/public/works_tooling.svg";
 
+import environmentImg from "@/public/images/CSR_environment.png";
+import communityImg from "@/public/images/CSR_community.png";
+import templeImg from "@/public/images/CSR_temple.png";
+
 type ProductItem = {
   name: string;
   image: StaticImageData;
@@ -1198,5 +1202,35 @@ export const CareersWork = [
     description:
       "Mould making, moulding, bonding and inspection on the shop floor. Trade and ITI backgrounds, and the route by which most of our senior production people arrived.",
     icon: worksTool,
+  },
+];
+
+export const CSRStoriesData = [
+  {
+    title: "environment",
+    header: "A planted campus, and Save Soil",
+    bodyTxt1:
+      "The campus at Amausi is planted. Around a third of the site, with more than 400 trees put in since 2015, looked after by the works team rather than by a contractor.",
+    bodyTxt2:
+      "The company also supports Save Soil, the Conscious Planet movement, across the workforce rather than at management level only.",
+    image: environmentImg,
+  },
+  {
+    title: "community and healthcare",
+    header: "A clinic on the works site",
+    bodyTxt1:
+      "There is a clinic on the works site. It gives free consultation and medicine to anyone who needs it, not only to people who work here. It is open six days a week and sees around 200 people a month.",
+    bodyTxt2:
+      "We also run donation drives and health camps with local organisations, and support schooling in the villages the works recruits from.",
+    image: communityImg,
+  },
+  {
+    title: "the temple",
+    header: "The temple at the works",
+    bodyTxt1:
+      "There has been a temple on the works premises since [year]. It is open to everyone who works here and to anyone from the neighbourhood who wants to use it.",
+    bodyTxt2:
+      "We mention it because it is part of what this place is, not because it is something we offer. Nobody is asked to take part in anything.",
+    image: templeImg,
   },
 ];
