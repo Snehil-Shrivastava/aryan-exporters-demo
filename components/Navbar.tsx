@@ -58,7 +58,7 @@ const navLinks: NavItem[] = [
         label: "Resources",
         link: "/resources",
       },
-      { label: "Press and Events", link: "" },
+      { label: "Press and Events", link: "/resources/press" },
     ],
   },
   {

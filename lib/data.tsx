@@ -1234,3 +1234,63 @@ export const CSRStoriesData = [
     image: templeImg,
   },
 ];
+
+export const DownloadsData = {
+  certificates: [
+    {
+      title: "NABL accreditation certificate",
+      description:
+        "ISO/IEC 17025:2017, certificate NABLT0726UP18835. Issued 29 July 2026, valid to 28 July 2030. Aryan Exporters Private Limited (Lab Division).",
+      downloadStatus: "download",
+    },
+    {
+      title: "NABL scope of accreditation",
+      description:
+        "The annexure to the certificate above. It lists the tests the accreditation actually covers.",
+      downloadStatus: "awaiting aryan",
+    },
+    {
+      title: "ISO 9001:2015 certificate",
+      description:
+        "DNV, certificate C899464. Valid 18 May 2026 to 17 May 2029. First certified 18 May 1999. Scope printed in full.",
+      downloadStatus: "download",
+    },
+    {
+      title: "IRIS certificate",
+      description:
+        "DNV Business Assurance India, register C545422. Valid 4 August 2025 to 3 August 2028. Business category rolling stock.",
+      downloadStatus: "download",
+    },
+  ],
+  awards: [
+    {
+      title: "MSME National Award 2009",
+      description:
+        "Special Recognition for outstanding entrepreneurship, to Shri Ravi Sood.",
+      downloadStatus: "awaiting aryan",
+    },
+    {
+      title: "MSME National Award 2010",
+      description: "Special Recognition for research and development.",
+      downloadStatus: "awaiting aryan",
+    },
+  ],
+  products: [
+    {
+      title: "Product catalogue",
+      description: "The full range, by work area.",
+      downloadStatus: "awaiting aryan",
+    },
+    {
+      title: "Quality policy.",
+      description: "Redirect target for the old quality policy page.",
+      downloadStatus: "awaiting aryan",
+    },
+    {
+      title: "Product data sheets",
+      description:
+        "Published per product as each is written, and linked from the product panel as well as from here.",
+      downloadStatus: "as written",
+    },
+  ],
+};
