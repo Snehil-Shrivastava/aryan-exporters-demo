@@ -23,7 +23,7 @@ const downloads = [
 ];
 
 const fieldBase =
-  "w-full rounded-xl border border-neutral-300 px-5 text-sm md:text-base text-neutral-900 placeholder:text-neutral-400 outline-none transition focus:border-[#a42826] focus:ring-2 focus:ring-[#a42826]/20";
+  "w-full rounded-xl border border-neutral-300 bg-white px-5 text-sm md:text-base text-neutral-900 placeholder:text-neutral-400 outline-none transition focus:border-[#a42826] focus:ring-2 focus:ring-[#a42826]/20";
 const inputClass = `${fieldBase} h-12 lg:h-14`;
 const selectClass = `${inputClass} appearance-none pr-12 invalid:text-neutral-400`;
 
@@ -186,7 +186,7 @@ const ContactEnquiry = () => {
               </Field>
 
               <Field label="Attachment" htmlFor="attachment">
-                <div className="flex items-center gap-4 rounded-xl border border-neutral-300 px-4 py-4">
+                <div className="flex items-center gap-4 rounded-xl border border-neutral-300 bg-white px-4 py-4">
                   <input
                     id="attachment"
                     name="attachment"

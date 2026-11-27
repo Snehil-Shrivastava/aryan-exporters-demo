@@ -10,7 +10,6 @@ const SuccessStories = () => {
   const stories4 = Story4Arr;
   return (
     <div className="py-14 max-md:py-8 w-full font-montserrat">
-      {/* <div className="px-10 max-lg:px-4 max-w-[1920px] mx-auto w-full md:max-lg:pb-25 pb-35"> */}
       <SuccessStoriesHeader />
       <div className="flex flex-col gap-20 max-1440p:gap-20 mt-20 max-lg:mt-6">
         <SuccessStoriesSection
@@ -60,7 +59,6 @@ const SuccessStories = () => {
           tagsColSpan="xl:col-span-2"
           bgColor="bg-[#F5F5F5]"
         />
-        {/* </div> */}
       </div>
       <StartConvo marginTop="mt-0" />
     </div>
