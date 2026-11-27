@@ -3,7 +3,7 @@ const MediaPressPack = () => {
     <div className="px-10 max-lg:px-4 max-w-[1920px] mx-auto w-full pt-15 pb-15">
       <div className="flex max-lg:flex-col gap-30 max-lg:gap-20 max-md:pt-15">
         <div className="flex flex-col justify-center items-start flex-1">
-          <h4 className="uppercase font-medium tracking-widest max-lg:text-sm">
+          <h4 className="uppercase font-medium tracking-[12px] max-lg:text-sm">
             media
           </h4>
           <h2 className="text-[36px] 1440p:leading-10 max-lg:text-2xl lg:max-1440p:text-3xl font-bold text-brand-red mt-3">
@@ -15,7 +15,7 @@ const MediaPressPack = () => {
           </p>
         </div>
         <div className="flex flex-col justify-center items-start flex-1">
-          <h4 className="uppercase font-medium tracking-widest max-lg:text-sm">
+          <h4 className="uppercase font-medium tracking-[12px] max-lg:text-sm">
             presspack
           </h4>
           <h2 className="text-[36px] 1440p:leading-10 max-lg:text-2xl lg:max-1440p:text-3xl font-bold text-brand-red mt-3">

@@ -143,6 +143,11 @@ import digitalutm from "@/public/digitalutm.svg";
 import fatiguetorquetest from "@/public/fatiguetorquetest.svg";
 import analyticalbench from "@/public/analyticalbench.svg";
 
+import worksDesign from "@/public/works_design.svg";
+import worksMaterial from "@/public/works_materials.svg";
+import worksLab from "@/public/works_laboratory.svg";
+import worksTool from "@/public/works_tooling.svg";
+
 type ProductItem = {
   name: string;
   image: StaticImageData;
@@ -1166,5 +1171,32 @@ export const LabTestingTests = [
     property: "Material identification",
     test: ["Specific gravity, ash, polymer identification"],
     method: ["ASTM D297 and related"],
+  },
+];
+
+export const CareersWork = [
+  {
+    title: "Design",
+    description:
+      "Reading a customer requirement, choosing a material, modelling the part and analysing it before anyone cuts a mould. Mechanical engineers, usually with some FEA behind them",
+    icon: worksDesign,
+  },
+  {
+    title: "Materials",
+    description:
+      "Compound development and mixing. The slowest and least visible work here, and the part the rest of the company depends on. Polymer or rubber technology background.",
+    icon: worksMaterial,
+  },
+  {
+    title: "Laboratory",
+    description:
+      "Running the rig, the rheometer and the analytical bench in a NABL accredited laboratory, and writing reports an outside auditor will read. Precision matters more than speed.",
+    icon: worksLab,
+  },
+  {
+    title: "Production and tooling",
+    description:
+      "Mould making, moulding, bonding and inspection on the shop floor. Trade and ITI backgrounds, and the route by which most of our senior production people arrived.",
+    icon: worksTool,
   },
 ];
